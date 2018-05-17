@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9744940220ADAFC500BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493D720ADAFC100BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf */; };
+		9744940320ADAFC500BFA579 /* 13-31-Laryngospasm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493D820ADAFC100BFA579 /* 13-31-Laryngospasm.pdf */; };
+		9744940420ADAFC500BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493D920ADAFC100BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf */; };
+		9744940520ADAFC500BFA579 /* 12-29-Transfusion_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DA20ADAFC100BFA579 /* 12-29-Transfusion_Guidelines.pdf */; };
+		9744940620ADAFC500BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DB20ADAFC100BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf */; };
+		9744940720ADAFC500BFA579 /* 13-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DC20ADAFC100BFA579 /* 13-33-Post_Adenotonsillectomy_Bleeding.pdf */; };
+		9744940820ADAFC500BFA579 /* 14-40-Pain_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DD20ADAFC100BFA579 /* 14-40-Pain_in_Children.pdf */; };
+		9744940920ADAFC500BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DE20ADAFC100BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf */; };
+		9744940A20ADAFC500BFA579 /* 13-32-Hypercyanotic_Tet_Spells.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493DF20ADAFC100BFA579 /* 13-32-Hypercyanotic_Tet_Spells.pdf */; };
+		9744940B20ADAFC500BFA579 /* 13-38-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E020ADAFC100BFA579 /* 13-38-Local_Anaesthetic_Toxicity.pdf */; };
+		9744940C20ADAFC500BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E120ADAFC100BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf */; };
+		9744940D20ADAFC500BFA579 /* 3-07-Nausea_Vomitting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E220ADAFC100BFA579 /* 3-07-Nausea_Vomitting.pdf */; };
+		9744940E20ADAFC500BFA579 /* 3-08-Emergence_delirium.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E320ADAFC100BFA579 /* 3-08-Emergence_delirium.pdf */; };
+		9744940F20ADAFC500BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E420ADAFC200BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf */; };
+		9744941020ADAFC500BFA579 /* 9-23-Central_Neuraxial_Block.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E520ADAFC200BFA579 /* 9-23-Central_Neuraxial_Block.pdf */; };
+		9744941120ADAFC500BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E620ADAFC200BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf */; };
+		9744941220ADAFC500BFA579 /* 3-05-Premedication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E720ADAFC200BFA579 /* 3-05-Premedication.pdf */; };
+		9744941320ADAFC500BFA579 /* 3-06-Common_Medical_Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E820ADAFC200BFA579 /* 3-06-Common_Medical_Conditions.pdf */; };
+		9744941420ADAFC500BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493E920ADAFC200BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf */; };
+		9744941520ADAFC500BFA579 /* 15-45-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493EA20ADAFC200BFA579 /* 15-45-Chronic_Pain.pdf */; };
+		9744941620ADAFC500BFA579 /* 9-22-Peripheral_Nerve_Block.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493EB20ADAFC200BFA579 /* 9-22-Peripheral_Nerve_Block.pdf */; };
+		9744941720ADAFC500BFA579 /* 3-04-Preoperative_Evaluation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493EC20ADAFC200BFA579 /* 3-04-Preoperative_Evaluation.pdf */; };
+		9744941820ADAFC500BFA579 /* 3-09-Dental_Injury.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493ED20ADAFC200BFA579 /* 3-09-Dental_Injury.pdf */; };
+		9744941920ADAFC500BFA579 /* 4-11-Fluid_Guidelines_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493EE20ADAFC300BFA579 /* 4-11-Fluid_Guidelines_in_Children.pdf */; };
+		9744941A20ADAFC500BFA579 /* 6-15-Cardiac_Catheterization.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493EF20ADAFC300BFA579 /* 6-15-Cardiac_Catheterization.pdf */; };
+		9744941B20ADAFC500BFA579 /* 13-36-Latex_Allergy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F020ADAFC300BFA579 /* 13-36-Latex_Allergy.pdf */; };
+		9744941C20ADAFC500BFA579 /* 6-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F120ADAFC300BFA579 /* 6-17-Prophylaxis_for_Infective_Endocarditis.pdf */; };
+		9744941D20ADAFC500BFA579 /* 7-18-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F220ADAFC300BFA579 /* 7-18-Diagnostic_Imaging.pdf */; };
+		9744941E20ADAFC500BFA579 /* 13-34-Acute_Epiglottitis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F320ADAFC300BFA579 /* 13-34-Acute_Epiglottitis.pdf */; };
+		9744941F20ADAFC500BFA579 /* 14-41-Children's_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F420ADAFC300BFA579 /* 14-41-Children's_Pain_Service.pdf */; };
+		9744942020ADAFC500BFA579 /* 14-43-Epidurals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F520ADAFC400BFA579 /* 14-43-Epidurals.pdf */; };
+		9744942120ADAFC500BFA579 /* 14-44-Alternative_Modes_of_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F620ADAFC400BFA579 /* 14-44-Alternative_Modes_of_Analgesia.pdf */; };
+		9744942220ADAFC500BFA579 /* 11-28-Miscellaneous_Drugs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F720ADAFC400BFA579 /* 11-28-Miscellaneous_Drugs.pdf */; };
+		9744942320ADAFC500BFA579 /* 6-16-ROTEM_Algorithm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F820ADAFC400BFA579 /* 6-16-ROTEM_Algorithm.pdf */; };
+		9744942420ADAFC500BFA579 /* 11-27-Antibiotics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493F920ADAFC400BFA579 /* 11-27-Antibiotics.pdf */; };
+		9744942520ADAFC500BFA579 /* 13-35-Suspected_Anaphylaxis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FA20ADAFC400BFA579 /* 13-35-Suspected_Anaphylaxis.pdf */; };
+		9744942620ADAFC500BFA579 /* 6-13-Common_Cardiac_Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FB20ADAFC400BFA579 /* 6-13-Common_Cardiac_Conditions.pdf */; };
+		9744942720ADAFC500BFA579 /* 8-19-Sedation_for_Oncology_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FC20ADAFC400BFA579 /* 8-19-Sedation_for_Oncology_Children.pdf */; };
+		9744942820ADAFC500BFA579 /* 13-37-Malignant_Hyperthermia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FD20ADAFC400BFA579 /* 13-37-Malignant_Hyperthermia.pdf */; };
+		9744942920ADAFC500BFA579 /* 3-10-Equipment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FE20ADAFC500BFA579 /* 3-10-Equipment.pdf */; };
+		9744942A20ADAFC500BFA579 /* 5-12-Neonatal_Anaesthesia_NICU.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 974493FF20ADAFC500BFA579 /* 5-12-Neonatal_Anaesthesia_NICU.pdf */; };
+		9744942B20ADAFC500BFA579 /* 9-25-Current_Trends.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */; };
+		9744942C20ADAFC500BFA579 /* 10-26-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */; };
+		975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4AF20AD64CD00DB6398 /* Extensions.swift */; };
+		975EA4B320AD656200DB6398 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B220AD656200DB6398 /* Controller.swift */; };
+		975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B420AD658500DB6398 /* GlobalController.swift */; };
+		975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B620AD7AA200DB6398 /* PDFManager.swift */; };
+		975EA4BA20AD845000DB6398 /* Chapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4B920AD845000DB6398 /* Chapters.plist */; };
+		975EA4F620AD85CC00DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4C820AD85C200DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf */; };
+		975EA4F920AD85CC00DB6398 /* 1-01-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4CB20AD85C300DB6398 /* 1-01-Training_Programmes.pdf */; };
+		975EA4FE20AD85CC00DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4D020AD85C500DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
+		977BC37920ADB3B40000FD6F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37820ADB3B40000FD6F /* Model.swift */; };
+		977BC37C20ADB4C30000FD6F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37B20ADB4C30000FD6F /* File.swift */; };
+		977BC38B20ADBF6F0000FD6F /* kkh_handbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */; };
+		977BC39320ADBF950000FD6F /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC39220ADBF950000FD6F /* PDFManager.swift */; };
+		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
+		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
+		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
+		97B4B1B320AD39FC00E05F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1B120AD39FC00E05F85 /* LaunchScreen.storyboard */; };
+		DD102A0DB5D2FC0EE5F72276 /* Pods_kkh_handbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		977BC38D20ADBF6F0000FD6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97B4B19D20AD39FA00E05F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B4B1A420AD39FA00E05F85;
+			remoteInfo = "kkh-handbook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkh_handbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB96F476DD259613D1483FE /* Pods-kkh-handbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkh-handbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook.debug.xcconfig"; sourceTree = "<group>"; };
+		974493D720ADAFC100BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-24-Ultrasound_Guided_Blocks.pdf"; sourceTree = "<group>"; };
+		974493D820ADAFC100BFA579 /* 13-31-Laryngospasm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-31-Laryngospasm.pdf"; sourceTree = "<group>"; };
+		974493D920ADAFC100BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-42-Patient_Controlled_Analgesia.pdf"; sourceTree = "<group>"; };
+		974493DA20ADAFC100BFA579 /* 12-29-Transfusion_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-29-Transfusion_Guidelines.pdf"; sourceTree = "<group>"; };
+		974493DB20ADAFC100BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-30-Paediatric_Massive_Transfusion_Protocol.pdf"; sourceTree = "<group>"; };
+		974493DC20ADAFC100BFA579 /* 13-33-Post_Adenotonsillectomy_Bleeding.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-33-Post_Adenotonsillectomy_Bleeding.pdf"; sourceTree = "<group>"; };
+		974493DD20ADAFC100BFA579 /* 14-40-Pain_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-40-Pain_in_Children.pdf"; sourceTree = "<group>"; };
+		974493DE20ADAFC100BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6-14-Paediatric_Cardiac_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		974493DF20ADAFC100BFA579 /* 13-32-Hypercyanotic_Tet_Spells.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-32-Hypercyanotic_Tet_Spells.pdf"; sourceTree = "<group>"; };
+		974493E020ADAFC100BFA579 /* 13-38-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-38-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
+		974493E120ADAFC100BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-39-Advanced_Paediatric_Life_Support.pdf"; sourceTree = "<group>"; };
+		974493E220ADAFC100BFA579 /* 3-07-Nausea_Vomitting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-07-Nausea_Vomitting.pdf"; sourceTree = "<group>"; };
+		974493E320ADAFC100BFA579 /* 3-08-Emergence_delirium.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-08-Emergence_delirium.pdf"; sourceTree = "<group>"; };
+		974493E420ADAFC200BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-21-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
+		974493E520ADAFC200BFA579 /* 9-23-Central_Neuraxial_Block.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-23-Central_Neuraxial_Block.pdf"; sourceTree = "<group>"; };
+		974493E620ADAFC200BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-46-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
+		974493E720ADAFC200BFA579 /* 3-05-Premedication.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-05-Premedication.pdf"; sourceTree = "<group>"; };
+		974493E820ADAFC200BFA579 /* 3-06-Common_Medical_Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-06-Common_Medical_Conditions.pdf"; sourceTree = "<group>"; };
+		974493E920ADAFC200BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-20-Regional_Anaesthesia_Workflow.pdf"; sourceTree = "<group>"; };
+		974493EA20ADAFC200BFA579 /* 15-45-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-45-Chronic_Pain.pdf"; sourceTree = "<group>"; };
+		974493EB20ADAFC200BFA579 /* 9-22-Peripheral_Nerve_Block.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-22-Peripheral_Nerve_Block.pdf"; sourceTree = "<group>"; };
+		974493EC20ADAFC200BFA579 /* 3-04-Preoperative_Evaluation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-04-Preoperative_Evaluation.pdf"; sourceTree = "<group>"; };
+		974493ED20ADAFC200BFA579 /* 3-09-Dental_Injury.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-09-Dental_Injury.pdf"; sourceTree = "<group>"; };
+		974493EE20ADAFC300BFA579 /* 4-11-Fluid_Guidelines_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "4-11-Fluid_Guidelines_in_Children.pdf"; sourceTree = "<group>"; };
+		974493EF20ADAFC300BFA579 /* 6-15-Cardiac_Catheterization.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6-15-Cardiac_Catheterization.pdf"; sourceTree = "<group>"; };
+		974493F020ADAFC300BFA579 /* 13-36-Latex_Allergy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-36-Latex_Allergy.pdf"; sourceTree = "<group>"; };
+		974493F120ADAFC300BFA579 /* 6-17-Prophylaxis_for_Infective_Endocarditis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6-17-Prophylaxis_for_Infective_Endocarditis.pdf"; sourceTree = "<group>"; };
+		974493F220ADAFC300BFA579 /* 7-18-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "7-18-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
+		974493F320ADAFC300BFA579 /* 13-34-Acute_Epiglottitis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-34-Acute_Epiglottitis.pdf"; sourceTree = "<group>"; };
+		974493F420ADAFC300BFA579 /* 14-41-Children's_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-41-Children's_Pain_Service.pdf"; sourceTree = "<group>"; };
+		974493F520ADAFC400BFA579 /* 14-43-Epidurals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-43-Epidurals.pdf"; sourceTree = "<group>"; };
+		974493F620ADAFC400BFA579 /* 14-44-Alternative_Modes_of_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-44-Alternative_Modes_of_Analgesia.pdf"; sourceTree = "<group>"; };
+		974493F720ADAFC400BFA579 /* 11-28-Miscellaneous_Drugs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-28-Miscellaneous_Drugs.pdf"; sourceTree = "<group>"; };
+		974493F820ADAFC400BFA579 /* 6-16-ROTEM_Algorithm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6-16-ROTEM_Algorithm.pdf"; sourceTree = "<group>"; };
+		974493F920ADAFC400BFA579 /* 11-27-Antibiotics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-27-Antibiotics.pdf"; sourceTree = "<group>"; };
+		974493FA20ADAFC400BFA579 /* 13-35-Suspected_Anaphylaxis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-35-Suspected_Anaphylaxis.pdf"; sourceTree = "<group>"; };
+		974493FB20ADAFC400BFA579 /* 6-13-Common_Cardiac_Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "6-13-Common_Cardiac_Conditions.pdf"; sourceTree = "<group>"; };
+		974493FC20ADAFC400BFA579 /* 8-19-Sedation_for_Oncology_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "8-19-Sedation_for_Oncology_Children.pdf"; sourceTree = "<group>"; };
+		974493FD20ADAFC400BFA579 /* 13-37-Malignant_Hyperthermia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-37-Malignant_Hyperthermia.pdf"; sourceTree = "<group>"; };
+		974493FE20ADAFC500BFA579 /* 3-10-Equipment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3-10-Equipment.pdf"; sourceTree = "<group>"; };
+		974493FF20ADAFC500BFA579 /* 5-12-Neonatal_Anaesthesia_NICU.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "5-12-Neonatal_Anaesthesia_NICU.pdf"; sourceTree = "<group>"; };
+		9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-25-Current_Trends.pdf"; sourceTree = "<group>"; };
+		9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-26-Patient_Transport.pdf"; sourceTree = "<group>"; };
+		975EA4AF20AD64CD00DB6398 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		975EA4B220AD656200DB6398 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		975EA4B420AD658500DB6398 /* GlobalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalController.swift; sourceTree = "<group>"; };
+		975EA4B620AD7AA200DB6398 /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
+		975EA4B920AD845000DB6398 /* Chapters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Chapters.plist; sourceTree = "<group>"; };
+		975EA4C820AD85C200DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2-03-Preoperative_preparation_and_induction_techniques.pdf"; sourceTree = "<group>"; };
+		975EA4CB20AD85C300DB6398 /* 1-01-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "1-01-Training_Programmes.pdf"; sourceTree = "<group>"; };
+		975EA4D020AD85C500DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
+		977BC37820ADB3B40000FD6F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		977BC37B20ADB4C30000FD6F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		977BC38220ADBE9E0000FD6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		977BC38820ADBF6F0000FD6F /* kkh-handbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kkh-handbookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kkh_handbookTests.swift; sourceTree = "<group>"; };
+		977BC38C20ADBF6F0000FD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977BC39220ADBF950000FD6F /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
+		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97B4B1B220AD39FC00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97B4B1B420AD39FC00E05F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkh-handbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		977BC38520ADBF6F0000FD6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B4B1A220AD39FA00E05F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD102A0DB5D2FC0EE5F72276 /* Pods_kkh_handbook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112AC992A5F353C445B84E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				977BC38220ADBE9E0000FD6F /* XCTest.framework */,
+				07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89268EE797E34CC8EE3A5081 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB96F476DD259613D1483FE /* Pods-kkh-handbook.debug.xcconfig */,
+				D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9744942D20ADAFD600BFA579 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				975EA4CB20AD85C300DB6398 /* 1-01-Training_Programmes.pdf */,
+				975EA4D020AD85C500DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */,
+				975EA4C820AD85C200DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf */,
+				974493EC20ADAFC200BFA579 /* 3-04-Preoperative_Evaluation.pdf */,
+				974493E720ADAFC200BFA579 /* 3-05-Premedication.pdf */,
+				974493E820ADAFC200BFA579 /* 3-06-Common_Medical_Conditions.pdf */,
+				974493E220ADAFC100BFA579 /* 3-07-Nausea_Vomitting.pdf */,
+				974493E320ADAFC100BFA579 /* 3-08-Emergence_delirium.pdf */,
+				974493ED20ADAFC200BFA579 /* 3-09-Dental_Injury.pdf */,
+				974493FE20ADAFC500BFA579 /* 3-10-Equipment.pdf */,
+				974493EE20ADAFC300BFA579 /* 4-11-Fluid_Guidelines_in_Children.pdf */,
+				974493FF20ADAFC500BFA579 /* 5-12-Neonatal_Anaesthesia_NICU.pdf */,
+				974493FB20ADAFC400BFA579 /* 6-13-Common_Cardiac_Conditions.pdf */,
+				974493DE20ADAFC100BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf */,
+				974493EF20ADAFC300BFA579 /* 6-15-Cardiac_Catheterization.pdf */,
+				974493F820ADAFC400BFA579 /* 6-16-ROTEM_Algorithm.pdf */,
+				974493F120ADAFC300BFA579 /* 6-17-Prophylaxis_for_Infective_Endocarditis.pdf */,
+				974493F220ADAFC300BFA579 /* 7-18-Diagnostic_Imaging.pdf */,
+				974493FC20ADAFC400BFA579 /* 8-19-Sedation_for_Oncology_Children.pdf */,
+				974493E920ADAFC200BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf */,
+				974493E420ADAFC200BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf */,
+				974493EB20ADAFC200BFA579 /* 9-22-Peripheral_Nerve_Block.pdf */,
+				974493E520ADAFC200BFA579 /* 9-23-Central_Neuraxial_Block.pdf */,
+				974493D720ADAFC100BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf */,
+				9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */,
+				9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */,
+				974493F920ADAFC400BFA579 /* 11-27-Antibiotics.pdf */,
+				974493F720ADAFC400BFA579 /* 11-28-Miscellaneous_Drugs.pdf */,
+				974493DA20ADAFC100BFA579 /* 12-29-Transfusion_Guidelines.pdf */,
+				974493DB20ADAFC100BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf */,
+				974493D820ADAFC100BFA579 /* 13-31-Laryngospasm.pdf */,
+				974493DF20ADAFC100BFA579 /* 13-32-Hypercyanotic_Tet_Spells.pdf */,
+				974493DC20ADAFC100BFA579 /* 13-33-Post_Adenotonsillectomy_Bleeding.pdf */,
+				974493F320ADAFC300BFA579 /* 13-34-Acute_Epiglottitis.pdf */,
+				974493FA20ADAFC400BFA579 /* 13-35-Suspected_Anaphylaxis.pdf */,
+				974493F020ADAFC300BFA579 /* 13-36-Latex_Allergy.pdf */,
+				974493FD20ADAFC400BFA579 /* 13-37-Malignant_Hyperthermia.pdf */,
+				974493E020ADAFC100BFA579 /* 13-38-Local_Anaesthetic_Toxicity.pdf */,
+				974493E120ADAFC100BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf */,
+				974493DD20ADAFC100BFA579 /* 14-40-Pain_in_Children.pdf */,
+				974493F420ADAFC300BFA579 /* 14-41-Children's_Pain_Service.pdf */,
+				974493D920ADAFC100BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf */,
+				974493F520ADAFC400BFA579 /* 14-43-Epidurals.pdf */,
+				974493F620ADAFC400BFA579 /* 14-44-Alternative_Modes_of_Analgesia.pdf */,
+				974493EA20ADAFC200BFA579 /* 15-45-Chronic_Pain.pdf */,
+				974493E620ADAFC200BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
+		975EA4B120AD650600DB6398 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				975EA4B420AD658500DB6398 /* GlobalController.swift */,
+				975EA4B620AD7AA200DB6398 /* PDFManager.swift */,
+				975EA4AF20AD64CD00DB6398 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		975EA4B820AD843800DB6398 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				9744942D20ADAFD600BFA579 /* PDFs */,
+				975EA4B920AD845000DB6398 /* Chapters.plist */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		977BC37720ADB33C0000FD6F /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				975EA4B220AD656200DB6398 /* Controller.swift */,
+				977BC37820ADB3B40000FD6F /* Model.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		977BC37A20ADB4A30000FD6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				977BC37B20ADB4C30000FD6F /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		977BC37F20ADBE510000FD6F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				977BC39220ADBF950000FD6F /* PDFManager.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		977BC38920ADBF6F0000FD6F /* kkh-handbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */,
+				977BC38C20ADBF6F0000FD6F /* Info.plist */,
+			);
+			path = "kkh-handbookTests";
+			sourceTree = "<group>";
+		};
+		97B4B19C20AD39FA00E05F85 = {
+			isa = PBXGroup;
+			children = (
+				975EA4B820AD843800DB6398 /* Content */,
+				97B4B1A720AD39FA00E05F85 /* kkh-handbook */,
+				977BC38920ADBF6F0000FD6F /* kkh-handbookTests */,
+				97B4B1A620AD39FA00E05F85 /* Products */,
+				89268EE797E34CC8EE3A5081 /* Pods */,
+				112AC992A5F353C445B84E0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97B4B1A620AD39FA00E05F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */,
+				977BC38820ADBF6F0000FD6F /* kkh-handbookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B4B1A720AD39FA00E05F85 /* kkh-handbook */ = {
+			isa = PBXGroup;
+			children = (
+				977BC37A20ADB4A30000FD6F /* Models */,
+				97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */,
+				977BC37720ADB33C0000FD6F /* Reference */,
+				975EA4B120AD650600DB6398 /* Utility */,
+				97B4B1AC20AD39FA00E05F85 /* Main.storyboard */,
+				97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */,
+				97B4B1B120AD39FC00E05F85 /* LaunchScreen.storyboard */,
+				97B4B1B420AD39FC00E05F85 /* Info.plist */,
+				977BC37F20ADBE510000FD6F /* Tests */,
+			);
+			path = "kkh-handbook";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		977BC38720ADBF6F0000FD6F /* kkh-handbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 977BC38F20ADBF6F0000FD6F /* Build configuration list for PBXNativeTarget "kkh-handbookTests" */;
+			buildPhases = (
+				977BC38420ADBF6F0000FD6F /* Sources */,
+				977BC38520ADBF6F0000FD6F /* Frameworks */,
+				977BC38620ADBF6F0000FD6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				977BC38E20ADBF6F0000FD6F /* PBXTargetDependency */,
+			);
+			name = "kkh-handbookTests";
+			productName = "kkh-handbookTests";
+			productReference = 977BC38820ADBF6F0000FD6F /* kkh-handbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97B4B1A420AD39FA00E05F85 /* kkh-handbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B4B1B720AD39FC00E05F85 /* Build configuration list for PBXNativeTarget "kkh-handbook" */;
+			buildPhases = (
+				8D8498C1FC4DEFFE05E775A2 /* [CP] Check Pods Manifest.lock */,
+				97B4B1A120AD39FA00E05F85 /* Sources */,
+				97B4B1A220AD39FA00E05F85 /* Frameworks */,
+				97B4B1A320AD39FA00E05F85 /* Resources */,
+				7F0286D95B6E7E9865E99832 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kkh-handbook";
+			productName = "kkh-handbook";
+			productReference = 97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97B4B19D20AD39FA00E05F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = sstinc;
+				TargetAttributes = {
+					977BC38720ADBF6F0000FD6F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 97B4B1A420AD39FA00E05F85;
+					};
+					97B4B1A420AD39FA00E05F85 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 97B4B1A020AD39FA00E05F85 /* Build configuration list for PBXProject "kkh-handbook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97B4B19C20AD39FA00E05F85;
+			productRefGroup = 97B4B1A620AD39FA00E05F85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B4B1A420AD39FA00E05F85 /* kkh-handbook */,
+				977BC38720ADBF6F0000FD6F /* kkh-handbookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		977BC38620ADBF6F0000FD6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B4B1A320AD39FA00E05F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B4B1B320AD39FC00E05F85 /* LaunchScreen.storyboard in Resources */,
+				9744942420ADAFC500BFA579 /* 11-27-Antibiotics.pdf in Resources */,
+				9744940A20ADAFC500BFA579 /* 13-32-Hypercyanotic_Tet_Spells.pdf in Resources */,
+				9744942C20ADAFC500BFA579 /* 10-26-Patient_Transport.pdf in Resources */,
+				97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */,
+				9744940D20ADAFC500BFA579 /* 3-07-Nausea_Vomitting.pdf in Resources */,
+				9744942A20ADAFC500BFA579 /* 5-12-Neonatal_Anaesthesia_NICU.pdf in Resources */,
+				9744941C20ADAFC500BFA579 /* 6-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */,
+				9744941A20ADAFC500BFA579 /* 6-15-Cardiac_Catheterization.pdf in Resources */,
+				9744941020ADAFC500BFA579 /* 9-23-Central_Neuraxial_Block.pdf in Resources */,
+				9744942720ADAFC500BFA579 /* 8-19-Sedation_for_Oncology_Children.pdf in Resources */,
+				9744941920ADAFC500BFA579 /* 4-11-Fluid_Guidelines_in_Children.pdf in Resources */,
+				9744942320ADAFC500BFA579 /* 6-16-ROTEM_Algorithm.pdf in Resources */,
+				975EA4F920AD85CC00DB6398 /* 1-01-Training_Programmes.pdf in Resources */,
+				9744941520ADAFC500BFA579 /* 15-45-Chronic_Pain.pdf in Resources */,
+				9744941720ADAFC500BFA579 /* 3-04-Preoperative_Evaluation.pdf in Resources */,
+				9744941620ADAFC500BFA579 /* 9-22-Peripheral_Nerve_Block.pdf in Resources */,
+				9744942B20ADAFC500BFA579 /* 9-25-Current_Trends.pdf in Resources */,
+				9744942620ADAFC500BFA579 /* 6-13-Common_Cardiac_Conditions.pdf in Resources */,
+				9744941B20ADAFC500BFA579 /* 13-36-Latex_Allergy.pdf in Resources */,
+				9744940920ADAFC500BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */,
+				9744940520ADAFC500BFA579 /* 12-29-Transfusion_Guidelines.pdf in Resources */,
+				9744940420ADAFC500BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf in Resources */,
+				9744940F20ADAFC500BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf in Resources */,
+				9744940320ADAFC500BFA579 /* 13-31-Laryngospasm.pdf in Resources */,
+				9744940E20ADAFC500BFA579 /* 3-08-Emergence_delirium.pdf in Resources */,
+				9744942120ADAFC500BFA579 /* 14-44-Alternative_Modes_of_Analgesia.pdf in Resources */,
+				9744942920ADAFC500BFA579 /* 3-10-Equipment.pdf in Resources */,
+				9744941F20ADAFC500BFA579 /* 14-41-Children's_Pain_Service.pdf in Resources */,
+				9744942020ADAFC500BFA579 /* 14-43-Epidurals.pdf in Resources */,
+				9744940220ADAFC500BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf in Resources */,
+				9744941D20ADAFC500BFA579 /* 7-18-Diagnostic_Imaging.pdf in Resources */,
+				975EA4BA20AD845000DB6398 /* Chapters.plist in Resources */,
+				9744941120ADAFC500BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf in Resources */,
+				975EA4FE20AD85CC00DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
+				9744942520ADAFC500BFA579 /* 13-35-Suspected_Anaphylaxis.pdf in Resources */,
+				9744942220ADAFC500BFA579 /* 11-28-Miscellaneous_Drugs.pdf in Resources */,
+				9744940820ADAFC500BFA579 /* 14-40-Pain_in_Children.pdf in Resources */,
+				97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */,
+				9744940C20ADAFC500BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf in Resources */,
+				9744941420ADAFC500BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf in Resources */,
+				9744940620ADAFC500BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
+				9744942820ADAFC500BFA579 /* 13-37-Malignant_Hyperthermia.pdf in Resources */,
+				9744941320ADAFC500BFA579 /* 3-06-Common_Medical_Conditions.pdf in Resources */,
+				9744941220ADAFC500BFA579 /* 3-05-Premedication.pdf in Resources */,
+				9744941E20ADAFC500BFA579 /* 13-34-Acute_Epiglottitis.pdf in Resources */,
+				9744941820ADAFC500BFA579 /* 3-09-Dental_Injury.pdf in Resources */,
+				9744940B20ADAFC500BFA579 /* 13-38-Local_Anaesthetic_Toxicity.pdf in Resources */,
+				9744940720ADAFC500BFA579 /* 13-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */,
+				975EA4F620AD85CC00DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F0286D95B6E7E9865E99832 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8498C1FC4DEFFE05E775A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kkh-handbook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		977BC38420ADBF6F0000FD6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977BC39320ADBF950000FD6F /* PDFManager.swift in Sources */,
+				977BC38B20ADBF6F0000FD6F /* kkh_handbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B4B1A120AD39FA00E05F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
+				975EA4B320AD656200DB6398 /* Controller.swift in Sources */,
+				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
+				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
+				977BC37920ADB3B40000FD6F /* Model.swift in Sources */,
+				975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */,
+				97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		977BC38E20ADBF6F0000FD6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97B4B1A420AD39FA00E05F85 /* kkh-handbook */;
+			targetProxy = 977BC38D20ADBF6F0000FD6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97B4B1AC20AD39FA00E05F85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B4B1AD20AD39FA00E05F85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97B4B1B120AD39FC00E05F85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B4B1B220AD39FC00E05F85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		977BC39020ADBF6F0000FD6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				INFOPLIST_FILE = "kkh-handbookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "inc.kkh-handbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kkh-handbook.app/kkh-handbook";
+			};
+			name = Debug;
+		};
+		977BC39120ADBF6F0000FD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				INFOPLIST_FILE = "kkh-handbookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "inc.kkh-handbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kkh-handbook.app/kkh-handbook";
+			};
+			name = Release;
+		};
+		97B4B1B520AD39FC00E05F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97B4B1B620AD39FC00E05F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97B4B1B820AD39FC00E05F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB96F476DD259613D1483FE /* Pods-kkh-handbook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				INFOPLIST_FILE = "kkh-handbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "inc.kkh-handbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97B4B1B920AD39FC00E05F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				INFOPLIST_FILE = "kkh-handbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "inc.kkh-handbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		977BC38F20ADBF6F0000FD6F /* Build configuration list for PBXNativeTarget "kkh-handbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				977BC39020ADBF6F0000FD6F /* Debug */,
+				977BC39120ADBF6F0000FD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B4B1A020AD39FA00E05F85 /* Build configuration list for PBXProject "kkh-handbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B4B1B520AD39FC00E05F85 /* Debug */,
+				97B4B1B620AD39FC00E05F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B4B1B720AD39FC00E05F85 /* Build configuration list for PBXNativeTarget "kkh-handbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B4B1B820AD39FC00E05F85 /* Debug */,
+				97B4B1B920AD39FC00E05F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97B4B19D20AD39FA00E05F85 /* Project object */;
+}
