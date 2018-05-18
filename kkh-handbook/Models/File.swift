@@ -12,6 +12,6 @@ import UIKit
 struct File {
 	let name: String
 	let id: Int
-	let chapter: String
+	let chapterId: Int
 	let path: URL
 }

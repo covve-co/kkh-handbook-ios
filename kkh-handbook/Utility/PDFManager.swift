@@ -1,16 +1,16 @@
 //
 //  PDFManager.swift
-//  Handbook
+//  kkh-handbook
 //
-//  Created by Ravern on 9/6/16.
-//  Copyright © 2016 SST Inc. All rights reserved.
+//  Created by Sean Lim on 17/5/18.
+//  Copyright © 2018 sstinc. All rights reserved.
 //
 
 import UIKit
 
 class PDFManager: NSObject {
 	
-	private var files: [Int: File] = [:]
+	private var files: [Int: [File]] = [:]
 	private var chapters: [String] = []
 	
 	override init() {
@@ -20,39 +20,57 @@ class PDFManager: NSObject {
 		var contents: [String]!
 		
 		// Read files
-		do { contents = try fileManager.contentsOfDirectory(atPath: bundleRoot.bundlePath) }
+		do {
+			contents = try fileManager
+				.contentsOfDirectory(atPath: bundleRoot.bundlePath) }
 		catch {
 			print("Read root bundle failed")
 		}
 		
 		// Read Chapters
-		if let url = bundleRoot.url(forResource: "Chapters", withExtension: "plist") {
+		if let url = bundleRoot.url(forResource: "Chapters",
+									withExtension: "plist") {
 			let readchapters = NSArray(contentsOf: url) as? [String]
 			readchapters?.forEach{chapters.append($0)}
-		}
+			// Clean up dirty chapter names
+			chapters = chapters.map{$0.replacingOccurrences(of: "\n", with: "")}
+			}
 		
-		// Map files
+		// Map to Files
 		contents.filter{ $0.hasSuffix(".pdf")}.forEach {
 			let a = $0.split(separator: "-")
-			files[Int(a[1])! - 1] = File(
-				name: a[2]
-					.replacingOccurrences(of: "_", with: " ")
-					.replacingOccurrences(of: ".pdf", with: ""),
-				id: Int(a[1])!,
-				chapter:  chapters[Int(a[0])! - 1],
-				path: URL(string: $0)!
+			if files[Int(a[0])! - 1] == nil  {
+				files[Int(a[0])! - 1] = []
+			}
+			files[Int(a[0])! - 1]!.append(
+				File(
+					name: a[2]
+						.replacingOccurrences(of: "_", with: " ")
+						.replacingOccurrences(of: ".pdf", with: ""),
+					id: Int(a[1])!,
+					chapterId:  Int(a[0])! - 1,
+					path: URL(string: $0)!
 				)
+			)
 		}
 		
 	}
 	
+	func getFiles() -> [File]? {
+		return files.flatMap{$1}
+	}
+	
+	func getFiles(chapterIndex: Int) -> [File]? {
+		return files[chapterIndex]
+	}
+	
 	func getFile(withId: Int) -> File? {
-		return files[withId-1]
+		return files.flatMap{$1}[withId-1]
 	}
 	
 	func getFile(withName: String) -> File? {
 		var res: File?
-		for file in files.values {
+		for file in files.flatMap({$1}) {
 			if file.name == withName {
 				res = file
 				break
@@ -61,8 +79,18 @@ class PDFManager: NSObject {
 		return res
 	}
 	
+	func queryFiles(_ queryString: String) -> [File]? {
+		return files
+			.flatMap{$1}
+			.filter{$0.name.contains(queryString)}
+	}
+	
+	func getChapter(forId: Int) -> String {
+		return chapters[forId]
+	}
+	
 	func numberOfFiles() -> Int {
-		return files.count
+		return files.flatMap{$1}.count
 	}
 	
 	func numberOfChapters() -> Int {

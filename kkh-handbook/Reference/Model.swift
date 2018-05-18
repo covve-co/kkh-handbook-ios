@@ -7,8 +7,17 @@
 //
 
 struct ReferenceViewModel {
+	let manager = PDFManager()
+	
+	// Content that is displayed on tableview
 	var content: [File] = []
-	func search(query: String) {
-		
+	
+	init() {
+		content = manager.getFiles()!
 	}
+	
+	mutating func search(query: String) {
+		content = manager.queryFiles(query)!
+	}
+	
 }
