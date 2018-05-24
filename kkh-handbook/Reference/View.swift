@@ -36,7 +36,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-		model.search(query: searchBar.text)
+		model.search(query: searchBar.text == "" ? nil : searchBar.text)
 		print(model.content)
 	}
 	

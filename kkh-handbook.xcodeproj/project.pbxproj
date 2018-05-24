@@ -51,7 +51,7 @@
 		9744942B20ADAFC500BFA579 /* 9-25-Current_Trends.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */; };
 		9744942C20ADAFC500BFA579 /* 10-26-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */; };
 		975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4AF20AD64CD00DB6398 /* Extensions.swift */; };
-		975EA4B320AD656200DB6398 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B220AD656200DB6398 /* Controller.swift */; };
+		975EA4B320AD656200DB6398 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B220AD656200DB6398 /* View.swift */; };
 		975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B420AD658500DB6398 /* GlobalController.swift */; };
 		975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B620AD7AA200DB6398 /* PDFManager.swift */; };
 		975EA4BA20AD845000DB6398 /* Chapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4B920AD845000DB6398 /* Chapters.plist */; };
@@ -128,7 +128,7 @@
 		9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-25-Current_Trends.pdf"; sourceTree = "<group>"; };
 		9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-26-Patient_Transport.pdf"; sourceTree = "<group>"; };
 		975EA4AF20AD64CD00DB6398 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		975EA4B220AD656200DB6398 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		975EA4B220AD656200DB6398 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		975EA4B420AD658500DB6398 /* GlobalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalController.swift; sourceTree = "<group>"; };
 		975EA4B620AD7AA200DB6398 /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		975EA4B920AD845000DB6398 /* Chapters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Chapters.plist; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 		977BC37720ADB33C0000FD6F /* Reference */ = {
 			isa = PBXGroup;
 			children = (
-				975EA4B220AD656200DB6398 /* Controller.swift */,
+				975EA4B220AD656200DB6398 /* View.swift */,
 				977BC37820ADB3B40000FD6F /* Model.swift */,
 				97CFABBF20AE890900CAF4DB /* Section header.xib */,
 				97CFAB9D20AE7DCB00CAF4DB /* TableViewController.swift */,
@@ -543,7 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
-				975EA4B320AD656200DB6398 /* Controller.swift in Sources */,
+				975EA4B320AD656200DB6398 /* View.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
 				977BC37920ADB3B40000FD6F /* Model.swift in Sources */,
