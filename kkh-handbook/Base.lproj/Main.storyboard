@@ -83,6 +83,9 @@
                                     <color key="tintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="barTintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="2sz-kf-ch1" id="Azj-DR-JPK"/>
+                                    </connections>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell" id="Uq1-J0-hzJ" customClass="ReferenceViewCell" customModule="kkh_handbook" customModuleProvider="target">
@@ -130,6 +133,10 @@
                     <tabBarItem key="tabBarItem" title="" id="h4H-AT-G65"/>
                     <navigationItem key="navigationItem" title="Reference" id="cfy-8m-d3k"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchBar" destination="V3b-SO-Bfs" id="AWk-eJ-d1S"/>
+                        <outlet property="tableView" destination="ga9-6g-nNg" id="7Kr-cG-xAX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ln3-8q-d3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
