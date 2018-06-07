@@ -79,6 +79,10 @@ class PDFManager: NSObject {
 		return res
 	}
 	
+	func getFile(withChapterIndex: Int, id: Int) -> File {
+		return files[withChapterIndex]![id]
+	}
+	
 	func queryFiles(_ queryString: String) -> [File]? {
 		return files
 			.flatMap{$1}
