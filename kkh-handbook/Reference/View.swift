@@ -13,8 +13,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	
 	var model = ReferenceViewModel()
 	
-	var sections = 1
-	var rows = 0
+	var content: [Chapter] = []
 	
 	@IBOutlet var searchBar: UISearchBar!
 	@IBOutlet var tableView: UITableView!
@@ -35,9 +34,10 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		model.build()
 	}
 	
-	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+	func searchBar(_ searchBar: UISearchBar,
+				   textDidChange searchText: String) {
+		// Mutating search
 		model.search(query: searchBar.text == "" ? nil : searchBar.text)
-		print(model.content)
 	}
 	
 	

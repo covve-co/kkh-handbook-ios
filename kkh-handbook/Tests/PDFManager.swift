@@ -30,12 +30,11 @@ class PDFManager_Test: XCTestCase {
 		
 		let testfile = instance.getFile(withId: 16)!
 		let testfile2 = instance.getFile(withName: "ROTEM Algorithm")!
+		let testfile3 = instance.getFile(withChapterIndex: 0, id: 0)
+		
+		XCTAssert(testfile3.name == "Training Programmes")
 		
 		XCTAssert(testfile.name == testfile2.name, "File names should be identical")
-		
-		let query = instance.queryFiles("Nothing")
-		
-		XCTAssert(query!.count == 0, "Search query should return nothing")
 		
 		let filesofPaediatricAnaesthesia = instance.getFiles(chapterIndex: 2)
 		

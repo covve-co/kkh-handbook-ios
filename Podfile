@@ -7,5 +7,6 @@ target 'kkh-handbook' do
 
   # Pods for kkh-handbook
   pod 'IQKeyboardManager'
+  pod 'PDFReader'
   
 end

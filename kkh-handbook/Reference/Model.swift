@@ -13,14 +13,16 @@ struct ReferenceViewModel {
 	// Store view instance
 	var viewInstance: ReferenceView?
 	
-	// Proxy for content
-	var content: [File] = []
+	// Files
+	private var files: [File] = []
+	// Content
+	var content: [Chapter] = []
 	
-	// Store search state
+	// Store search statez
 	var searching: Bool = false
 	
 	init() {
-		content = manager.getFiles()!
+		build()
 	}
 	
 	// Bind instance of reference view
@@ -30,30 +32,41 @@ struct ReferenceViewModel {
 	}
 	
 	mutating func build() {
-		content = manager.getFiles()!
-		updateView()
+		// Setup files
+		files = manager.getFiles()!
+		// Setup content
+		content = [Int](0..<manager.numberOfChapters()-1)
+			.map{makeChapter($0)}
 	}
 	
-	mutating func search(query: String?) {
-		if let q = query {
-			content = manager.queryFiles(q)!
-		}
-		else {
-			content = manager.getFiles()!
-		}
-		updateView()
-	}
-	
-	// Update view
-	func updateView(){
-		viewInstance!.rows = content.count
-		viewInstance!.sections = searching ? 1:manager.numberOfChapters()
+	// Updates the bound instance with model content
+	func updateView(_ content: [Chapter]? = nil) {
+		viewInstance!.content = content ?? self.content
 		reloadTable()
 	}
 	
-	// Reload table
+	// Reloads table in bound instance
 	func reloadTable() {
 		viewInstance!.tableView.reloadData()
 	}
 	
+}
+
+extension ReferenceViewModel {
+	// Chapter factory
+	func makeChapter(_ id: Int) -> Chapter {
+		return (manager.getChapter(forId: id + 1), manager.getFiles(chapterIndex: id)!)
+	}
+	
+	// Searching function
+	mutating func search(query: String?) {
+		if query != nil {
+			updateView(viewInstance?.content
+				.map {($0.0, $0.1.filter {$0.name.lowercased().contains(query!.lowercased())})}
+				.filter{!$0.1.isEmpty}
+			)
+		} else {
+			updateView()
+		}
+	}
 }

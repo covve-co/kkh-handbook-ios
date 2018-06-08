@@ -66,6 +66,7 @@
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
 		97B4B1B320AD39FC00E05F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1B120AD39FC00E05F85 /* LaunchScreen.storyboard */; };
+		97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B57AAF20C8C3BE003F41D2 /* Chapter.swift */; };
 		97CFAB9E20AE7DCB00CAF4DB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFAB9D20AE7DCB00CAF4DB /* TableViewController.swift */; };
 		97CFABC020AE890900CAF4DB /* Section header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CFABBF20AE890900CAF4DB /* Section header.xib */; };
 		DD102A0DB5D2FC0EE5F72276 /* Pods_kkh_handbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */; };
@@ -148,6 +149,7 @@
 		97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97B4B1B220AD39FC00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97B4B1B420AD39FC00E05F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B57AAF20C8C3BE003F41D2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		97CFAB9D20AE7DCB00CAF4DB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		97CFABBF20AE890900CAF4DB /* Section header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Section header.xib"; sourceTree = "<group>"; };
 		D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkh-handbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				977BC37B20ADB4C30000FD6F /* File.swift */,
+				97B57AAF20C8C3BE003F41D2 /* Chapter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -498,10 +501,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFReader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -545,6 +550,7 @@
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
 				975EA4B320AD656200DB6398 /* View.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
+				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
 				977BC37920ADB3B40000FD6F /* Model.swift in Sources */,
 				97CFAB9E20AE7DCB00CAF4DB /* TableViewController.swift in Sources */,
