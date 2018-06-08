@@ -33,7 +33,8 @@ class PDFManager: NSObject {
 			let readchapters = NSArray(contentsOf: url) as? [String]
 			readchapters?.forEach{chapters.append($0)}
 			// Clean up dirty chapter names
-			chapters = chapters.map{$0.replacingOccurrences(of: "\n", with: "")}
+			chapters = chapters
+					.map{$0.replacingOccurrences(of: "\n", with: "")}
 			}
 		
 		// Map to Files
@@ -81,12 +82,6 @@ class PDFManager: NSObject {
 	
 	func getFile(withChapterIndex: Int, id: Int) -> File {
 		return files[withChapterIndex]![id]
-	}
-	
-	func queryFiles(_ queryString: String) -> [File]? {
-		return files
-			.flatMap{$1}
-			.filter{$0.name.contains(queryString)}
 	}
 	
 	func getChapter(forId: Int) -> String {
