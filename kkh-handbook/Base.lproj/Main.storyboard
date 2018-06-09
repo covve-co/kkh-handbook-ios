@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,7 +77,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Type to search" id="V3b-SO-Bfs">
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Type to search" id="9Cy-7L-F42">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,7 +85,7 @@
                                     <color key="barTintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
-                                        <outlet property="delegate" destination="2sz-kf-ch1" id="Azj-DR-JPK"/>
+                                        <outlet property="delegate" destination="2sz-kf-ch1" id="0i9-Kx-W1U"/>
                                     </connections>
                                 </searchBar>
                                 <prototypes>
@@ -95,22 +96,35 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Km-Wx-yTk">
-                                                    <rect key="frame" x="20" y="16" width="309" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Km-Wx-yTk">
+                                                    <rect key="frame" x="30" y="13.333333333333334" width="299" height="17.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-rv-XcT" customClass="CircleView" customModule="kkh_handbook" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="17.333333333333332" width="9.6666666666666643" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" red="1" green="0.81568627449999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ORV-rv-XcT" secondAttribute="height" multiplier="1:1" id="Jb5-wx-HAV"/>
+                                                        <constraint firstAttribute="height" constant="10" id="ksX-8G-P0m"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="leading" secondItem="CLV-t4-1Xn" secondAttribute="leadingMargin" constant="5" id="Oy4-84-7xo"/>
+                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="centerY" secondItem="CLV-t4-1Xn" secondAttribute="centerY" id="4aI-mn-nUk"/>
+                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="leading" secondItem="ORV-rv-XcT" secondAttribute="trailing" constant="8.3333333333333357" id="NPa-gZ-Bkq"/>
+                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="leading" secondItem="CLV-t4-1Xn" secondAttribute="leadingMargin" constant="15" id="Oy4-84-7xo"/>
+                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="top" secondItem="CLV-t4-1Xn" secondAttribute="topMargin" constant="2" id="cL5-9w-B33"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2Km-Wx-yTk" secondAttribute="trailing" constant="5" id="d1e-TT-nAk"/>
-                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="top" secondItem="CLV-t4-1Xn" secondAttribute="topMargin" constant="5" id="haQ-VF-Yfa"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2Km-Wx-yTk" secondAttribute="bottom" constant="5" id="way-Cv-Mkl"/>
+                                                <constraint firstItem="ORV-rv-XcT" firstAttribute="centerY" secondItem="2Km-Wx-yTk" secondAttribute="centerY" id="dop-wp-zzt"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2Km-Wx-yTk" secondAttribute="bottom" constant="2" id="frX-9y-qzK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="indicator" destination="ORV-rv-XcT" id="YRr-ot-C4t"/>
                                             <outlet property="label" destination="2Km-Wx-yTk" id="vWS-04-Efn"/>
                                         </connections>
                                     </tableViewCell>
@@ -126,21 +140,29 @@
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="trailing" secondItem="5bc-fX-GcV" secondAttribute="trailing" id="HLe-4q-tI2"/>
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="leading" secondItem="5bc-fX-GcV" secondAttribute="leading" id="Job-1Z-rWC"/>
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="bottom" secondItem="5bc-fX-GcV" secondAttribute="bottom" id="O27-iE-ecB"/>
-                            <constraint firstItem="ga9-6g-nNg" firstAttribute="top" secondItem="5bc-fX-GcV" secondAttribute="top" id="hjF-Pv-bhE"/>
+                            <constraint firstItem="ga9-6g-nNg" firstAttribute="top" secondItem="5bc-fX-GcV" secondAttribute="top" id="eQ1-aX-6VE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5bc-fX-GcV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="h4H-AT-G65"/>
-                    <navigationItem key="navigationItem" title="Reference" id="cfy-8m-d3k"/>
+                    <navigationItem key="navigationItem" title="Reference" id="cfy-8m-d3k">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="9bw-4X-Hno">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="bookmarkToggle:" destination="2sz-kf-ch1" id="fLM-Wv-G1N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="searchBar" destination="V3b-SO-Bfs" id="AWk-eJ-d1S"/>
+                        <outlet property="bookmarkToggle" destination="9bw-4X-Hno" id="n2f-7P-o7a"/>
+                        <outlet property="searchBar" destination="9Cy-7L-F42" id="mCF-UK-qIY"/>
                         <outlet property="tableView" destination="ga9-6g-nNg" id="7Kr-cG-xAX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ln3-8q-d3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1122" y="2162"/>
+            <point key="canvasLocation" x="-1122.4000000000001" y="2161.3300492610838"/>
         </scene>
         <!--Reference Nav-->
         <scene sceneID="LWh-hX-0xm">

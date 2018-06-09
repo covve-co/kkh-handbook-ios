@@ -10,13 +10,8 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-	func secondaryColor() -> UIColor{
-		return UIColor(red:0.03, green:0.38, blue:0.59, alpha:1.0)
-		
-	}
-	func primaryColor() -> UIColor{
-		return UIColor(red:0.31, green:0.57, blue:0.82, alpha:1.0)
-		
+	static func bookmarkOrange() -> UIColor {
+		return  UIColor(red:1.00, green:0.84, blue:0.00, alpha:1.0)
 	}
 	
 }

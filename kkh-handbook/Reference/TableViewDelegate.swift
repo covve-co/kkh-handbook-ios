@@ -41,19 +41,49 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 				   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView
 			.dequeueReusableCell(withIdentifier: "cell") as! ReferenceViewCell
-		cell.label.text = content[indexPath.section].1[indexPath.row].name
+		
+		// Set name
+		let file = content[indexPath.section].1[indexPath.row]
+		cell.label.text = file.name
+		
+		// Set styles
+		cell.indicator.alpha = 0
+		if bookmarkedOnly && UserDefaults.standard.bool(forKey: String(file.id)) {
+			cell.indicator.alpha = 1
+			cell.label.textColor = .black
+		} else if bookmarkedOnly {
+			cell.label.textColor = .lightGray
+		} else {
+			cell.label.textColor = .darkText
+		}
+		
 		return cell
 	}
 	
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		let file = content[indexPath.section].1[indexPath.row]
-		let action = UIContextualAction(style: .normal, title: nil) { _, _, _ in
-			print("Will bookmark \(file.name)")
+		
+		let bookmarkAction = UIContextualAction(style: .normal, title: nil) { _, _, _ in
+			UserDefaults.standard.set(true, forKey: String(file.id))
 			tableView.setEditing(false, animated: true)
+			tableView.reloadRows(at: [indexPath], with: .right)
 		}
-		action.image = #imageLiteral(resourceName: "bookmark") // RIP light theme users
-		action.backgroundColor = UIColor(red:1.00, green:0.84, blue:0.00, alpha:1.0)
-		let swipeConfig = UISwipeActionsConfiguration(actions: [action])
+		
+		let removeAction = UIContextualAction(style: .normal, title: nil) { _, _, _ in
+			UserDefaults.standard.set(false, forKey: String(file.id))
+			tableView.setEditing(false, animated: true)
+			tableView.reloadRows(at: [indexPath], with: .right)
+		}
+		
+		bookmarkAction.image = #imageLiteral(resourceName: "bookmark") // RIP light theme users
+		bookmarkAction.backgroundColor = .bookmarkOrange()
+		
+		removeAction.image = #imageLiteral(resourceName: "cancel") // RIP light theme users
+		removeAction.backgroundColor = .red
+		
+		let swipeConfig = UISwipeActionsConfiguration(actions:
+			bookmarkedOnly && UserDefaults.standard.bool(forKey: String(file.id)) ? [removeAction]:[bookmarkAction])
+		
 		return swipeConfig
 	}
 	
@@ -61,8 +91,20 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 
 class ReferenceViewCell: UITableViewCell {
 	@IBOutlet var label: UILabel!
-
+	@IBOutlet var indicator: CircleView!
 }
+
+
+
+class CircleView: UIView {
+	override func draw(_ rect: CGRect) {
+		let context = UIGraphicsGetCurrentContext()
+		self.tintColor.setFill()
+		CGContext.fillEllipse(context!)(in: rect)
+	}
+}
+
+
 
 class ReferenceSectionHeader: UIView {
 	@IBOutlet var label: UILabel!
