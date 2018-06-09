@@ -45,6 +45,18 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		return cell
 	}
 	
+	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+		let file = content[indexPath.section].1[indexPath.row]
+		let action = UIContextualAction(style: .normal, title: nil) { _, _, _ in
+			print("Will bookmark \(file.name)")
+			tableView.setEditing(false, animated: true)
+		}
+		action.image = #imageLiteral(resourceName: "bookmark") // RIP light theme users
+		action.backgroundColor = UIColor(red:1.00, green:0.84, blue:0.00, alpha:1.0)
+		let swipeConfig = UISwipeActionsConfiguration(actions: [action])
+		return swipeConfig
+	}
+	
 }
 
 class ReferenceViewCell: UITableViewCell {

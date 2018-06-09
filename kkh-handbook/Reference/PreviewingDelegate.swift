@@ -18,7 +18,7 @@ extension ReferenceView: UIViewControllerPreviewingDelegate {
 			return content[indexPath.section].1[indexPath.row].buildController()
 		}
 		else {
-			return nil 
+			return nil
 		}
 	}
 	
