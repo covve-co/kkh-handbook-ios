@@ -23,6 +23,10 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		
 		// Bind to model
 		model.bind(self)
+		
+		// 3D Touch
+		registerForPreviewing(with: self , sourceView: tableView)
+		
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -44,7 +48,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		model.search(query: searchBar.text == "" ? nil : searchBar.text)
 	}
 	
-	
 }
+
 
 
