@@ -25,7 +25,7 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	func tableView(_ tableView: UITableView,
 				   viewForHeaderInSection section: Int) -> UIView? {
 		let headerView = ReferenceSectionHeader.instanceFromNib()
-		headerView.label?.text = model.manager.getChapter(forId: section)
+		headerView.label?.text = content[section].0
 		return headerView
 	}
 	
