@@ -62,6 +62,7 @@
 		977BC37C20ADB4C30000FD6F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37B20ADB4C30000FD6F /* File.swift */; };
 		977BC38B20ADBF6F0000FD6F /* kkh_handbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */; };
 		977BC39320ADBF950000FD6F /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC39220ADBF950000FD6F /* PDFManager.swift */; };
+		977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -143,6 +144,7 @@
 		977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kkh_handbookTests.swift; sourceTree = "<group>"; };
 		977BC38C20ADBF6F0000FD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977BC39220ADBF950000FD6F /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
+		977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAdapter.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				975EA4B420AD658500DB6398 /* GlobalController.swift */,
 				975EA4B620AD7AA200DB6398 /* PDFManager.swift */,
 				975EA4AF20AD64CD00DB6398 /* Extensions.swift */,
+				977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			files = (
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
 				975EA4B320AD656200DB6398 /* View.swift in Sources */,
+				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,

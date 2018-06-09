@@ -36,7 +36,8 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView,
 				   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ReferenceViewCell
+		let cell = tableView
+			.dequeueReusableCell(withIdentifier: "cell") as! ReferenceViewCell
 		cell.label.text = content[indexPath.section].1[indexPath.row].name
 		return cell
 	}
@@ -52,6 +53,7 @@ class ReferenceSectionHeader: UIView {
 	@IBOutlet var label: UILabel!
 	class func instanceFromNib() -> ReferenceSectionHeader {
 		return UINib(nibName: "Section header", bundle: nil)
-			.instantiate(withOwner: nil, options: nil)[0] as! ReferenceSectionHeader
+			.instantiate(withOwner: nil,
+						 options: nil)[0] as! ReferenceSectionHeader
 	}
 }
