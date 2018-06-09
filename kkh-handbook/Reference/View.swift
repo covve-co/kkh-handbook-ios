@@ -25,6 +25,10 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		model.bind(self)
 	}
 	
+	override func viewDidAppear(_ animated: Bool) {
+		self.navigationController?.navigationBar.prefersLargeTitles = true
+	}
+	
 	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
 		model.searching = true
 	}

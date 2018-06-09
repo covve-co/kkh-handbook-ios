@@ -17,6 +17,6 @@ struct File {
 	
 	// Display PDFViewer
 	func buildController() -> UIViewController  {
-		return PDFAdapter.buildView(self.name)
+		return PDFAdapter.buildView(self.path, name)
 	}
 }

@@ -11,12 +11,16 @@ import UIKit
 import PDFReader
 
 class PDFAdapter {
-	static func displayFile (_ name: String) -> PDFDocument {
-		let documentFileURL = Bundle.main.url(forResource: name, withExtension: "pdf")!
-		return PDFDocument(url: documentFileURL)!
+	static func displayFile (_ path: URL) -> PDFDocument {
+		let documentFileURL = Bundle.main.url(forResource: path.absoluteString, withExtension: nil)
+		return PDFDocument(url: documentFileURL!)!
 	}
 	
-	static func buildView (_ name: String) -> UIViewController {
-		return PDFViewController.createNew(with: PDFAdapter.displayFile(name))
+	static func buildView (_ path: URL, _ name: String) -> UIViewController {
+		
+		let pdfController = PDFViewController.createNew(with:  PDFAdapter.displayFile(path), title: name, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: false, startPageIndex: 0)
+		pdfController.scrollDirection = .vertical
+		pdfController.backgroundColor = .white
+		return pdfController
 	}
 }

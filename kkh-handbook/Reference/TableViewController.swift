@@ -14,7 +14,10 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView,
 				   didSelectRowAt indexPath: IndexPath) {
-		
+		let fileView = content[indexPath.section].1[indexPath.row]
+													.buildController()
+		self.navigationController?.pushViewController(fileView, animated: true)
+		self.navigationController?.navigationBar.prefersLargeTitles = false
 	}
 	
 	func tableView(_ tableView: UITableView,
