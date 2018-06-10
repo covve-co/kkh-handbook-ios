@@ -52,7 +52,7 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		
 		// Set styles
 		cell.indicator.alpha = 0
-		if UserDefaults.standard.bool(forKey: String(file.id)) {
+		if file.isBookmarked() {
 			cell.indicator.alpha = 1
 			cell.label.textColor = .darkText
 		}
@@ -82,7 +82,7 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		removeAction.backgroundColor = .red
 		
 		let swipeConfig = UISwipeActionsConfiguration(actions:
-			UserDefaults.standard.bool(forKey: String(file.id)) ? [removeAction]:[bookmarkAction])
+			file.isBookmarked() ? [removeAction]:[bookmarkAction])
 		
 		return swipeConfig
 	}

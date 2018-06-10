@@ -30,7 +30,7 @@
                                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-3o-gf0">
                                                 <rect key="frame" x="15" y="30" width="99" height="140"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Quick BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-o8-Z6b">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-o8-Z6b">
                                                 <rect key="frame" x="122" y="30" width="207" height="140"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,7 +210,6 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="2Km-Wx-yTk" secondAttribute="bottom" constant="4" id="frX-9y-qzK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.95060221349999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="indicator" destination="ORV-rv-XcT" id="YRr-ot-C4t"/>
@@ -238,13 +237,12 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="9bw-4X-Hno">
                             <color key="tintColor" red="1" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                             <connections>
-                                <action selector="bookmarkToggle:" destination="2sz-kf-ch1" id="fLM-Wv-G1N"/>
+                                <action selector="bookmarkToggle:" destination="2sz-kf-ch1" id="XQX-cG-v5W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="bookmarkToggle" destination="9bw-4X-Hno" id="n2f-7P-o7a"/>
                         <outlet property="tableView" destination="ga9-6g-nNg" id="7Kr-cG-xAX"/>
                     </connections>
                 </viewController>

@@ -16,7 +16,6 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	var content: [Chapter] = []
 	
 	@IBOutlet var tableView: UITableView!
-	@IBOutlet var bookmarkToggle: UIBarButtonItem!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -39,7 +38,20 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	@IBAction func bookmarkToggle(_ sender: Any) {
-		
+		let actionSheet = UIAlertController.init(title: "Bookmarks",
+												 message: "Select chapter to view",
+												 preferredStyle: .actionSheet)
+		let files = content.flatMap{$0.1}.filter{$0.isBookmarked()}
+		files.forEach { file in
+			actionSheet.addAction(UIAlertAction(title: file.name, style: .default, handler: { _ in
+				self.navigationController?.pushViewController(file.buildController(), animated: true)
+				self.navigationController?.navigationBar.prefersLargeTitles = false
+			}))
+		}
+		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
+		self.present(actionSheet, animated: true) {
+			
+		}
 	}
 	
 	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
