@@ -37,7 +37,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.47728047026357701" blue="0.56331746104139202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.47728047029999998" blue="0.56331746100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="EfF-o8-Z6b" firstAttribute="centerY" secondItem="ces-FI-7Ch" secondAttribute="centerY" id="8vG-5F-PWI"/>
@@ -139,6 +139,7 @@
                         <viewLayoutGuide key="safeArea" id="CoL-ij-nud"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Crisis" id="h6G-dU-wpR"/>
+                    <navigationItem key="navigationItem" title="Crisis" id="tMG-7h-buA"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBE-5m-bpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDN-Mf-IYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="1935"/>
+            <point key="canvasLocation" x="1282" y="1230"/>
         </scene>
         <!--Reference-->
         <scene sceneID="Iq7-uq-gQ1">
@@ -435,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Lz-Mi-cJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754.39999999999998" y="2717.7339901477835"/>
+            <point key="canvasLocation" x="-1122" y="3086"/>
         </scene>
         <!--Drug Calculator-->
         <scene sceneID="e1V-nC-gZQ">
@@ -450,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfh-I5-htG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="2718"/>
+            <point key="canvasLocation" x="-295" y="3086"/>
         </scene>
         <!--Reference Nav-->
         <scene sceneID="LWh-hX-0xm">
@@ -506,6 +507,23 @@
             </objects>
             <point key="canvasLocation" x="-294" y="1230"/>
         </scene>
+        <!--CRISIS-->
+        <scene sceneID="z1z-Ca-8a0">
+            <objects>
+                <navigationController title="CRISIS" id="pKc-kg-2Ux" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="woB-65-Mri"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2Qe-fM-Fuz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PjN-DU-iW9" kind="relationship" relationship="rootViewController" id="DIl-RC-EYx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHV-sT-brI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="1230"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bHe-6Y-ypc">
             <objects>
@@ -522,6 +540,8 @@
                     <connections>
                         <segue destination="8pi-L6-VqZ" kind="relationship" relationship="viewControllers" id="hSS-EE-SBj"/>
                         <segue destination="KSY-wg-uyt" kind="relationship" relationship="viewControllers" id="Hw9-IM-L5A"/>
+                        <segue destination="pKc-kg-2Ux" kind="relationship" relationship="viewControllers" id="bNH-Xl-sC7"/>
+                        <segue destination="fmt-TB-WQf" kind="relationship" relationship="viewControllers" id="dA0-PB-47q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xt2-cm-ZuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
