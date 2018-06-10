@@ -16,7 +16,7 @@
         <!--Calculators-->
         <scene sceneID="dgY-En-zD0">
             <objects>
-                <viewController title="Calculators" id="dWG-2j-las" sceneMemberID="viewController">
+                <viewController title="Calculators" id="dWG-2j-las" customClass="CalculatorController" customModule="kkh_handbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kTC-zN-9tn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-aQ-L1L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ces-FI-7Ch">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ces-FI-7Ch" userLabel="BMI Section">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-3o-gf0">
@@ -38,6 +38,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.47728047026357701" blue="0.56331746104139202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="EfF-o8-Z6b" firstAttribute="centerY" secondItem="ces-FI-7Ch" secondAttribute="centerY" id="8vG-5F-PWI"/>
                                             <constraint firstItem="EfF-o8-Z6b" firstAttribute="leading" secondItem="e0D-3o-gf0" secondAttribute="trailing" constant="8" id="FsU-SN-80s"/>
@@ -49,8 +50,11 @@
                                             <constraint firstItem="e0D-3o-gf0" firstAttribute="leading" secondItem="ces-FI-7Ch" secondAttribute="leading" constant="15" id="ZuL-hs-gxZ"/>
                                             <constraint firstItem="EfF-o8-Z6b" firstAttribute="height" secondItem="ces-FI-7Ch" secondAttribute="height" multiplier="0.7" id="mYG-ek-l3R"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="SGj-mM-bRz" appends="YES" id="z4b-zM-Zey"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kal-GJ-Uza">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kal-GJ-Uza" userLabel="Drug Section">
                                         <rect key="frame" x="0.0" y="168" width="375" height="160"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syringe" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-ie-9Y5">
@@ -64,6 +68,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="gSd-ie-9Y5" firstAttribute="height" secondItem="enW-nJ-zfv" secondAttribute="height" multiplier="0.8" id="8WC-OK-R2O"/>
                                             <constraint firstItem="gSd-ie-9Y5" firstAttribute="centerY" secondItem="enW-nJ-zfv" secondAttribute="centerY" id="BM7-bG-Mbf"/>
@@ -75,6 +80,9 @@
                                             <constraint firstItem="enW-nJ-zfv" firstAttribute="height" secondItem="kal-GJ-Uza" secondAttribute="height" multiplier="0.7" id="kqy-2H-Pqp"/>
                                             <constraint firstItem="enW-nJ-zfv" firstAttribute="centerY" secondItem="kal-GJ-Uza" secondAttribute="centerY" id="sCj-Ei-bhz"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="36o-Sg-HKv" appends="YES" id="UQz-tY-5P7"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,6 +115,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spL-04-Ygm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SGj-mM-bRz" userLabel="BMI Tap">
+                    <connections>
+                        <action selector="BMIPressed:" destination="dWG-2j-las" id="jDn-kK-isg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="36o-Sg-HKv" userLabel="Drug Tap">
+                    <connections>
+                        <action selector="drugPressed:" destination="dWG-2j-las" id="tX4-Bc-bpf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-295.19999999999999" y="1934.4827586206898"/>
         </scene>
@@ -251,23 +269,23 @@
                     <view key="view" contentMode="scaleToFill" id="0QV-QY-QYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RQu-Zs-zr7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XdY-R5-tJa"/>
+                    <navigationItem key="navigationItem" title="BMI Calculation" id="XdY-R5-tJa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Lz-Mi-cJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-753" y="2718"/>
         </scene>
-        <!--Drug Calculator-->
+        <!--Drug Calculation-->
         <scene sceneID="e1V-nC-gZQ">
             <objects>
-                <viewController title="Drug Calculator" id="KOL-0M-i5j" sceneMemberID="viewController">
+                <viewController title="Drug Calculation" id="KOL-0M-i5j" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJ0-7S-uA9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cp5-Cx-7O4"/>
                     </view>
                 </viewController>

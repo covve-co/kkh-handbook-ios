@@ -71,6 +71,7 @@
 		97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B57AAF20C8C3BE003F41D2 /* Chapter.swift */; };
 		97CFAB9E20AE7DCB00CAF4DB /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFAB9D20AE7DCB00CAF4DB /* TableViewDelegate.swift */; };
 		97CFABC020AE890900CAF4DB /* Section header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CFABBF20AE890900CAF4DB /* Section header.xib */; };
+		97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BC920CCDD4E0055F3BD /* Controller.swift */; };
 		DD102A0DB5D2FC0EE5F72276 /* Pods_kkh_handbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		97B57AAF20C8C3BE003F41D2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		97CFAB9D20AE7DCB00CAF4DB /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		97CFABBF20AE890900CAF4DB /* Section header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Section header.xib"; sourceTree = "<group>"; };
+		97E31BC920CCDD4E0055F3BD /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkh-handbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,10 +333,11 @@
 		97B4B1A720AD39FA00E05F85 /* kkh-handbook */ = {
 			isa = PBXGroup;
 			children = (
+				97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */,
 				97CFAB9F20AE7FFC00CAF4DB /* Resources */,
 				977BC37A20ADB4A30000FD6F /* Models */,
-				97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */,
 				977BC37720ADB33C0000FD6F /* Reference */,
+				97E31BC820CCDD370055F3BD /* Calculators */,
 				975EA4B120AD650600DB6398 /* Utility */,
 				97B4B1AC20AD39FA00E05F85 /* Main.storyboard */,
 				97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */,
@@ -350,6 +353,14 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		97E31BC820CCDD370055F3BD /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				97E31BC920CCDD4E0055F3BD /* Controller.swift */,
+			);
+			path = Calculators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +568,7 @@
 				975EA4B320AD656200DB6398 /* View.swift in Sources */,
 				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
+				97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
 				977BC37920ADB3B40000FD6F /* Model.swift in Sources */,
