@@ -11,11 +11,6 @@ import UIKit
 
 class CalculatorController: GlobalController {
 	
-	
-	override func viewDidLoad() {
-		
-	}
-	
 	@IBAction func BMIPressed(_ sender: Any) {
 		self.performSegue(withIdentifier:"bmi", sender: self)
 	}
@@ -25,4 +20,4 @@ class CalculatorController: GlobalController {
 	}
 	
 	
-}
+}	

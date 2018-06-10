@@ -27,7 +27,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ces-FI-7Ch" userLabel="BMI Section">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-3o-gf0">
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-3o-gf0">
                                                 <rect key="frame" x="15" y="24" width="111" height="112"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Quick BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-o8-Z6b">
@@ -57,7 +57,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kal-GJ-Uza" userLabel="Drug Section">
                                         <rect key="frame" x="0.0" y="168" width="375" height="160"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syringe" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-ie-9Y5">
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syringe" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-ie-9Y5">
                                                 <rect key="frame" x="20" y="35.333333333333307" width="106" height="89.333333333333314"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Drug         Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enW-nJ-zfv">
@@ -265,7 +265,7 @@
         <!--BMI Calculator-->
         <scene sceneID="VdB-Gh-W6z">
             <objects>
-                <viewController title="BMI Calculator" id="gM0-Xa-39L" sceneMemberID="viewController">
+                <viewController title="BMI Calculator" id="gM0-Xa-39L" customClass="BMICalculatorView" customModule="kkh_handbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0QV-QY-QYn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,7 +341,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5LX-YX-bYy" firstAttribute="top" secondItem="HWf-aE-qMy" secondAttribute="bottom" constant="1.3333333333333712" id="1FL-vb-csN"/>
                                             <constraint firstItem="aNO-bl-kTm" firstAttribute="centerX" secondItem="cen-xJ-Bee" secondAttribute="centerX" id="BY9-9h-ImY"/>
@@ -367,23 +367,51 @@
                                         </segments>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </segmentedControl>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-XD-ehP">
+                                        <rect key="frame" x="0.0" y="586" width="375" height="128"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gM0-Xa-39L" id="b3K-tw-ECx"/>
+                                            <outlet property="delegate" destination="gM0-Xa-39L" id="4xN-5V-Fwc"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Patient Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlF-6W-N0K">
+                                        <rect key="frame" x="141.33333333333334" y="566" width="92.666666666666657" height="15.333333333333371"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iR-Et-7eE">
+                                        <rect key="frame" x="149" y="298" width="77" height="16"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="fXa-74-8sM" firstAttribute="top" secondItem="o4O-mp-K9c" secondAttribute="bottom" constant="44" id="087-FH-QwZ"/>
                                     <constraint firstItem="LTI-9c-LGQ" firstAttribute="leading" secondItem="Xbg-ba-phH" secondAttribute="leading" id="1aH-ZI-Ps1"/>
+                                    <constraint firstItem="0iR-Et-7eE" firstAttribute="centerX" secondItem="o4O-mp-K9c" secondAttribute="centerX" id="5Kl-IZ-84b"/>
                                     <constraint firstItem="LTI-9c-LGQ" firstAttribute="top" secondItem="Xbg-ba-phH" secondAttribute="top" id="7p4-Ue-XOQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="jUp-XD-ehP" secondAttribute="bottom" constant="20" id="9Dr-jn-d93"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="centerX" secondItem="LTI-9c-LGQ" secondAttribute="centerX" id="9Ml-kv-okN"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="trailing" secondItem="fXa-74-8sM" secondAttribute="trailing" id="Css-w2-6zz"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="leading" secondItem="fXa-74-8sM" secondAttribute="leading" id="E6E-8f-T7m"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="width" secondItem="7dI-R0-RYK" secondAttribute="width" id="I6a-Ja-btc"/>
                                     <constraint firstItem="LTI-9c-LGQ" firstAttribute="height" secondItem="Xbg-ba-phH" secondAttribute="height" multiplier="0.4" id="Occ-xP-ECh"/>
+                                    <constraint firstItem="jUp-XD-ehP" firstAttribute="leading" secondItem="Xbg-ba-phH" secondAttribute="leading" id="TyJ-p1-NVU"/>
+                                    <constraint firstItem="XlF-6W-N0K" firstAttribute="centerX" secondItem="fXa-74-8sM" secondAttribute="centerX" id="bYs-79-lVd"/>
+                                    <constraint firstItem="jUp-XD-ehP" firstAttribute="height" secondItem="fXa-74-8sM" secondAttribute="height" id="c6a-6e-5lr"/>
+                                    <constraint firstItem="XlF-6W-N0K" firstAttribute="top" secondItem="fXa-74-8sM" secondAttribute="bottom" constant="44" id="f45-vv-ec8"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="top" secondItem="LTI-9c-LGQ" secondAttribute="bottom" constant="66" id="fMj-p4-XoP"/>
+                                    <constraint firstItem="o4O-mp-K9c" firstAttribute="top" secondItem="0iR-Et-7eE" secondAttribute="bottom" constant="8" id="gJH-eJ-nUw"/>
                                     <constraint firstItem="LTI-9c-LGQ" firstAttribute="centerX" secondItem="Xbg-ba-phH" secondAttribute="centerX" id="nIP-eT-cq1"/>
-                                    <constraint firstAttribute="bottom" secondItem="LTI-9c-LGQ" secondAttribute="bottom" constant="385" id="pZK-SD-VJa"/>
+                                    <constraint firstItem="jUp-XD-ehP" firstAttribute="top" secondItem="XlF-6W-N0K" secondAttribute="bottom" constant="5" id="qaz-vC-saR"/>
                                     <constraint firstAttribute="trailing" secondItem="LTI-9c-LGQ" secondAttribute="trailing" id="rQy-V6-xrb"/>
+                                    <constraint firstAttribute="trailing" secondItem="jUp-XD-ehP" secondAttribute="trailing" id="ysR-lP-WRj"/>
                                     <constraint firstItem="o4O-mp-K9c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xbg-ba-phH" secondAttribute="leading" id="zvA-MW-VzY"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="gM0-Xa-39L" id="AT6-UU-eWw"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -396,6 +424,14 @@
                         <viewLayoutGuide key="safeArea" id="RQu-Zs-zr7"/>
                     </view>
                     <navigationItem key="navigationItem" title="BMI" id="XdY-R5-tJa"/>
+                    <connections>
+                        <outlet property="avatar" destination="6XX-oa-l1T" id="eSh-L0-9ib"/>
+                        <outlet property="bmiLabel" destination="7dI-R0-RYK" id="PqJ-dJ-gJf"/>
+                        <outlet property="genderPicker" destination="o4O-mp-K9c" id="3lv-jT-iUJ"/>
+                        <outlet property="height" destination="aNO-bl-kTm" id="lw4-uR-z2l"/>
+                        <outlet property="message" destination="JLD-XE-oI2" id="FMf-U2-yQZ"/>
+                        <outlet property="weight" destination="cen-xJ-Bee" id="3Uf-1H-O0Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Lz-Mi-cJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -51,27 +51,30 @@
 		9744942B20ADAFC500BFA579 /* 9-25-Current_Trends.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */; };
 		9744942C20ADAFC500BFA579 /* 10-26-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */; };
 		975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4AF20AD64CD00DB6398 /* Extensions.swift */; };
-		975EA4B320AD656200DB6398 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B220AD656200DB6398 /* View.swift */; };
+		975EA4B320AD656200DB6398 /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B220AD656200DB6398 /* ReferenceView.swift */; };
 		975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B420AD658500DB6398 /* GlobalController.swift */; };
 		975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975EA4B620AD7AA200DB6398 /* PDFManager.swift */; };
 		975EA4BA20AD845000DB6398 /* Chapters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4B920AD845000DB6398 /* Chapters.plist */; };
 		975EA4F620AD85CC00DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4C820AD85C200DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf */; };
 		975EA4F920AD85CC00DB6398 /* 1-01-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4CB20AD85C300DB6398 /* 1-01-Training_Programmes.pdf */; };
 		975EA4FE20AD85CC00DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 975EA4D020AD85C500DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
-		977BC37920ADB3B40000FD6F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37820ADB3B40000FD6F /* Model.swift */; };
+		977BC37920ADB3B40000FD6F /* ReferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37820ADB3B40000FD6F /* ReferenceModel.swift */; };
 		977BC37C20ADB4C30000FD6F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC37B20ADB4C30000FD6F /* File.swift */; };
 		977BC38B20ADBF6F0000FD6F /* kkh_handbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC38A20ADBF6F0000FD6F /* kkh_handbookTests.swift */; };
 		977BC39320ADBF950000FD6F /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC39220ADBF950000FD6F /* PDFManager.swift */; };
 		977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */; };
-		977D39C020CBAA3C00F0CE1B /* PreviewingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BF20CBAA3C00F0CE1B /* PreviewingDelegate.swift */; };
+		977D39C020CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
 		97B4B1B320AD39FC00E05F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1B120AD39FC00E05F85 /* LaunchScreen.storyboard */; };
 		97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B57AAF20C8C3BE003F41D2 /* Chapter.swift */; };
-		97CFAB9E20AE7DCB00CAF4DB /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFAB9D20AE7DCB00CAF4DB /* TableViewDelegate.swift */; };
+		97CFAB9E20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFAB9D20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift */; };
 		97CFABC020AE890900CAF4DB /* Section header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CFABBF20AE890900CAF4DB /* Section header.xib */; };
 		97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BC920CCDD4E0055F3BD /* Controller.swift */; };
+		97E31BCE20CCEA0E0055F3BD /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BCD20CCEA0E0055F3BD /* BMIView.swift */; };
+		97E31BD020CCEAFD0055F3BD /* BMIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BCF20CCEAFD0055F3BD /* BMIModel.swift */; };
+		97E31BD220CCEBDA0055F3BD /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BD120CCEBDA0055F3BD /* BMIGraphManager.swift */; };
 		DD102A0DB5D2FC0EE5F72276 /* Pods_kkh_handbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C727806BD3649EBD5AF702 /* Pods_kkh_handbook.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,14 +135,14 @@
 		9744940020ADAFC500BFA579 /* 9-25-Current_Trends.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "9-25-Current_Trends.pdf"; sourceTree = "<group>"; };
 		9744940120ADAFC500BFA579 /* 10-26-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-26-Patient_Transport.pdf"; sourceTree = "<group>"; };
 		975EA4AF20AD64CD00DB6398 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		975EA4B220AD656200DB6398 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		975EA4B220AD656200DB6398 /* ReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
 		975EA4B420AD658500DB6398 /* GlobalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalController.swift; sourceTree = "<group>"; };
 		975EA4B620AD7AA200DB6398 /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		975EA4B920AD845000DB6398 /* Chapters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Chapters.plist; sourceTree = "<group>"; };
 		975EA4C820AD85C200DB6398 /* 2-03-Preoperative_preparation_and_induction_techniques.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2-03-Preoperative_preparation_and_induction_techniques.pdf"; sourceTree = "<group>"; };
 		975EA4CB20AD85C300DB6398 /* 1-01-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "1-01-Training_Programmes.pdf"; sourceTree = "<group>"; };
 		975EA4D020AD85C500DB6398 /* 2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
-		977BC37820ADB3B40000FD6F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		977BC37820ADB3B40000FD6F /* ReferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceModel.swift; sourceTree = "<group>"; };
 		977BC37B20ADB4C30000FD6F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		977BC38220ADBE9E0000FD6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		977BC38820ADBF6F0000FD6F /* kkh-handbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kkh-handbookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +150,7 @@
 		977BC38C20ADBF6F0000FD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977BC39220ADBF950000FD6F /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAdapter.swift; sourceTree = "<group>"; };
-		977D39BF20CBAA3C00F0CE1B /* PreviewingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewingDelegate.swift; sourceTree = "<group>"; };
+		977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePreviewingDelegate.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,9 +158,12 @@
 		97B4B1B220AD39FC00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97B4B1B420AD39FC00E05F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97B57AAF20C8C3BE003F41D2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
-		97CFAB9D20AE7DCB00CAF4DB /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
+		97CFAB9D20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewDelegate.swift; sourceTree = "<group>"; };
 		97CFABBF20AE890900CAF4DB /* Section header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Section header.xib"; sourceTree = "<group>"; };
 		97E31BC920CCDD4E0055F3BD /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		97E31BCD20CCEA0E0055F3BD /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
+		97E31BCF20CCEAFD0055F3BD /* BMIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIModel.swift; sourceTree = "<group>"; };
+		97E31BD120CCEBDA0055F3BD /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
 		D4034931F2B35EC1F0FDA18D /* Pods-kkh-handbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkh-handbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-kkh-handbook/Pods-kkh-handbook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				975EA4B420AD658500DB6398 /* GlobalController.swift */,
+				97E31BD120CCEBDA0055F3BD /* BMIGraphManager.swift */,
 				975EA4B620AD7AA200DB6398 /* PDFManager.swift */,
 				975EA4AF20AD64CD00DB6398 /* Extensions.swift */,
 				977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */,
@@ -274,11 +281,11 @@
 		977BC37720ADB33C0000FD6F /* Reference */ = {
 			isa = PBXGroup;
 			children = (
-				975EA4B220AD656200DB6398 /* View.swift */,
-				977BC37820ADB3B40000FD6F /* Model.swift */,
+				975EA4B220AD656200DB6398 /* ReferenceView.swift */,
+				977BC37820ADB3B40000FD6F /* ReferenceModel.swift */,
 				97CFABBF20AE890900CAF4DB /* Section header.xib */,
-				97CFAB9D20AE7DCB00CAF4DB /* TableViewDelegate.swift */,
-				977D39BF20CBAA3C00F0CE1B /* PreviewingDelegate.swift */,
+				97CFAB9D20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift */,
+				977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */,
 			);
 			path = Reference;
 			sourceTree = "<group>";
@@ -358,9 +365,27 @@
 		97E31BC820CCDD370055F3BD /* Calculators */ = {
 			isa = PBXGroup;
 			children = (
+				97E31BCC20CCEA000055F3BD /* Drug */,
+				97E31BCB20CCE9F80055F3BD /* BMI */,
 				97E31BC920CCDD4E0055F3BD /* Controller.swift */,
 			);
 			path = Calculators;
+			sourceTree = "<group>";
+		};
+		97E31BCB20CCE9F80055F3BD /* BMI */ = {
+			isa = PBXGroup;
+			children = (
+				97E31BCD20CCEA0E0055F3BD /* BMIView.swift */,
+				97E31BCF20CCEAFD0055F3BD /* BMIModel.swift */,
+			);
+			path = BMI;
+			sourceTree = "<group>";
+		};
+		97E31BCC20CCEA000055F3BD /* Drug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Drug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,17 +589,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E31BCE20CCEA0E0055F3BD /* BMIView.swift in Sources */,
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
-				975EA4B320AD656200DB6398 /* View.swift in Sources */,
+				97E31BD220CCEBDA0055F3BD /* BMIGraphManager.swift in Sources */,
+				975EA4B320AD656200DB6398 /* ReferenceView.swift in Sources */,
 				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
 				97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
+				97E31BD020CCEAFD0055F3BD /* BMIModel.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
-				977BC37920ADB3B40000FD6F /* Model.swift in Sources */,
-				97CFAB9E20AE7DCB00CAF4DB /* TableViewDelegate.swift in Sources */,
+				977BC37920ADB3B40000FD6F /* ReferenceModel.swift in Sources */,
+				97CFAB9E20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift in Sources */,
 				975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */,
-				977D39C020CBAA3C00F0CE1B /* PreviewingDelegate.swift in Sources */,
+				977D39C020CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift in Sources */,
 				97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
