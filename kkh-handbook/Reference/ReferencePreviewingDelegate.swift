@@ -23,6 +23,7 @@ extension ReferenceView: UIViewControllerPreviewingDelegate {
 	}
 	
 	func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
-		
+		self.navigationController?.navigationBar.prefersLargeTitles = false
+		self.navigationController?.pushViewController(viewControllerToCommit, animated: true)
 	}
 }
