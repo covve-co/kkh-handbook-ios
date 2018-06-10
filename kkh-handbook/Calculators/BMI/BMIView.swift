@@ -15,6 +15,7 @@ class BMICalculatorView: GlobalController, UIPickerViewDelegate {
 	
 	var color: UIColor = .appBlue()
 	
+	@IBOutlet var headerView: UIView!
 	@IBOutlet var avatar: UIImageView!
 	@IBOutlet var message: UILabel!
 	@IBOutlet var bmiLabel: UILabel!
@@ -25,6 +26,7 @@ class BMICalculatorView: GlobalController, UIPickerViewDelegate {
 	
 	override func viewDidLoad() {
 		model = BMIModel(bind: self)
+		headerView.roundify(15)
 	}
 	
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

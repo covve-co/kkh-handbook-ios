@@ -17,7 +17,6 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	
 	var bookmarkedOnly: Bool = false
 	
-	@IBOutlet var searchBar: UISearchBar!
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var bookmarkToggle: UIBarButtonItem!
 	
@@ -31,6 +30,11 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		registerForPreviewing(with: self , sourceView: tableView)
 		
 		bookmarkToggle.tintColor = .lightGray
+		
+		let searchController = UISearchController(searchResultsController: nil) // Search Controller
+		navigationItem.hidesSearchBarWhenScrolling = true
+		navigationItem.searchController = searchController
+		searchController.searchBar.delegate = self
 		
 	}
 	

@@ -37,3 +37,10 @@ public extension String {
 		return result
 	}
 }
+
+public extension UIView {
+	func roundify(_ value: CGFloat) {
+		self.layer.cornerRadius = value
+		self.clipsToBounds = true
+	}
+}
