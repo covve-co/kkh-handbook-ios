@@ -32,7 +32,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		bookmarkToggle.tintColor = .lightGray
 		
 		let searchController = UISearchController(searchResultsController: nil) // Search Controller
-		navigationItem.hidesSearchBarWhenScrolling = true
+		navigationItem.hidesSearchBarWhenScrolling = false
 		navigationItem.searchController = searchController
 		searchController.searchBar.delegate = self
 		
@@ -55,6 +55,11 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+		model.searching = false
+		model.build()
+	}
+	
+	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 		model.searching = false
 		model.build()
 	}
