@@ -32,7 +32,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Quick BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-o8-Z6b">
                                                 <rect key="frame" x="122" y="30" width="207" height="140"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -62,7 +62,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Drug         Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enW-nJ-zfv">
                                                 <rect key="frame" x="122" y="24" width="207" height="112"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -187,8 +187,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Km-Wx-yTk">
-                                                    <rect key="frame" x="30" y="13.333333333333334" width="299" height="17.666666666666664"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                    <rect key="frame" x="30" y="15" width="299" height="14"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-rv-XcT" customClass="CircleView" customModule="kkh_handbook" customModuleProvider="target">
@@ -202,16 +202,15 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="centerY" secondItem="CLV-t4-1Xn" secondAttribute="centerY" id="4aI-mn-nUk"/>
                                                 <constraint firstItem="2Km-Wx-yTk" firstAttribute="leading" secondItem="ORV-rv-XcT" secondAttribute="trailing" constant="8.3333333333333357" id="NPa-gZ-Bkq"/>
                                                 <constraint firstItem="2Km-Wx-yTk" firstAttribute="leading" secondItem="CLV-t4-1Xn" secondAttribute="leadingMargin" constant="15" id="Oy4-84-7xo"/>
-                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="top" secondItem="CLV-t4-1Xn" secondAttribute="topMargin" constant="2" id="cL5-9w-B33"/>
+                                                <constraint firstItem="2Km-Wx-yTk" firstAttribute="top" secondItem="CLV-t4-1Xn" secondAttribute="topMargin" constant="4" id="cL5-9w-B33"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2Km-Wx-yTk" secondAttribute="trailing" constant="5" id="d1e-TT-nAk"/>
                                                 <constraint firstItem="ORV-rv-XcT" firstAttribute="centerY" secondItem="2Km-Wx-yTk" secondAttribute="centerY" id="dop-wp-zzt"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2Km-Wx-yTk" secondAttribute="bottom" constant="2" id="frX-9y-qzK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2Km-Wx-yTk" secondAttribute="bottom" constant="4" id="frX-9y-qzK"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.95060221349999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="indicator" destination="ORV-rv-XcT" id="YRr-ot-C4t"/>
@@ -230,14 +229,14 @@
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="trailing" secondItem="5bc-fX-GcV" secondAttribute="trailing" id="HLe-4q-tI2"/>
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="leading" secondItem="5bc-fX-GcV" secondAttribute="leading" id="Job-1Z-rWC"/>
                             <constraint firstItem="ga9-6g-nNg" firstAttribute="bottom" secondItem="5bc-fX-GcV" secondAttribute="bottom" id="O27-iE-ecB"/>
-                            <constraint firstItem="ga9-6g-nNg" firstAttribute="top" secondItem="5bc-fX-GcV" secondAttribute="top" id="eQ1-aX-6VE"/>
+                            <constraint firstItem="ga9-6g-nNg" firstAttribute="top" secondItem="5bc-fX-GcV" secondAttribute="top" id="oVb-A0-oui"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5bc-fX-GcV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="h4H-AT-G65"/>
                     <navigationItem key="navigationItem" title="Reference" id="cfy-8m-d3k">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="9bw-4X-Hno">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="1" green="0.6705882353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                             <connections>
                                 <action selector="bookmarkToggle:" destination="2sz-kf-ch1" id="fLM-Wv-G1N"/>
                             </connections>

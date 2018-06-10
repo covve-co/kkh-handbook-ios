@@ -15,8 +15,6 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	
 	var content: [Chapter] = []
 	
-	var bookmarkedOnly: Bool = false
-	
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var bookmarkToggle: UIBarButtonItem!
 	
@@ -28,9 +26,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		
 		// 3D Touch
 		registerForPreviewing(with: self , sourceView: tableView)
-		
-		bookmarkToggle.tintColor = .lightGray
-		
+				
 		let searchController = UISearchController(searchResultsController: nil) // Search Controller
 		navigationItem.hidesSearchBarWhenScrolling = false
 		navigationItem.searchController = searchController
@@ -43,11 +39,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	@IBAction func bookmarkToggle(_ sender: Any) {
-		bookmarkToggle.tintColor = bookmarkToggle.tintColor == .lightGray ? .bookmarkOrange():.lightGray
-	
-		bookmarkedOnly = !bookmarkedOnly
 		
-		tableView.reloadData()
 	}
 	
 	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {

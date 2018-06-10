@@ -32,6 +32,10 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		return headerView
 	}
 	
+	func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 40
+	}
+	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		// TODO search condition
 		return content.count
@@ -48,15 +52,11 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		
 		// Set styles
 		cell.indicator.alpha = 0
-		if bookmarkedOnly && UserDefaults.standard.bool(forKey: String(file.id)) {
+		if UserDefaults.standard.bool(forKey: String(file.id)) {
 			cell.indicator.alpha = 1
-			cell.label.textColor = .black
-		} else if bookmarkedOnly {
-			cell.label.textColor = .lightGray
-		} else {
 			cell.label.textColor = .darkText
 		}
-		
+	
 		return cell
 	}
 	
@@ -82,7 +82,7 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		removeAction.backgroundColor = .red
 		
 		let swipeConfig = UISwipeActionsConfiguration(actions:
-			bookmarkedOnly && UserDefaults.standard.bool(forKey: String(file.id)) ? [removeAction]:[bookmarkAction])
+			UserDefaults.standard.bool(forKey: String(file.id)) ? [removeAction]:[bookmarkAction])
 		
 		return swipeConfig
 	}
