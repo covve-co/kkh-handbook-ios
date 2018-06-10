@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,16 +20,95 @@
                     <view key="view" contentMode="scaleToFill" id="kTC-zN-9tn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-aQ-L1L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ces-FI-7Ch">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-3o-gf0">
+                                                <rect key="frame" x="15" y="24" width="111" height="112"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Quick BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-o8-Z6b">
+                                                <rect key="frame" x="134" y="24" width="225" height="112"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.47728047026357701" blue="0.56331746104139202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="EfF-o8-Z6b" firstAttribute="centerY" secondItem="ces-FI-7Ch" secondAttribute="centerY" id="8vG-5F-PWI"/>
+                                            <constraint firstItem="EfF-o8-Z6b" firstAttribute="leading" secondItem="e0D-3o-gf0" secondAttribute="trailing" constant="8" id="FsU-SN-80s"/>
+                                            <constraint firstItem="e0D-3o-gf0" firstAttribute="height" secondItem="EfF-o8-Z6b" secondAttribute="height" id="HhF-DK-iEP"/>
+                                            <constraint firstItem="EfF-o8-Z6b" firstAttribute="width" secondItem="ces-FI-7Ch" secondAttribute="width" multiplier="0.6" id="JlH-zf-H2Z"/>
+                                            <constraint firstItem="e0D-3o-gf0" firstAttribute="centerY" secondItem="EfF-o8-Z6b" secondAttribute="centerY" id="MJL-Zq-E61"/>
+                                            <constraint firstAttribute="height" constant="160" id="P8n-Fp-RcZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="EfF-o8-Z6b" secondAttribute="trailing" constant="16" id="Wtn-c7-fvd"/>
+                                            <constraint firstItem="e0D-3o-gf0" firstAttribute="leading" secondItem="ces-FI-7Ch" secondAttribute="leading" constant="15" id="ZuL-hs-gxZ"/>
+                                            <constraint firstItem="EfF-o8-Z6b" firstAttribute="height" secondItem="ces-FI-7Ch" secondAttribute="height" multiplier="0.7" id="mYG-ek-l3R"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kal-GJ-Uza">
+                                        <rect key="frame" x="0.0" y="168" width="375" height="160"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syringe" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-ie-9Y5">
+                                                <rect key="frame" x="20" y="35.333333333333307" width="106" height="89.333333333333314"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Drug         Calculator" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enW-nJ-zfv">
+                                                <rect key="frame" x="134" y="24" width="225" height="112"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gSd-ie-9Y5" firstAttribute="height" secondItem="enW-nJ-zfv" secondAttribute="height" multiplier="0.8" id="8WC-OK-R2O"/>
+                                            <constraint firstItem="gSd-ie-9Y5" firstAttribute="centerY" secondItem="enW-nJ-zfv" secondAttribute="centerY" id="BM7-bG-Mbf"/>
+                                            <constraint firstItem="enW-nJ-zfv" firstAttribute="width" secondItem="kal-GJ-Uza" secondAttribute="width" multiplier="0.6" id="MgD-rD-0JD"/>
+                                            <constraint firstItem="gSd-ie-9Y5" firstAttribute="leading" secondItem="kal-GJ-Uza" secondAttribute="leading" constant="20" id="SPk-m6-atv"/>
+                                            <constraint firstAttribute="trailing" secondItem="enW-nJ-zfv" secondAttribute="trailing" constant="16" id="SvE-86-8cB"/>
+                                            <constraint firstItem="enW-nJ-zfv" firstAttribute="leading" secondItem="gSd-ie-9Y5" secondAttribute="trailing" constant="8" id="iep-Z1-S7B"/>
+                                            <constraint firstAttribute="height" constant="160" id="jgr-sl-BKc"/>
+                                            <constraint firstItem="enW-nJ-zfv" firstAttribute="height" secondItem="kal-GJ-Uza" secondAttribute="height" multiplier="0.7" id="kqy-2H-Pqp"/>
+                                            <constraint firstItem="enW-nJ-zfv" firstAttribute="centerY" secondItem="kal-GJ-Uza" secondAttribute="centerY" id="sCj-Ei-bhz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ces-FI-7Ch" secondAttribute="trailing" id="FCN-7h-IIF"/>
+                                    <constraint firstItem="ces-FI-7Ch" firstAttribute="centerX" secondItem="lEI-aQ-L1L" secondAttribute="centerX" id="TPY-pL-phL"/>
+                                    <constraint firstAttribute="trailing" secondItem="kal-GJ-Uza" secondAttribute="trailing" id="ZFZ-zX-Bhk"/>
+                                    <constraint firstItem="ces-FI-7Ch" firstAttribute="top" secondItem="lEI-aQ-L1L" secondAttribute="top" id="gGB-a6-v3e"/>
+                                    <constraint firstItem="kal-GJ-Uza" firstAttribute="leading" secondItem="lEI-aQ-L1L" secondAttribute="leading" id="qnk-5F-zhf"/>
+                                    <constraint firstItem="kal-GJ-Uza" firstAttribute="top" secondItem="ces-FI-7Ch" secondAttribute="bottom" constant="8" id="zjA-vi-wQl"/>
+                                    <constraint firstItem="ces-FI-7Ch" firstAttribute="leading" secondItem="lEI-aQ-L1L" secondAttribute="leading" id="zsX-XS-5ov"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lEI-aQ-L1L" firstAttribute="top" secondItem="wyM-OP-aL0" secondAttribute="top" id="40D-1k-9z6"/>
+                            <constraint firstItem="lEI-aQ-L1L" firstAttribute="bottom" secondItem="wyM-OP-aL0" secondAttribute="bottom" id="EAr-q6-K4q"/>
+                            <constraint firstItem="lEI-aQ-L1L" firstAttribute="trailing" secondItem="wyM-OP-aL0" secondAttribute="trailing" id="VlF-Ih-Mu9"/>
+                            <constraint firstItem="lEI-aQ-L1L" firstAttribute="leading" secondItem="wyM-OP-aL0" secondAttribute="leading" id="i3u-Bb-EJx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wyM-OP-aL0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="C6r-Dv-Mpb"/>
                     <navigationItem key="navigationItem" title="Calculator" id="SEU-Ye-Nmt"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="gM0-Xa-39L" kind="show" identifier="bmi" id="q86-vI-btm"/>
+                        <segue destination="KOL-0M-i5j" kind="show" identifier="drug" id="Qkb-OP-f9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spL-04-Ygm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="1935"/>
+            <point key="canvasLocation" x="-295.19999999999999" y="1934.4827586206898"/>
         </scene>
         <!--Crisis-->
         <scene sceneID="4Dy-Su-f3V">
@@ -98,7 +178,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Km-Wx-yTk">
                                                     <rect key="frame" x="30" y="13.333333333333334" width="299" height="17.666666666666664"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-rv-XcT" customClass="CircleView" customModule="kkh_handbook" customModuleProvider="target">
@@ -162,7 +242,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ln3-8q-d3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1122.4000000000001" y="2161.3300492610838"/>
+            <point key="canvasLocation" x="-1122" y="1934"/>
+        </scene>
+        <!--BMI Calculator-->
+        <scene sceneID="VdB-Gh-W6z">
+            <objects>
+                <viewController title="BMI Calculator" id="gM0-Xa-39L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0QV-QY-QYn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RQu-Zs-zr7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XdY-R5-tJa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Lz-Mi-cJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-753" y="2718"/>
+        </scene>
+        <!--Drug Calculator-->
+        <scene sceneID="e1V-nC-gZQ">
+            <objects>
+                <viewController title="Drug Calculator" id="KOL-0M-i5j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJ0-7S-uA9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cp5-Cx-7O4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfh-I5-htG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="2718"/>
         </scene>
         <!--Reference Nav-->
         <scene sceneID="LWh-hX-0xm">
@@ -176,11 +287,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.95060221349999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -241,4 +352,8 @@
             <point key="canvasLocation" x="126" y="213"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bmi" width="200" height="200"/>
+        <image name="syringe" width="1003" height="1003"/>
+    </resources>
 </document>

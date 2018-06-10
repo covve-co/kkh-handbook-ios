@@ -14,3 +14,11 @@ class GlobalController: UIViewController {
 		super.viewDidLoad()
 	}
 }
+
+class CircleView: UIView {
+	override func draw(_ rect: CGRect) {
+		let context = UIGraphicsGetCurrentContext()
+		self.tintColor.setFill()
+		CGContext.fillEllipse(context!)(in: rect)
+	}
+}
