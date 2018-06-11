@@ -17,7 +17,22 @@ struct BMIModel {
 	}
 	
 	func notifyFormChanged() {
-		if let (ismale, bmiValue) = viewInstance!.getForm() {
+		if let (ismale, bmiValue, age) = viewInstance!.getForm() {
+			let m = BMIGraphManager(age: age, bmi: bmiValue, isMale: ismale)
+			let res = m.range()
+			
+			var msg: String {
+				switch res {
+				case 1:  return "Patient is severely underweight"
+				case 2:  return "Patient is underweight"
+				case 3:  return "Patient is of acceptable weight"
+				case 4:  return "Patient is overweight"
+				case 5:  return "Patient is severely overweight"
+				default: return "Please enter valid patient details"
+				}
+			}
+			
+			viewInstance!.update(message: msg, BMI: bmiValue)
 		}
 	}
 	
