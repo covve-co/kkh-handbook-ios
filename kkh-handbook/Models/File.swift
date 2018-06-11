@@ -14,14 +14,19 @@ struct File {
 	let id: Int
 	let chapterId: Int
 	let path: URL
+	var isBookmarked: Bool {
+		get {
+			return UserDefaults.standard.bool(forKey: String(id))
+		}
+	}
 	
 	// Display PDFViewer
 	func buildController() -> UIViewController  {
 		return PDFAdapter.buildView(self.path, name)
 	}
 	
-	func isBookmarked() -> Bool {
-		return UserDefaults.standard.bool(forKey: String(id))
-	}
+//	func isBookmarked() -> Bool {
+//		return
+//	}
 	
 }

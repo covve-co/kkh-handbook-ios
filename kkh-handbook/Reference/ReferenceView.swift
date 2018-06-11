@@ -41,7 +41,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		let actionSheet = UIAlertController.init(title: "Bookmarks",
 												 message: "Select chapter to view",
 												 preferredStyle: .actionSheet)
-		let files = content.flatMap{$0.1}.filter{$0.isBookmarked()}
+		let files = content.flatMap{$0.1}.filter{$0.isBookmarked}
 		files.forEach { file in
 			actionSheet.addAction(UIAlertAction(title: file.name, style: .default, handler: { _ in
 				self.navigationController?.pushViewController(file.buildController(), animated: true)
