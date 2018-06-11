@@ -12,6 +12,16 @@ import UIKit
 struct File {
 	let name: String
 	let id: Int
-	let chapter: String
+	let chapterId: Int
 	let path: URL
+	
+	// Display PDFViewer
+	func buildController() -> UIViewController  {
+		return PDFAdapter.buildView(self.path, name)
+	}
+	
+	func isBookmarked() -> Bool {
+		return UserDefaults.standard.bool(forKey: String(id))
+	}
+	
 }

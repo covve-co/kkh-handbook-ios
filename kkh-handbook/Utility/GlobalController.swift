@@ -10,5 +10,16 @@ import Foundation
 import UIKit
 
 class GlobalController: UIViewController {
-	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		UILabel.appearance(whenContainedInInstancesOf: [UIAlertController.self]).numberOfLines = 0
+	}
+}
+
+class CircleView: UIView {
+	override func draw(_ rect: CGRect) {
+		let context = UIGraphicsGetCurrentContext()
+		self.tintColor.setFill()
+		CGContext.fillEllipse(context!)(in: rect)
+	}
 }

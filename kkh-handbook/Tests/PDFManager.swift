@@ -21,18 +21,25 @@ class PDFManager_Test: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testIntegrity() {
 		let instance = PDFManager()
 		
 		XCTAssertEqual(instance.numberOfChapters(), 17)
 		XCTAssertEqual(instance.numberOfFiles(), 46)
+		XCTAssertEqual(instance.numberOfFiles(), instance.getFiles()!.count)
 		
 		let testfile = instance.getFile(withId: 16)!
 		let testfile2 = instance.getFile(withName: "ROTEM Algorithm")!
+		let testfile3 = instance.getFile(withChapterIndex: 0, id: 0)
 		
-		XCTAssert(testfile.name == testfile2.name, "File getters broken")
+		XCTAssert(testfile3.name == "Training Programmes")
+		
+		XCTAssert(testfile.name == testfile2.name, "File names should be identical")
+		
+		let filesofPaediatricAnaesthesia = instance.getFiles(chapterIndex: 2)
+		
+		XCTAssertEqual(filesofPaediatricAnaesthesia?.count, 7)
+		
     }
     
     func testPerformanceExample() {

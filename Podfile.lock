@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManager (5.0.7)
+  - PDFReader (2.5.1)
 
 DEPENDENCIES:
   - IQKeyboardManager
+  - PDFReader
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManager
+    - PDFReader
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  PDFReader: 2c4a845d0560f33221cf911516e3b700967680f6
 
-PODFILE CHECKSUM: 3e96880955f1de7a2620a8ef7e389712b96a7f85
+PODFILE CHECKSUM: 415dff13365d26a716bd18b7e0b1cb605a7be21d
 
 COCOAPODS: 1.5.2
