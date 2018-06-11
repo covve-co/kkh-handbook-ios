@@ -71,6 +71,12 @@
 		97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B57AAF20C8C3BE003F41D2 /* Chapter.swift */; };
 		97C41C1220CE563D008E8A42 /* DrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C41C1120CE563D008E8A42 /* DrugView.swift */; };
 		97C41C1420CE7A6C008E8A42 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C41C1320CE7A6C008E8A42 /* AlertManager.swift */; };
+		97C41C1A20CE8690008E8A42 /* AnaesthesiaDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 97C41C1720CE8690008E8A42 /* AnaesthesiaDrugList.csv */; };
+		97C41C1B20CE8690008E8A42 /* ScoliosisDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 97C41C1820CE8690008E8A42 /* ScoliosisDrugList.csv */; };
+		97C41C1C20CE8690008E8A42 /* CardiacDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 97C41C1920CE8690008E8A42 /* CardiacDrugList.csv */; };
+		97C41C2020CE86B8008E8A42 /* CardiacDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C41C1D20CE86B7008E8A42 /* CardiacDrugCalculationsManager.swift */; };
+		97C41C2120CE86B8008E8A42 /* ScoliosisDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C41C1E20CE86B7008E8A42 /* ScoliosisDrugCalculationsManager.swift */; };
+		97C41C2220CE86B8008E8A42 /* AnaesthesiaDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C41C1F20CE86B7008E8A42 /* AnaesthesiaDrugCalculationsManager.swift */; };
 		97CFAB9E20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFAB9D20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift */; };
 		97CFABC020AE890900CAF4DB /* Section header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CFABBF20AE890900CAF4DB /* Section header.xib */; };
 		97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E31BC920CCDD4E0055F3BD /* Controller.swift */; };
@@ -162,6 +168,12 @@
 		97B57AAF20C8C3BE003F41D2 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		97C41C1120CE563D008E8A42 /* DrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugView.swift; sourceTree = "<group>"; };
 		97C41C1320CE7A6C008E8A42 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		97C41C1720CE8690008E8A42 /* AnaesthesiaDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnaesthesiaDrugList.csv; sourceTree = "<group>"; };
+		97C41C1820CE8690008E8A42 /* ScoliosisDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScoliosisDrugList.csv; sourceTree = "<group>"; };
+		97C41C1920CE8690008E8A42 /* CardiacDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CardiacDrugList.csv; sourceTree = "<group>"; };
+		97C41C1D20CE86B7008E8A42 /* CardiacDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiacDrugCalculationsManager.swift; sourceTree = "<group>"; };
+		97C41C1E20CE86B7008E8A42 /* ScoliosisDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoliosisDrugCalculationsManager.swift; sourceTree = "<group>"; };
+		97C41C1F20CE86B7008E8A42 /* AnaesthesiaDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnaesthesiaDrugCalculationsManager.swift; sourceTree = "<group>"; };
 		97CFAB9D20AE7DCB00CAF4DB /* ReferenceTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewDelegate.swift; sourceTree = "<group>"; };
 		97CFABBF20AE890900CAF4DB /* Section header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Section header.xib"; sourceTree = "<group>"; };
 		97E31BC920CCDD4E0055F3BD /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -264,6 +276,7 @@
 		975EA4B120AD650600DB6398 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				97C41C1520CE8643008E8A42 /* Drug Calculators */,
 				975EA4B420AD658500DB6398 /* GlobalController.swift */,
 				97E31BD120CCEBDA0055F3BD /* BMIGraphManager.swift */,
 				975EA4B620AD7AA200DB6398 /* PDFManager.swift */,
@@ -358,6 +371,27 @@
 				977BC37F20ADBE510000FD6F /* Tests */,
 			);
 			path = "kkh-handbook";
+			sourceTree = "<group>";
+		};
+		97C41C1520CE8643008E8A42 /* Drug Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				97C41C1620CE8650008E8A42 /* Drug Lists */,
+				97C41C1D20CE86B7008E8A42 /* CardiacDrugCalculationsManager.swift */,
+				97C41C1F20CE86B7008E8A42 /* AnaesthesiaDrugCalculationsManager.swift */,
+				97C41C1E20CE86B7008E8A42 /* ScoliosisDrugCalculationsManager.swift */,
+			);
+			path = "Drug Calculators";
+			sourceTree = "<group>";
+		};
+		97C41C1620CE8650008E8A42 /* Drug Lists */ = {
+			isa = PBXGroup;
+			children = (
+				97C41C1920CE8690008E8A42 /* CardiacDrugList.csv */,
+				97C41C1720CE8690008E8A42 /* AnaesthesiaDrugList.csv */,
+				97C41C1820CE8690008E8A42 /* ScoliosisDrugList.csv */,
+			);
+			path = "Drug Lists";
 			sourceTree = "<group>";
 		};
 		97CFAB9F20AE7FFC00CAF4DB /* Resources */ = {
@@ -506,6 +540,7 @@
 				9744941B20ADAFC500BFA579 /* 13-36-Latex_Allergy.pdf in Resources */,
 				9744940920ADAFC500BFA579 /* 6-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */,
 				9744940520ADAFC500BFA579 /* 12-29-Transfusion_Guidelines.pdf in Resources */,
+				97C41C1C20CE8690008E8A42 /* CardiacDrugList.csv in Resources */,
 				97CFABC020AE890900CAF4DB /* Section header.xib in Resources */,
 				9744940420ADAFC500BFA579 /* 14-42-Patient_Controlled_Analgesia.pdf in Resources */,
 				9744940F20ADAFC500BFA579 /* 9-21-Local_Anaesthetic_Toxicity.pdf in Resources */,
@@ -516,6 +551,7 @@
 				9744941F20ADAFC500BFA579 /* 14-41-Children's_Pain_Service.pdf in Resources */,
 				9744942020ADAFC500BFA579 /* 14-43-Epidurals.pdf in Resources */,
 				9744940220ADAFC500BFA579 /* 9-24-Ultrasound_Guided_Blocks.pdf in Resources */,
+				97C41C1A20CE8690008E8A42 /* AnaesthesiaDrugList.csv in Resources */,
 				9744941D20ADAFC500BFA579 /* 7-18-Diagnostic_Imaging.pdf in Resources */,
 				975EA4BA20AD845000DB6398 /* Chapters.plist in Resources */,
 				9744941120ADAFC500BFA579 /* 16-46-NORMAL_LABORATORY_DATA.pdf in Resources */,
@@ -529,6 +565,7 @@
 				9744940620ADAFC500BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
 				9744942820ADAFC500BFA579 /* 13-37-Malignant_Hyperthermia.pdf in Resources */,
 				9744941320ADAFC500BFA579 /* 3-06-Common_Medical_Conditions.pdf in Resources */,
+				97C41C1B20CE8690008E8A42 /* ScoliosisDrugList.csv in Resources */,
 				9744941220ADAFC500BFA579 /* 3-05-Premedication.pdf in Resources */,
 				9744941E20ADAFC500BFA579 /* 13-34-Acute_Epiglottitis.pdf in Resources */,
 				9744941820ADAFC500BFA579 /* 3-09-Dental_Injury.pdf in Resources */,
@@ -604,8 +641,10 @@
 				975EA4B320AD656200DB6398 /* ReferenceView.swift in Sources */,
 				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
+				97C41C2220CE86B8008E8A42 /* AnaesthesiaDrugCalculationsManager.swift in Sources */,
 				97C41C1220CE563D008E8A42 /* DrugView.swift in Sources */,
 				97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */,
+				97C41C2120CE86B8008E8A42 /* ScoliosisDrugCalculationsManager.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				97E31BD020CCEAFD0055F3BD /* BMIModel.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,
@@ -614,6 +653,7 @@
 				975EA4B020AD64CD00DB6398 /* Extensions.swift in Sources */,
 				977D39C020CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift in Sources */,
 				97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */,
+				97C41C2020CE86B8008E8A42 /* CardiacDrugCalculationsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
