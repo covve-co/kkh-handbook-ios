@@ -12,6 +12,7 @@ import UIKit
 class GlobalController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		UILabel.appearance(whenContainedInInstancesOf: [UIAlertController.self]).numberOfLines = 0
 	}
 }
 
