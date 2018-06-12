@@ -34,6 +34,22 @@ class DrugView: GlobalController, UITextFieldDelegate {
 			feedback.textColor = .red
 		}
 	}
+	
+	func showActionSheet (title: String, manager: DrugManager) {
+		let controller = viewForCsv(manager.getData()!)
+		controller.title = title
+		
+		let a = UIAlertController(title: title, message: "Select action", preferredStyle: .actionSheet)
+		a.addAction(UIAlertAction(title: "View Results", style: .default, handler: { _ in
+			self.navigationController?.pushViewController(controller, animated: true)
+		}))
+		a.addAction(UIAlertAction(title: "Email", style: .default, handler: { _ in
+			manager.sendEmail(self)
+		}))
+		a.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+		
+		self.present(a, animated: true, completion: nil)
+	}
 }
 
 extension DrugView: UITableViewDelegate, UITableViewDataSource {
@@ -49,11 +65,7 @@ extension DrugView: UITableViewDelegate, UITableViewDataSource {
 					default: return nil
 					}
 				}
-				
-				let controller = viewForCsv(manager!.getData()!)
-				controller.title = ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row]
-				self.navigationController?.pushViewController(controller, animated: true)
-				
+				showActionSheet(title: ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row], manager: manager!)
 			} else {
 				
 			}

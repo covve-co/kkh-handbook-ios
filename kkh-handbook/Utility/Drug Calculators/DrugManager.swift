@@ -12,4 +12,5 @@ import UIKit
 protocol DrugManager {
 	init(weight: Int)
 	func getData() -> Data?
+	func sendEmail(_ sender: UIViewController)
 }
