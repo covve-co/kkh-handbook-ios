@@ -135,7 +135,7 @@ final class AnaesthesiaDrugCalculationsManager: NSObject, MFMailComposeViewContr
                     }
                 }
                 
-                printLines(dataLines)
+//                printLines(dataLines)
                 for i in 0 ..< dataLines.count {
                     emailData = emailData + "\(dataLines[i])\n"
                 }

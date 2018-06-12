@@ -80,9 +80,9 @@ final class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControlle
                 }
                 dataLines[1] = dataLines[1].replacingOccurrences(of: "XX", with: "\(weight)")
                 for i in 3 ..< dataLines.count {
-                    print(dataLines[i])
+//                    print(dataLines[i])
                     if multipliers[i + 1] != nil {
-                        print(dataLines[i])
+//                        print(dataLines[i])
                         dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: truncateIfWhole(Double(weight) * multipliers[i + 1]!))
                     }
                 }

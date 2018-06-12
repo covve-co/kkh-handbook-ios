@@ -49,6 +49,11 @@ extension DrugView: UITableViewDelegate, UITableViewDataSource {
 					default: return nil
 					}
 				}
+				
+				let controller = viewForCsv(manager!.getData()!)
+				controller.title = ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row]
+				self.navigationController?.pushViewController(controller, animated: true)
+				
 			} else {
 				
 			}
