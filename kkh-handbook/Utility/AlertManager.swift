@@ -10,27 +10,28 @@ import UIKit
 
 public class AlertManager {
 	
-	static let newAlert = AlertManager()
+	var alertController: UIAlertController = UIAlertController()
 	
 	var targetViewController: UIViewController?
+	var style: UIAlertControllerStyle?
 	var title: String?
 	var message: String?
 	var actions: [UIAlertAction]?
 	
-	func to(_ target : UIViewController) -> AlertManager {
+	init(target: UIViewController, type: UIAlertControllerStyle) {
 		self.targetViewController = target
+		self.style = type
+	}
+	
+	func withFields(title: String? = "Alert Title", message: String? = "Alert description") -> AlertManager {
+		self.title = title
+		self.message = message
 		return self
 		
 	}
 	
-	func withTitle(_ titleInput: String) -> AlertManager {
-		self.title = titleInput
-		return self
-		
-	}
-	
-	func addAction(_ actionTitle: String?, withCallback: @escaping (_ : UIAlertAction) -> Void) -> AlertManager {
-		let action = UIAlertAction.init(title: actionTitle ?? "Dismiss", style: .default, handler: withCallback)
+	func addAction(actionTitle: String?, style: UIAlertActionStyle = .default, withCallback: ((_ : UIAlertAction) -> Void)?) -> AlertManager {
+		let action = UIAlertAction.init(title: actionTitle ?? "Dismiss", style: style, handler: withCallback)
 		if self.actions != nil{
 			self.actions!.append(action)
 			
@@ -43,15 +44,9 @@ public class AlertManager {
 		
 	}
 	
-	func withMessage(_ errorMessage: String) -> AlertManager {
-		self.message = errorMessage
-		return self
-		
-	}
-	
 	// Endpoint of interface
-	func throwsAlert () -> Void {
-		self.targetViewController?.presentAlertView(title: self.title ?? "Alert", message: self.message ?? "no Description provided", actions: self.actions ?? [])
+	func throwsAlert() -> Void {
+		self.targetViewController?.presentAlertView(title: self.title ?? "Alert", message: self.message ??  "Description",style: style ??  .alert , actions: self.actions ?? [])
 		
 		// Cleans
 		self.cleans()
@@ -71,8 +66,8 @@ public class AlertManager {
 
 // Extends UIViewController
 extension UIViewController {
-	func presentAlertView (title : String, message : String, actions : [UIAlertAction]) {
-		let av = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+	func presentAlertView (title : String, message : String, style: UIAlertControllerStyle = .alert, actions : [UIAlertAction]) {
+		let av = UIAlertController.init(title: title, message: message, preferredStyle: style)
 		actions.forEach { av.addAction($0) }
 		self.present(av, animated: true, completion: nil)
 		

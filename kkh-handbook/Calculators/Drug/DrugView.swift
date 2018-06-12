@@ -19,15 +19,17 @@ class DrugView: GlobalController, UITextFieldDelegate {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		header.drawGradientBackground(color1: .appBlue(), color2: .appBlueSecondary())
+		header.drawGradientBackground(color1: .appBlue(),
+									  color2: .appBlueSecondary())
 		header.roundify(15)
 		wrapper.roundify(10)
-		wrapperHeader.drawGradientBackground(color1: .appPink(), color2: .appPinkSecondary())
+		wrapperHeader.drawGradientBackground(color1: .appPink(),
+											 color2: .appPinkSecondary())
 	}
 	
 	func textFieldDidEndEditing(_ textField: UITextField) {
 		if weightField.text != "" && weightField.text!.valueCheck() != nil {
-			feedback.text = "Calculating for patient of weight \(weightField.text!.valueCheck()!)"
+			feedback.text = "Calculated for patient of weight \(weightField.text!.valueCheck()!)"
 			feedback.textColor = .black
 		} else {
 			feedback.text = "Please enter valid weight"
@@ -39,16 +41,18 @@ class DrugView: GlobalController, UITextFieldDelegate {
 		let controller = viewForCsv(manager.getData()!)
 		controller.title = title
 		
-		let a = UIAlertController(title: title, message: "Select action", preferredStyle: .actionSheet)
-		a.addAction(UIAlertAction(title: "View Results", style: .default, handler: { _ in
-			self.navigationController?.pushViewController(controller, animated: true)
-		}))
-		a.addAction(UIAlertAction(title: "Email", style: .default, handler: { _ in
-			manager.sendEmail(self)
-		}))
-		a.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+		AlertManager(target: self, type: .actionSheet)
+		.withFields(title: title, message: "Select action")
+			.addAction(actionTitle: "View Results") { _ in
+					self.navigationController?.pushViewController(controller, animated: true)
+				}
+			.addAction(actionTitle: "Email", style: .default) { _ in
+				manager.sendEmail(self)
+
+				}
+			.addAction(actionTitle: "Cancel", style: .cancel, withCallback: nil)
+		.throwsAlert()
 		
-		self.present(a, animated: true, completion: nil)
 	}
 }
 
@@ -65,18 +69,16 @@ extension DrugView: UITableViewDelegate, UITableViewDataSource {
 					default: return nil
 					}
 				}
-				showActionSheet(title: ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row], manager: manager!)
+				showActionSheet(title: ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row],
+								manager: manager!)
 			} else {
 				
 			}
 		} else {
-			AlertManager.newAlert.to(self)
-				.withTitle("Invalid patient weight")
-				.withMessage("Please input a valid weight value")
-				.addAction("Dismiss") { _ in
-					
-				}
-				.throwsAlert()
+			AlertManager(target: self, type: .alert)
+			.withFields(title: "Error", message: "Please enter valid patient weight")
+			.addAction(actionTitle: "Dismiss", withCallback: nil)
+			.throwsAlert()
 		}
 	}
 	

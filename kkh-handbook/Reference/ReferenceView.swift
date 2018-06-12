@@ -38,20 +38,18 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	@IBAction func bookmarkToggle(_ sender: Any) {
-		let actionSheet = UIAlertController.init(title: "Bookmarks",
-												 message: "Select chapter to view",
-												 preferredStyle: .actionSheet)
+		let actionSheet = AlertManager.init(target: self, type: .actionSheet)
+		.withFields(title: "Bookmarks", message: "Select bookmarked chapter")
+		
 		let files = content.flatMap{$0.1}.filter{$0.isBookmarked}
 		files.forEach { file in
-			actionSheet.addAction(UIAlertAction(title: file.name, style: .default, handler: { _ in
+			_ = actionSheet.addAction(actionTitle: file.name, withCallback: { _ in
 				self.navigationController?.pushViewController(file.buildController(), animated: true)
 				self.navigationController?.navigationBar.prefersLargeTitles = false
-			}))
+			})
 		}
-		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
-		self.present(actionSheet, animated: true) {
-			
-		}
+		actionSheet.addAction(actionTitle: "Cancel", style: .cancel, withCallback: nil)
+			.throwsAlert()
 	}
 	
 	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
