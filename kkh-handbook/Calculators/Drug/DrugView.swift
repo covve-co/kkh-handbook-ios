@@ -36,10 +36,22 @@ class DrugView: GlobalController, UITextFieldDelegate {
 	}
 }
 
-extension DrugView: UITableViewDelegate, UITableViewDataSource{
+extension DrugView: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if weightField.text != "" && weightField.text!.valueCheck() != nil {
-			
+			let weight = Int(weightField.text!)!
+			if indexPath.row < 3 {
+				var manager: DrugManager? {
+					switch indexPath.row {
+					case 0: return CardiacDrugCalculationsManager(weight: weight)
+					case 1: return AnaesthesiaDrugCalculationsManager(weight: weight)
+					case 2: return ScoliosisDrugCalculationsManager(weight: weight)
+					default: return nil
+					}
+				}
+			} else {
+				
+			}
 		} else {
 			AlertManager.newAlert.to(self)
 				.withTitle("Invalid patient weight")

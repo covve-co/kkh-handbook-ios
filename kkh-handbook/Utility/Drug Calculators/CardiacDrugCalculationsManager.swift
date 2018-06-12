@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
+final class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate, DrugManager {
     
     var weight: Int = -1
     var emailData: String = ""
@@ -64,7 +64,7 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
     ]
     var dataLines: [String]!
     
-    init(weight: Int) {
+	init(weight: Int) {
         super.init()
         
         self.weight = weight

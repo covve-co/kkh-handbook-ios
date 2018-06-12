@@ -9,13 +9,13 @@
 import UIKit
 import MessageUI
 
-class ScoliosisDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
+final class ScoliosisDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate, DrugManager {
     
     var weight: Int = -1
     var emailData: String = ""
     var dataLines: [String]!
     
-    init(weight: Int) {
+	init(weight: Int) {
         super.init()
         
         self.weight = weight

@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class AnaesthesiaDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
+final class AnaesthesiaDrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate, DrugManager {
     
     var weight: Int = -1
     var emailData: String = ""
