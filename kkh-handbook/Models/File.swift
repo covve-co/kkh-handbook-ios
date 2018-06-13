@@ -25,8 +25,4 @@ struct File {
 		return PDFAdapter.buildView(self.path, name)
 	}
 	
-//	func isBookmarked() -> Bool {
-//		return
-//	}
-	
 }

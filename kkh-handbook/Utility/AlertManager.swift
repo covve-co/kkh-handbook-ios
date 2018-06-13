@@ -30,7 +30,9 @@ public class AlertManager {
 		
 	}
 	
-	func addAction(actionTitle: String?, style: UIAlertActionStyle = .default, withCallback: ((_ : UIAlertAction) -> Void)?) -> AlertManager {
+	func addAction(actionTitle: String?,
+				   style: UIAlertActionStyle = .default,
+				   withCallback: ((_ : UIAlertAction) -> Void)?) -> AlertManager {
 		let action = UIAlertAction.init(title: actionTitle ?? "Dismiss", style: style, handler: withCallback)
 		if self.actions != nil{
 			self.actions!.append(action)
@@ -66,7 +68,7 @@ public class AlertManager {
 
 // Extends UIViewController
 extension UIViewController {
-	func presentAlertView (title : String, message : String, style: UIAlertControllerStyle = .alert, actions : [UIAlertAction]) {
+	func presentAlertView (title : String, message : String, style: UIAlertControllerStyle, actions : [UIAlertAction]) {
 		let av = UIAlertController.init(title: title, message: message, preferredStyle: style)
 		actions.forEach { av.addAction($0) }
 		self.present(av, animated: true, completion: nil)

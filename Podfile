@@ -9,5 +9,6 @@ target 'kkh-handbook' do
   pod 'IQKeyboardManager'
   pod 'PDFReader'
   pod 'Hero'
+  pod 'SwiftyJSON', '~> 4.0'
   
 end

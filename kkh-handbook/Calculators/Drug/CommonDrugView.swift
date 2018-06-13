@@ -9,3 +9,9 @@
 import Foundation
 import UIKit
 
+class CommonDrugView: UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+	}
+}

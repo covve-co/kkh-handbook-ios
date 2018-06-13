@@ -464,6 +464,11 @@
                             <constraint firstItem="Xbg-ba-phH" firstAttribute="bottom" secondItem="RQu-Zs-zr7" secondAttribute="bottom" id="iip-nG-IWo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RQu-Zs-zr7"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xbg-ba-phH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="BMI" id="XdY-R5-tJa"/>
                     <userDefinedRuntimeAttributes>
@@ -673,6 +678,11 @@
                             <constraint firstItem="Xnv-uh-j3y" firstAttribute="top" secondItem="cp5-Cx-7O4" secondAttribute="top" id="h9b-pm-5PB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cp5-Cx-7O4"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xnv-uh-j3y"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="feedback" destination="k8b-La-yUh" id="GQI-eQ-dwR"/>
@@ -680,11 +690,44 @@
                         <outlet property="weightField" destination="AAf-HS-Cey" id="T7g-gZ-ZJJ"/>
                         <outlet property="wrapper" destination="p0c-oe-nYP" id="Svo-qV-hDb"/>
                         <outlet property="wrapperHeader" destination="czz-hG-svk" id="bV2-vD-T37"/>
+                        <segue destination="p92-bV-5ho" kind="show" id="WpO-qo-iCs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfh-I5-htG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295.19999999999999" y="3085.7142857142858"/>
+        </scene>
+        <!--Common Drugs-->
+        <scene sceneID="LMj-nC-6u5">
+            <objects>
+                <viewController title="Common Drugs" id="p92-bV-5ho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="74j-40-Tca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qEx-af-igg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="s4b-dg-46m">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s4b-dg-46m" id="dFx-NG-Le1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S3g-06-K6h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jyr-Ec-hNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295.19999999999999" y="3857.8817733990149"/>
         </scene>
         <!--Reference Nav-->
         <scene sceneID="LWh-hX-0xm">

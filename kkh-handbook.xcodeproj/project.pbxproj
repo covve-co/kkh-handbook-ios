@@ -64,6 +64,8 @@
 		977BC39320ADBF950000FD6F /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977BC39220ADBF950000FD6F /* PDFManager.swift */; };
 		977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */; };
 		977D39C020CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */; };
+		97900C9820D1175800F58CC4 /* CommonDrugs.json in Resources */ = {isa = PBXBuildFile; fileRef = 97900C9720D1175800F58CC4 /* CommonDrugs.json */; };
+		97900C9A20D1178500F58CC4 /* CommonDrugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900C9920D1178500F58CC4 /* CommonDrugHelper.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -162,6 +164,8 @@
 		977BC39220ADBF950000FD6F /* PDFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		977D39BD20CB90AA00F0CE1B /* PDFAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFAdapter.swift; sourceTree = "<group>"; };
 		977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePreviewingDelegate.swift; sourceTree = "<group>"; };
+		97900C9720D1175800F58CC4 /* CommonDrugs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CommonDrugs.json; sourceTree = "<group>"; };
+		97900C9920D1178500F58CC4 /* CommonDrugHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDrugHelper.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -387,6 +391,7 @@
 				97C41C1F20CE86B7008E8A42 /* AnaesthesiaDrugCalculationsManager.swift */,
 				97C41C1E20CE86B7008E8A42 /* ScoliosisDrugCalculationsManager.swift */,
 				97C41C2320CF5FDA008E8A42 /* DrugManager.swift */,
+				97900C9920D1178500F58CC4 /* CommonDrugHelper.swift */,
 			);
 			path = "Drug Calculators";
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 		97C41C1620CE8650008E8A42 /* Drug Lists */ = {
 			isa = PBXGroup;
 			children = (
+				97900C9720D1175800F58CC4 /* CommonDrugs.json */,
 				97C41C1920CE8690008E8A42 /* CardiacDrugList.csv */,
 				97C41C1720CE8690008E8A42 /* AnaesthesiaDrugList.csv */,
 				97C41C1820CE8690008E8A42 /* ScoliosisDrugList.csv */,
@@ -569,6 +575,7 @@
 				9744942220ADAFC500BFA579 /* 11-28-Miscellaneous_Drugs.pdf in Resources */,
 				9744940820ADAFC500BFA579 /* 14-40-Pain_in_Children.pdf in Resources */,
 				97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */,
+				97900C9820D1175800F58CC4 /* CommonDrugs.json in Resources */,
 				9744940C20ADAFC500BFA579 /* 14-39-Advanced_Paediatric_Life_Support.pdf in Resources */,
 				9744941420ADAFC500BFA579 /* 9-20-Regional_Anaesthesia_Workflow.pdf in Resources */,
 				9744940620ADAFC500BFA579 /* 12-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
@@ -597,12 +604,14 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -655,6 +664,7 @@
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
 				97C41C2220CE86B8008E8A42 /* AnaesthesiaDrugCalculationsManager.swift in Sources */,
 				97C41C1220CE563D008E8A42 /* DrugView.swift in Sources */,
+				97900C9A20D1178500F58CC4 /* CommonDrugHelper.swift in Sources */,
 				97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */,
 				97C41C2120CE86B8008E8A42 /* ScoliosisDrugCalculationsManager.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
