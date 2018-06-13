@@ -9,9 +9,13 @@
 import Foundation
 import SwiftyJSON
 
+typealias Methods = [String: Any]
+typealias Paths =  [String : Methods]
+typealias CommonDrugs = [String : Paths]
+
 // Pyramid to parse JSON
 extension CommonDrugView {
-	func loadData(weight: Float) -> [String: [String: [String: Any]]]! {
+	func loadData(weight: Float) -> CommonDrugs! {
 		// Load data from file
 		do {
 			var returnValue: [String: [String: [String: [String: Any]]]] = [:]
