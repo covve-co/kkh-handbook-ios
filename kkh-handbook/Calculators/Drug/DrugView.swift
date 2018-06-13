@@ -72,7 +72,11 @@ extension DrugView: UITableViewDelegate, UITableViewDataSource {
 				showActionSheet(title: ["Cardiac", "Anaesthesia", "Scoliosis"][indexPath.row],
 								manager: manager!)
 			} else {
+				let vc = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "commonDrugs") as! CommonDrugView
+				vc.data = vc.loadData(weight: Float(weight))
+				vc.type = .CommonDrugs
 				
+				self.navigationController?.pushViewController(vc, animated: true)
 			}
 		} else {
 			AlertManager(target: self, type: .alert)
