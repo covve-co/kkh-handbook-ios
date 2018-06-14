@@ -77,6 +77,7 @@
 		97900CB120D231A000F58CC4 /* CrisisMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB020D231A000F58CC4 /* CrisisMenu.swift */; };
 		97900CB320D266F200F58CC4 /* CrisisContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB220D266F200F58CC4 /* CrisisContent.swift */; };
 		97900CB520D2697D00F58CC4 /* CrisisMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB420D2697D00F58CC4 /* CrisisMenuCell.swift */; };
+		97900CB820D270D300F58CC4 /* CrisisComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB720D270D300F58CC4 /* CrisisComponentFactory.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -188,6 +189,7 @@
 		97900CB020D231A000F58CC4 /* CrisisMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisMenu.swift; sourceTree = "<group>"; };
 		97900CB220D266F200F58CC4 /* CrisisContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisContent.swift; sourceTree = "<group>"; };
 		97900CB420D2697D00F58CC4 /* CrisisMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisMenuCell.swift; sourceTree = "<group>"; };
+		97900CB720D270D300F58CC4 /* CrisisComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisComponentFactory.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				97900CA720D21E2900F58CC4 /* CrisisContentManager.swift */,
+				97900CB720D270D300F58CC4 /* CrisisComponentFactory.swift */,
 			);
 			path = Crisis;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				97900CAD20D2210D00F58CC4 /* Paths.swift in Sources */,
 				97C41C2620CF6396008E8A42 /* CSVViewer.swift in Sources */,
 				975EA4B320AD656200DB6398 /* ReferenceView.swift in Sources */,
+				97900CB820D270D300F58CC4 /* CrisisComponentFactory.swift in Sources */,
 				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				97C41C2420CF5FDA008E8A42 /* DrugManager.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
