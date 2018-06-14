@@ -107,7 +107,3 @@ extension DrugView: UITableViewDelegate, UITableViewDataSource {
 	
 }
 
-class DrugCell: UITableViewCell {
-	@IBOutlet var title: UILabel!
-	
-}

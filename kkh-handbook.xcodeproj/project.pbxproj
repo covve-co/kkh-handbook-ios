@@ -66,6 +66,9 @@
 		977D39C020CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */; };
 		97900C9820D1175800F58CC4 /* CommonDrugs.json in Resources */ = {isa = PBXBuildFile; fileRef = 97900C9720D1175800F58CC4 /* CommonDrugs.json */; };
 		97900C9A20D1178500F58CC4 /* CommonDrugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900C9920D1178500F58CC4 /* CommonDrugHelper.swift */; };
+		97900C9D20D1FEE900F58CC4 /* ReferenceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900C9C20D1FEE900F58CC4 /* ReferenceViewCell.swift */; };
+		97900C9F20D1FF2700F58CC4 /* DrugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900C9E20D1FF2700F58CC4 /* DrugCell.swift */; };
+		97900CA120D1FF3C00F58CC4 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CA020D1FF3C00F58CC4 /* DetailCell.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -166,6 +169,9 @@
 		977D39BF20CBAA3C00F0CE1B /* ReferencePreviewingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencePreviewingDelegate.swift; sourceTree = "<group>"; };
 		97900C9720D1175800F58CC4 /* CommonDrugs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CommonDrugs.json; sourceTree = "<group>"; };
 		97900C9920D1178500F58CC4 /* CommonDrugHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDrugHelper.swift; sourceTree = "<group>"; };
+		97900C9C20D1FEE900F58CC4 /* ReferenceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceViewCell.swift; sourceTree = "<group>"; };
+		97900C9E20D1FF2700F58CC4 /* DrugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCell.swift; sourceTree = "<group>"; };
+		97900CA020D1FF3C00F58CC4 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -286,6 +292,7 @@
 		975EA4B120AD650600DB6398 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				97900C9B20D1FEC300F58CC4 /* Cells */,
 				97C41C1520CE8643008E8A42 /* Drug Calculators */,
 				975EA4B420AD658500DB6398 /* GlobalController.swift */,
 				97E31BD120CCEBDA0055F3BD /* BMIGraphManager.swift */,
@@ -342,6 +349,16 @@
 				977BC38C20ADBF6F0000FD6F /* Info.plist */,
 			);
 			path = "kkh-handbookTests";
+			sourceTree = "<group>";
+		};
+		97900C9B20D1FEC300F58CC4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97900C9C20D1FEE900F58CC4 /* ReferenceViewCell.swift */,
+				97900C9E20D1FF2700F58CC4 /* DrugCell.swift */,
+				97900CA020D1FF3C00F58CC4 /* DetailCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		97B4B19C20AD39FA00E05F85 = {
@@ -657,15 +674,18 @@
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
 				97E31BD220CCEBDA0055F3BD /* BMIGraphManager.swift in Sources */,
 				97C41C2820CF750C008E8A42 /* CommonDrugView.swift in Sources */,
+				97900C9F20D1FF2700F58CC4 /* DrugCell.swift in Sources */,
 				97C41C2620CF6396008E8A42 /* CSVViewer.swift in Sources */,
 				975EA4B320AD656200DB6398 /* ReferenceView.swift in Sources */,
 				977D39BE20CB90AA00F0CE1B /* PDFAdapter.swift in Sources */,
 				97C41C2420CF5FDA008E8A42 /* DrugManager.swift in Sources */,
 				977BC37C20ADB4C30000FD6F /* File.swift in Sources */,
+				97900CA120D1FF3C00F58CC4 /* DetailCell.swift in Sources */,
 				97C41C2220CE86B8008E8A42 /* AnaesthesiaDrugCalculationsManager.swift in Sources */,
 				97C41C1220CE563D008E8A42 /* DrugView.swift in Sources */,
 				97900C9A20D1178500F58CC4 /* CommonDrugHelper.swift in Sources */,
 				97E31BCA20CCDD4E0055F3BD /* Controller.swift in Sources */,
+				97900C9D20D1FEE900F58CC4 /* ReferenceViewCell.swift in Sources */,
 				97C41C2120CE86B8008E8A42 /* ScoliosisDrugCalculationsManager.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				97E31BD020CCEAFD0055F3BD /* BMIModel.swift in Sources */,

@@ -80,11 +80,6 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	
 }
 
-class ReferenceViewCell: UITableViewCell {
-	@IBOutlet var label: UILabel!
-	@IBOutlet var indicator: CircleView!
-}
-
 class ReferenceSectionHeader: UIView {
 	@IBOutlet var label: UILabel!
 	class func instanceFromNib() -> ReferenceSectionHeader {
