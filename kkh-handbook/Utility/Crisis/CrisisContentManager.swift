@@ -82,6 +82,16 @@ class ContentManager: NSObject {
 		
 	}
 	
+	static func CardiacArrest(weight: Float) -> [[String: Any]] {
+		return [["Notes" : ["type": "header",
+							"content": "Start BLS\n Give 100% Oxygen, Turn off all anesthetics"]],
+				 ["Check Rhythm" : ["type": "header"]],
+			["Non-Shockable: Asystole/PEA": ["type": "button",
+			"event": CardiacArrest_NONSHOCKcontent(weight)]],
+			["Shockable: VF/pulseless VT": ["type": "button",
+			"event": CardiacArrest_SHOCKcontent(weight)]]]
+	}
+	
 	static func CardiacArrest_NONSHOCKcontent (_ weight : Float) -> [[String : Any]] {
 		return [["Steps" : ["type" : "checkList_CA-NS"]],
 		        ["Administering Adrenaline" : ["type" : "text",
@@ -142,6 +152,26 @@ class ContentManager: NSObject {
 			
 			
 			
+		]
+	}
+	
+	static func LA (weight: Float) -> [[String:Any]] {
+		return [
+			["Recognition": ["type": "button",
+							 "event": LA_Recognition(weight: weight)]],
+			 ["Immediate Management": ["type": "button",
+				"event": LA_Management(weight: weight)]],
+			 
+				["Treatment": ["type": "header"]],
+				
+				["Neurotoxicity - Seizures": ["type": "button",
+				"event": LA_treatment_NeuroToxicity(weight: weight)]],
+				["Cardiotoxicity with Circulatory Arrest": ["type": "button",
+				"event": LA_treatment_CardiotoxicityWithCA(weight: weight)]],
+				["Cardiotoxicity without Circulatory Arrest": ["type": "button",
+															"event": LA_treatment_CardiotoxicityWOCA(weight: weight)]],
+				["Intralipid Therapy (20% Lipid Emulsion)": ["type": "button",
+														"event": LA_treatment_Intralipid(weight: weight)]]
 		]
 	}
 	
@@ -221,6 +251,18 @@ class ContentManager: NSObject {
 		]
 	}
 	
+	static func Hyperkalaemia(weight: Float) -> [[String: Any]] {
+		return [
+			["Exclusion and inclusion Criteria": ["type": "button",
+										  "event": Hyperkalaemia_criteria(weight:weight)]],
+			["Management Algorithm": ["type": "button",
+												  "event": Hyperkalaemia_ManagementAlgorithms(weight:weight)]],
+			["Treatment": ["type": "button",
+									  "event": Hyperkalaemia_Treatment(weight:weight)]],
+			
+		]
+	}
+	
 	static func Hyperkalaemia_criteria (weight : Float) -> [[String : Any]]{
 		return [["Exclusion criteria": ["type": "text",
 		                                "content" : "Premature Neonates"
@@ -237,10 +279,16 @@ class ContentManager: NSObject {
 	
 	static func Hyperkalaemia_ManagementAlgorithms (weight: Float) -> [[String : Any]]{
 		return [
-		        ["Exclude:" : ["type" : "HyperK_MA_2"]]
+				["Things to take note of" : ["type" : "checklist",
+							   "content_list": ["Perform ECG immediately when possible", "Review all medications/infusions"]]],
+		        ["Exclude:" : ["type" : "checklist",
+					"content_list": ["Burn or Crush injury", "Rhabdomyolysis", "Succinylchholine", "Malignant Hyperthermia", "Renal Failure"]]],
+				["Treatment summary": ["type": "button",
+										  "event": Hyperkalaemia_SerumDosage(weight:weight)]],
 		]
 	}
 	
+	// TODO convert to checklist
 	static func Hyperkalaemia_SerumDosage (weight: Float) -> [[String : Any]]{
 		return [
 			["For 5.5 - 6.0 mmol/L" : ["type":"header"]],
@@ -263,6 +311,7 @@ class ContentManager: NSObject {
 		]
 	}
 	
+	// TODO Checklist conversion
 	static func Hyperkalaemia_Treatment (weight : Float) -> [[String : Any]]{
 		return [["Do" : ["type": "HyperK_treatment_1"]],
 		        ["Without delaying therapy, consider" : ["type" : "HyperK_treatment_2"]],

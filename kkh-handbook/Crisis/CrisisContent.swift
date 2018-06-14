@@ -42,7 +42,7 @@ class CrisisContent: GlobalController {
 	// Adapter for legacy content that maps to cells
 	func cellsForData(_ data: [String: Any]) ->  [CrisisContentCell] {
 		
-		var res: [CrisisContentCell] = []
+		var res: [CrisisContentCell] = [paddingCell()]
 		let title = data.keys.first
 		let payload = (data[title!] as! [String: Any])
 		
@@ -51,6 +51,11 @@ class CrisisContent: GlobalController {
 		// Create title/header
 		if type == "header"{
 			res.append(headerCell(withTitle: title!))
+			if let c = payload["content"] {
+				res.append(textCell(withContent: c as! String))
+			}
+		} else if type == "button" {
+			res.append(buttonCell(withTitle: title!, event: payload["event"] as! [[String: Any]]))
 		} else {
 			res.append(titleCell(withTitle: title!))
 		}
@@ -96,14 +101,19 @@ extension CrisisContent: UIScrollViewDelegate{
 
 class CrisisContentCell: UITableViewCell {
 	
+	var instance: UIViewController?
+	
 	@IBOutlet var title: UILabel!
 	@IBOutlet var content: UILabel!
 	@IBOutlet var button: UIButton!
 	
-	var action: ( () -> Void? )?
+	var event: [[String: Any]]? // For buttons
 	
 	@IBAction func buttonPressed(_ sender: Any) {
-		action!()
+		let v = UIStoryboard(name: "Main", bundle: .main)
+			.instantiateViewController(withIdentifier: "crisisContent") as! CrisisContent
+		v.data = event
+		instance?.present(v, animated: true, completion: nil)
 	}
 	
 	

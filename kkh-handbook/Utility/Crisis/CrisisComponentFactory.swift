@@ -39,11 +39,16 @@ extension CrisisContent {
 		return cell
 	}
 	
-	func ButtonCell(withTitle: String, event: @escaping () -> Void) -> CrisisContentCell {
+	func buttonCell(withTitle: String, event:[[String: Any]]) -> CrisisContentCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "btn") as! CrisisContentCell
-		cell.button.titleLabel!.text = withTitle
-		cell.action = event
+		cell.button.setTitle(withTitle, for: .normal)
+		cell.event = event
+		cell.instance = self
 		
 		return cell
+	}
+	
+	func paddingCell() -> CrisisContentCell {
+		return tableView.dequeueReusableCell(withIdentifier: "padding") as! CrisisContentCell
 	}
 }

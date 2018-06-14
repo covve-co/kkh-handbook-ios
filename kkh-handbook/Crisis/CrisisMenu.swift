@@ -42,6 +42,7 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 		var data: [[String: Any]]? {
 			switch indexPath.row {
 			case 0: return ContentManager.BasicLifeSupport
+			case 1: return ContentManager.CardiacArrest(weight: weight!)
 			default: return nil
 			}
 		}
