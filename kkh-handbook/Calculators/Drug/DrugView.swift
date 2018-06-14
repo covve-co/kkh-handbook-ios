@@ -27,9 +27,9 @@ class DrugView: GlobalController, UITextFieldDelegate {
 											 color2: .appPinkSecondary())
 	}
 	
-	
+	// Validate weight
 	func textFieldDidEndEditing(_ textField: UITextField) {
-		if weightField.text != "" && weightField.text!.valueCheck() != nil {
+		if weightField.isValidDecimal() {
 			feedback.text = "Calculated for patient of weight \(weightField.text!.valueCheck()!)"
 			feedback.textColor = .black
 		} else {
@@ -59,7 +59,7 @@ class DrugView: GlobalController, UITextFieldDelegate {
 
 extension DrugView: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		if weightField.text != "" && weightField.text!.valueCheck() != nil {
+		if weightField.isValidDecimal() {
 			let weight = Int(weightField.text!)!
 			if indexPath.row < 3 {
 				var manager: DrugManager? {

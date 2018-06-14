@@ -78,3 +78,10 @@ extension Float {
 	}
 	
 }
+
+
+extension UITextField {
+	func isValidDecimal() -> Bool {
+		return self.text != "" && self.text!.valueCheck() != nil
+	}
+}
