@@ -170,12 +170,20 @@
                                                     <constraint firstAttribute="width" secondItem="uCT-M0-Smp" secondAttribute="height" multiplier="1:1" id="KKE-C5-dxY"/>
                                                     <constraint firstAttribute="width" constant="50" id="r8X-bI-pZD"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bmi_avatar"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Weight (KG)" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-6c-aSf">
                                                 <rect key="frame" x="85" y="125" width="175" height="41"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="weight"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="PjN-DU-iW9" id="UYf-et-GVW"/>
                                                 </connections>
@@ -802,6 +810,145 @@
             </objects>
             <point key="canvasLocation" x="-295.19999999999999" y="3085.7142857142858"/>
         </scene>
+        <!--Crisis Menu-->
+        <scene sceneID="Ga6-uG-aU5">
+            <objects>
+                <viewController storyboardIdentifier="crisisMenu" title="Crisis Menu" id="g4l-nK-kEy" customClass="CrisisMenu" customModule="kkh_handbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A6Y-bc-ql1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugg-uR-Iy7">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="72f-3T-7F0">
+                                        <rect key="frame" x="0.0" y="81" width="375" height="653"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="653" id="PA3-lF-LmK"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="q3e-rC-hBh" customClass="CrisisMenuCell" customModule="kkh_handbook" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q3e-rC-hBh" id="Nhu-sG-1KU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4Z-RE-cQ6">
+                                                            <rect key="frame" x="30" y="21" width="315" height="103"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-jG-rDG">
+                                                                    <rect key="frame" x="16" y="16" width="286" height="29"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="103" id="4Zi-pS-NpK"/>
+                                                                <constraint firstItem="l2W-jG-rDG" firstAttribute="top" secondItem="m4Z-RE-cQ6" secondAttribute="top" constant="16" id="VE8-P1-qXM"/>
+                                                                <constraint firstAttribute="trailing" secondItem="l2W-jG-rDG" secondAttribute="trailing" constant="13" id="bGL-0G-qtn"/>
+                                                                <constraint firstItem="l2W-jG-rDG" firstAttribute="leading" secondItem="m4Z-RE-cQ6" secondAttribute="leading" constant="16" id="qRo-sh-qDo"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="m4Z-RE-cQ6" firstAttribute="bottom" secondItem="Nhu-sG-1KU" secondAttribute="bottomMargin" id="CBw-Og-e6i"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="m4Z-RE-cQ6" secondAttribute="trailing" constant="15" id="JKe-50-aWO"/>
+                                                        <constraint firstItem="m4Z-RE-cQ6" firstAttribute="top" secondItem="Nhu-sG-1KU" secondAttribute="topMargin" constant="10" id="NEU-88-epW"/>
+                                                        <constraint firstItem="m4Z-RE-cQ6" firstAttribute="leading" secondItem="Nhu-sG-1KU" secondAttribute="leadingMargin" constant="15" id="awU-Ti-EeK"/>
+                                                        <constraint firstItem="m4Z-RE-cQ6" firstAttribute="centerX" secondItem="Nhu-sG-1KU" secondAttribute="centerX" id="mZM-k4-dlb"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="cardView" destination="m4Z-RE-cQ6" id="VQK-Wr-PLh"/>
+                                                    <outlet property="title" destination="l2W-jG-rDG" id="ges-t5-kkf"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="g4l-nK-kEy" id="G9r-fo-2R4"/>
+                                            <outlet property="delegate" destination="g4l-nK-kEy" id="XK4-bd-cbD"/>
+                                        </connections>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjs-8P-Whi" userLabel="Header">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Li-Vvr">
+                                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jle-Li-Vvr" secondAttribute="height" multiplier="1:1" id="8yg-qA-PAY"/>
+                                                    <constraint firstAttribute="width" constant="50" id="BfW-my-2Eg"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bmi_avatar"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXKG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSL-0D-BQ1">
+                                                <rect key="frame" x="75" y="24" width="66" height="33"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="weight"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jle-Li-Vvr" firstAttribute="width" secondItem="jle-Li-Vvr" secondAttribute="height" multiplier="1:1" id="LsT-zO-H7W"/>
+                                            <constraint firstItem="wSL-0D-BQ1" firstAttribute="leading" secondItem="jle-Li-Vvr" secondAttribute="trailing" constant="10" id="QBE-zh-hzh"/>
+                                            <constraint firstItem="wSL-0D-BQ1" firstAttribute="centerY" secondItem="zjs-8P-Whi" secondAttribute="centerY" id="kgd-wv-Z2u"/>
+                                            <constraint firstItem="jle-Li-Vvr" firstAttribute="leading" secondItem="zjs-8P-Whi" secondAttribute="leading" constant="15" id="uyn-B8-y2n"/>
+                                            <constraint firstItem="jle-Li-Vvr" firstAttribute="centerY" secondItem="zjs-8P-Whi" secondAttribute="centerY" id="zEP-d5-mxj"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="2"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="72f-3T-7F0" firstAttribute="top" secondItem="zjs-8P-Whi" secondAttribute="bottom" id="4en-dP-rE1"/>
+                                    <constraint firstItem="zjs-8P-Whi" firstAttribute="top" secondItem="Ugg-uR-Iy7" secondAttribute="top" id="5cK-Lu-HgM"/>
+                                    <constraint firstItem="zjs-8P-Whi" firstAttribute="leading" secondItem="Ugg-uR-Iy7" secondAttribute="leading" id="8Y5-YR-EGM"/>
+                                    <constraint firstAttribute="trailing" secondItem="zjs-8P-Whi" secondAttribute="trailing" id="Z76-s0-XzT"/>
+                                    <constraint firstItem="72f-3T-7F0" firstAttribute="centerX" secondItem="Ugg-uR-Iy7" secondAttribute="centerX" id="ZpB-wU-UrB"/>
+                                    <constraint firstAttribute="trailing" secondItem="72f-3T-7F0" secondAttribute="trailing" id="ZuF-Hi-XSI"/>
+                                    <constraint firstItem="72f-3T-7F0" firstAttribute="leading" secondItem="Ugg-uR-Iy7" secondAttribute="leading" id="xaE-v5-D38"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cul-qz-Dvy" firstAttribute="bottom" secondItem="Ugg-uR-Iy7" secondAttribute="bottom" id="CvH-Ee-rJU"/>
+                            <constraint firstItem="zjs-8P-Whi" firstAttribute="height" secondItem="A6Y-bc-ql1" secondAttribute="height" multiplier="0.1" id="JVU-VV-Jvo"/>
+                            <constraint firstItem="Ugg-uR-Iy7" firstAttribute="leading" secondItem="Cul-qz-Dvy" secondAttribute="leading" id="NH1-7l-gcr"/>
+                            <constraint firstItem="Cul-qz-Dvy" firstAttribute="trailing" secondItem="Ugg-uR-Iy7" secondAttribute="trailing" id="ith-P7-T8K"/>
+                            <constraint firstItem="Cul-qz-Dvy" firstAttribute="bottom" secondItem="72f-3T-7F0" secondAttribute="bottom" id="sAe-sY-hD6"/>
+                            <constraint firstItem="Ugg-uR-Iy7" firstAttribute="top" secondItem="Cul-qz-Dvy" secondAttribute="top" id="wLq-MH-8Jf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cul-qz-Dvy"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="headerView" destination="zjs-8P-Whi" id="ZeY-rv-GM3"/>
+                        <outlet property="tableView" destination="72f-3T-7F0" id="sSz-f2-rZe"/>
+                        <outlet property="weightLabel" destination="wSL-0D-BQ1" id="lk1-Dz-jbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6F-Ip-0z3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="2624.6305418719212"/>
+        </scene>
         <!--Common Drugs-->
         <scene sceneID="LMj-nC-6u5">
             <objects>
@@ -976,6 +1123,9 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="PjN-DU-iW9" kind="relationship" relationship="rootViewController" id="DIl-RC-EYx"/>
                     </connections>

@@ -74,6 +74,7 @@
 		97900CAB20D220D600F58CC4 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAA20D220D600F58CC4 /* Methods.swift */; };
 		97900CAD20D2210D00F58CC4 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAC20D2210D00F58CC4 /* Paths.swift */; };
 		97900CAF20D2211500F58CC4 /* CommonDrugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAE20D2211500F58CC4 /* CommonDrugs.swift */; };
+		97900CB120D231A000F58CC4 /* CrisisMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB020D231A000F58CC4 /* CrisisMenu.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -182,6 +183,7 @@
 		97900CAA20D220D600F58CC4 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		97900CAC20D2210D00F58CC4 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		97900CAE20D2211500F58CC4 /* CommonDrugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDrugs.swift; sourceTree = "<group>"; };
+		97900CB020D231A000F58CC4 /* CrisisMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisMenu.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				97900CA520D21BB500F58CC4 /* CrisisController.swift */,
+				97900CB020D231A000F58CC4 /* CrisisMenu.swift */,
 			);
 			path = Crisis;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				97900CA120D1FF3C00F58CC4 /* DetailCell.swift in Sources */,
 				97C41C2220CE86B8008E8A42 /* AnaesthesiaDrugCalculationsManager.swift in Sources */,
 				97C41C1220CE563D008E8A42 /* DrugView.swift in Sources */,
+				97900CB120D231A000F58CC4 /* CrisisMenu.swift in Sources */,
 				97900C9A20D1178500F58CC4 /* CommonDrugHelper.swift in Sources */,
 				97E31BCA20CCDD4E0055F3BD /* CalculatorController.swift in Sources */,
 				97900C9D20D1FEE900F58CC4 /* ReferenceViewCell.swift in Sources */,

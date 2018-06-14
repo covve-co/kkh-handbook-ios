@@ -33,7 +33,7 @@ class CrisisController: GlobalController, UITextFieldDelegate {
 	// TODO Abstract weightView controls to an individual component (DRY)
 	func textFieldDidEndEditing(_ textField: UITextField) {
 		if weightField.isValidDecimal() {
-			feedback.text = "Calculated for patient of weight \(weightField.text!.valueCheck()!)"
+			feedback.text = "Patient of weight \(weightField.text!.valueCheck()!)"
 			feedback.textColor = .black
 		} else {
 			feedback.text = "Please enter valid weight"
@@ -42,6 +42,10 @@ class CrisisController: GlobalController, UITextFieldDelegate {
 	}
 	
 	@IBAction func nextButtonPressed(_ sender: Any) {
-		
+		if weightField.isValidDecimal() {
+			let v = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "crisisMenu") as! CrisisMenu
+			v.weight = weightField.text!.valueCheck()
+			self.navigationController?.pushViewController(v, animated: true)
+		}
 	}
 }
