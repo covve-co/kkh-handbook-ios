@@ -8,10 +8,12 @@
 
 import Foundation
 import UIKit
+import Hero
 
 class GlobalController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController!.hero.navigationAnimationType = .fade
 		transitionSetup()
 		UILabel.appearance(whenContainedInInstancesOf: [UIAlertController.self]).numberOfLines = 0
 	}
