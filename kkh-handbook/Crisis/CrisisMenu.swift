@@ -47,6 +47,15 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 			}
 		}
 		
+		v.name = [
+			"Basic Life Support (BLS)",
+			"Cardiac Arrest",
+			"LA Toxicity",
+			"Hyperkalaemia",
+			"Malignant Hyperthermia",
+			"Anaphylaxis"
+			][indexPath.row]
+		
 		v.data = data
 		
 		self.navigationController?.present(v, animated: true, completion: nil)

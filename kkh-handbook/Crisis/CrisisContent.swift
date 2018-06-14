@@ -12,15 +12,19 @@ import UIKit
 class CrisisContent: GlobalController {
 	
 	var data: [[String: Any]]?
+	var name: String?
 	
 	private var cells: [CrisisContentCell] = []
 	
 	@IBOutlet var scrollView: UIScrollView!
 	@IBOutlet var tableView: UITableView!
 	@IBOutlet var headerView: UIView!
+	@IBOutlet var titleLabel: UILabel!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		self.titleLabel.text = name!
 		
 		// Build data
 		data?.forEach({ data in
@@ -73,9 +77,6 @@ class CrisisContent: GlobalController {
 		
 	}
 	
-	
-	
-	
 }
 
 extension CrisisContent: UITableViewDelegate, UITableViewDataSource {
@@ -86,7 +87,6 @@ extension CrisisContent: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		return self.cells[indexPath.row]
 	}
-	
 	
 	
 }
@@ -106,15 +106,25 @@ class CrisisContentCell: UITableViewCell {
 	@IBOutlet var title: UILabel!
 	@IBOutlet var content: UILabel!
 	@IBOutlet var button: UIButton!
+	@IBOutlet var checklistBtn: UIButton!
 	
 	var event: [[String: Any]]? // For buttons
+	
+	override func awakeFromNib() {
+		button?.backgroundColor = .black
+		button?.roundify(10)
+	}
 	
 	@IBAction func buttonPressed(_ sender: Any) {
 		let v = UIStoryboard(name: "Main", bundle: .main)
 			.instantiateViewController(withIdentifier: "crisisContent") as! CrisisContent
 		v.data = event
+		v.name = button!.titleLabel!.text
 		instance?.present(v, animated: true, completion: nil)
 	}
 	
+	@IBAction func chkButtonPressed(_ sender: Any) {
+		self.checklistBtn.setImage(checklistBtn.imageView?.image == #imageLiteral(resourceName: "checked") ? #imageLiteral(resourceName: "unchecked"):#imageLiteral(resourceName: "checked"), for: .normal)
+	}
 	
 }

@@ -25,10 +25,10 @@ extension CrisisContent {
 		return cell
 	}
 	
-	func textCell(withContent: String) -> CrisisContentCell {
+	func textCell(withContent: String, centered: Bool = false) -> CrisisContentCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "text") as! CrisisContentCell
 		cell.content.text = withContent
-		
+		cell.content.textAlignment = centered ? .center:.left
 		return cell
 	}
 	
