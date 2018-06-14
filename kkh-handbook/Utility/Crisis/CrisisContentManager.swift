@@ -293,21 +293,40 @@ class ContentManager: NSObject {
 		return [
 			["For 5.5 - 6.0 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "HyperK_Serum_1_1"]],
-			["Review: K+ not improving" : ["type" : "HyperK_Serum_1_2"]],
-			["Review: K+ improving" : ["type" : "HyperK_Serum_1_3"]],
+			["Initial Treatment" : ["type": "checklist",
+									"content_list": ["Salbutamol nebuliser (if possible)", "Consider Dextrose/Insulin"]
+				]],
+			["Review: K+ not improving" : ["type" : "checklist",
+										   "content_list" : ["Reevaluate cause", "if K+ > 6, Escalate level of Mx"]
+				]],
+			["Review: K+ improving" : ["type" : "checklist",
+									   "content_list": ["rpt Salbutamol if K+ remains at 5.5-6.0", "Start IV Dextrose/Insulin"]
+				]],
 			
 			["For 6.1 - 6.9 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "HyperK_Serum_2_1"]],
-			["Review: K+ not improving" : ["type" : "HyperK_Serum_2_2"]],
-			["Review: K+ improving" : ["type" : "HyperK_Serum_2_3"]],
+			["Initial Treatment" : ["type": "checklist",
+									"content_list": ["Salbutamol nebuliser (if possible)", "IV Dextrose/Insulin", "Consider NaHCO3 (if PH < 7.2)"]
+				]],
+			["Review: K+ not improving" : ["type" : "checklist",
+										   "content_list" : ["Reevaluate cause", "if K+ > 6, Escalate level of Mx"]
+				]],
+			["Review: K+ improving" : ["type" : "checklist",
+									   "content_list": ["Continue monitoring", "If K+ still 5.5-6.9\n- rpt salbutamol\n- rpt IV Dextrose/Insulin"]
+				]],
 			
 			["For > 7.0 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "HyperK_Serum_3_1"]],
-			["Review: K+ not improving" : ["type" : "HyperK_Serum_3_2"]],
-			["Review: K+ improving" : ["type" : "HyperK_Serum_2_3"]]
+			["Initial Treatment" : ["type": "checklist",
+									"content_list": ["Calcium Chloride or Calcium Gluconate","Salbutamol nebuliser (if possible)", "IV Dextrose/Insulin", "Consider NaHCO3 (if PH < 7.2)", "Reevaluate cause"]
+				]],
+			["Review: K+ not improving" : ["type" : "checklist",
+										   "content_list" : ["Reevaluate cause", "if ECG changes persist:\n- rpt Calcium\n- Consider CRRT"]
+
+				]],
+			["Review: K+ improving" : ["type" : "checklist",
+									   "content_list": ["Continue monitoring", "If K+ still 5.5-6.9\n- rpt salbutamol\n- rpt IV Dextrose/Insulin"]
+				]]
 		]
 	}
 	

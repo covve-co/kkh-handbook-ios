@@ -48,7 +48,7 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 		}
 		
 		v.name = [
-			"Basic Life Support (BLS)",
+			"Basic Life Support",
 			"Cardiac Arrest",
 			"LA Toxicity",
 			"Hyperkalaemia",
