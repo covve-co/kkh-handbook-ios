@@ -178,7 +178,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RZ9-0t-6eF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="SDI-wM-dfv"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info" id="SDI-wM-dfv"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDN-Mf-IYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -794,7 +794,7 @@
         <scene sceneID="LWh-hX-0xm">
             <objects>
                 <navigationController title="Reference Nav" id="8pi-L6-VqZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="REF" id="IHr-Ga-8NV">
+                    <tabBarItem key="tabBarItem" title="Handbook" image="book" id="IHr-Ga-8NV">
                         <color key="badgeColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ZRY-ud-LHU">
@@ -822,7 +822,7 @@
         <scene sceneID="Z8Z-WQ-hX6">
             <objects>
                 <navigationController title="Calculator Nav" id="KSY-wg-uyt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CALC" id="uOs-mL-DtL">
+                    <tabBarItem key="tabBarItem" title="Calculators" image="calculator" id="uOs-mL-DtL">
                         <color key="badgeColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HCD-2F-AOM">
@@ -847,11 +847,11 @@
             </objects>
             <point key="canvasLocation" x="-294" y="1230"/>
         </scene>
-        <!--CRISIS-->
+        <!--Crisis Nav-->
         <scene sceneID="z1z-Ca-8a0">
             <objects>
-                <navigationController title="CRISIS" id="pKc-kg-2Ux" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="woB-65-Mri"/>
+                <navigationController title="Crisis Nav" id="pKc-kg-2Ux" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Crisis" image="heart" id="woB-65-Mri"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2Qe-fM-Fuz">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -875,7 +875,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.3411764706" green="0.54901960780000003" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.95294117649999999" green="0.40000000000000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8pi-L6-VqZ" kind="relationship" relationship="viewControllers" id="hSS-EE-SBj"/>
@@ -891,6 +891,10 @@
     </scenes>
     <resources>
         <image name="bmi" width="200" height="200"/>
+        <image name="book" width="30" height="30"/>
+        <image name="calculator" width="30" height="30"/>
+        <image name="heart" width="30" height="30"/>
+        <image name="info" width="30" height="30"/>
         <image name="syringe" width="1003" height="1003"/>
     </resources>
 </document>
