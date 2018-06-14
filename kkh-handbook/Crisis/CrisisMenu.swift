@@ -45,7 +45,7 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 			case 1: return ContentManager.CardiacArrest(weight: weight!)
 			case 2: return ContentManager.LA(weight: weight!)
 			case 3: return ContentManager.Hyperkalaemia(weight: weight!)
-			case 4: return nil
+			case 4: return ContentManager.MH(weight: weight!)
 			case 5: return ContentManager.anaphylaxisContent(weight: weight!)
 			default: return nil
 			}

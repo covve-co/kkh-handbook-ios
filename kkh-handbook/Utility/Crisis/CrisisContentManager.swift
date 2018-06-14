@@ -380,6 +380,23 @@ class ContentManager: NSObject {
 		
 	}
 	
+	static func MH(weight: Float) -> [[String: Any]] {
+		return [
+			["Notes": ["type": "header",
+					   "content": "MH Orange Box\n(contains essential drugs and treatment algorithm)\nkept in:\nMOT - Paed Recovery\nDSOT - outside DSOT 2\nPlease return box to respective OT locations if not used.\nPlease informAu nurse if MH Box has been opened and used."
+				]
+			],
+			["Recognition and Differential Diagnosis": ["type": "button",
+														"event": MH_recognition(weight:weight)
+				] ],
+			["Immediate Management and monitoring": ["type": "button",
+														"event": MH_Management(weight:weight)
+				] ],
+			["Treatment": ["type": "button",
+														"event": MH_Treatment(weight:weight)
+				] ]
+		]
+	}
 	static func MH_recognition (weight : Float) -> [[String : Any]]{
 		return [["Differential Diagnosis" : ["type": "text",
 		                                     "content" : "1. Inadequate anaesthesia or analgesia\n2. Inappropriate breathing circuit, fresh gas flow or ventilation\n3. Infection or sepsis\n4. Tourniquet ischaemia\n5. Anaphylaxis\n5. Pheochromocytoma\n6. Thyroid storm"]],
@@ -416,7 +433,7 @@ class ContentManager: NSObject {
 		        ["Treat DIC (if present)" : ["type" : "text",
 		                                     "content" : "FFP, Cryoppt, Platelets"
 					]],
-		        ["Dantrolene" : ["type" : "text",
+		        ["Dantrolene" : ["type" : "header",
 		                         "content" : "each vial contains 20MG of dantrolene\nDissolve 1 vial in 60 ML sterile water\ndantrolene potentiates neuromuscular blockers"
 					]],
 		        ["Application of Dantrolene - 2.5 MG kg" : ["type" : "text",
