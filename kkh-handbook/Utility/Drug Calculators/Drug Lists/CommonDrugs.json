@@ -1,0 +1,1162 @@
+{
+  "ADENOSINE": {
+    "name": "ADENOSINE",
+    "routes": {
+      "IV/ IO": {
+        "name": "IV/ IO",
+        "methods": {
+          "FAST BOLUS": {
+            "name": "FAST BOLUS",
+            "remarks": "for SVT: Child < 50 KG BW: 0.1 MG /kg first push (rapid IV bolus over 1 second) then 0.2 MG /kg second push; Child > 50 KG BW: 6 MG first push then 12 MG second push.\nGive through IV access closest to heart.",
+            "unit": "MG",
+            "dose": "0.1"
+          }
+        }
+      }
+    }
+  },
+  "ADRENALINE": {
+    "name": "ADRENALINE",
+    "routes": {
+      "IV/ IO": {
+        "name": "IV/ IO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "equivalent to 0.1 mL/ kg 1:10 000 (10 MICROgram/kg) for CARDIAC AREST;\nGive 0.1 mL/ KG 1:100 000 (1 MICROgram/kg) for ANAPHYLAXIS ",
+            "unit": "MICROgram",
+            "dose": "10"
+          }
+        }
+      },
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "1 mL/h = 0.1 MICROgram/kg/min",
+            "content": "(BW X 0.3) MG in 50 mL"
+          }
+        }
+      },
+      "ETT": {
+        "name": "ETT",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "equivalent to 1.0 mL/ kg 1:10 000 (10X  IV dose)",
+            "unit": "MICROgram",
+            "dose": "100"
+          }
+        }
+      }
+    }
+  },
+  "AMIKACIN": {
+    "name": "AMIKACIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "15 MG/kg/day q8- 12h (max 1.5 gram/day); refer to chapter 11a for dosages in neonates"
+          }
+        }
+      }
+    }
+  },
+  "AMINOPHYLLINE": {
+    "name": "AMINOPHYLLINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "over 1 hour; maintenace infusion dose for different age range:                                                                                                                                                        6 weeks to 6 months: 0.5 MG/kg/h                         continuous intravenous infusion\n6 months to 1 year: 0.6 to 0.7 MG/kg/h                 continuous intravenous infusion\n1 year to 9 years: 1 to 1.2 MG/kg/h                        continuous intravenous infusion\n9 years to 12 years: 0.9 MG /kg/h                           continuous intravenous infusion\n>12 years: 0.7 MG/kg/h                                             continuous intravenous infusion",
+            "unit": "MG",
+            "dose": "10"
+          }
+        }
+      }
+    }
+  },
+  "AMIODARONE": {
+    "name": "AMIODARONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "over  3- 5 minutes for VT/ pulseless VF",
+            "unit": "MG",
+            "dose": "5"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "",
+            "content": "(BW X 15) MG in 50 mL at 5 mL/h (25 MICROgram/kg/min) for 4 h then reduce to 1- 3 mL/h (5- 15 MICROgram/kg/min)"
+          }
+        }
+      }
+    }
+  },
+  "AMPICILLIN": {
+    "name": "AMPICILLIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "25 MG/kg/dose q6h; refer to chapter 11a for dosages in neonates                                                                                      CARDIAC PROPHYLAXIS- 50 MG/kg"
+          }
+        }
+      }
+    }
+  },
+  "ATRACURIUM": {
+    "name": "ATRACURIUM",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS (INTUBATION)": {
+            "name": "BOLUS (INTUBATION)",
+            "remarks": "then IV 0.1- 0.2 MG/kg when required or IV INFUSION at 5- 10 MICROgram/kg/min",
+            "unit": "MG/kg",
+            "dose": "0.5"
+          }
+        }
+      }
+    }
+  },
+  "ATROPINE": {
+    "name": "ATROPINE",
+    "routes": {
+      "IV/ IM/ IO": {
+        "name": "IV/ IM/ IO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "0.02"
+          }
+        }
+      }
+    }
+  },
+  "AUGMENTIN": {
+    "name": "AUGMENTIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "< 3 MONTHS- 30 MG /kg/dose q12h\n> 3 MONTHS- 30 MG /kg /dose q8h"
+          }
+        }
+      }
+    }
+  },
+  "CALCIUM CHLORIDE (10%)": {
+    "name": "CALCIUM CHLORIDE (10%)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "ML/kg",
+            "dose": "0.2"
+          }
+        }
+      }
+    }
+  },
+  "CEFAZOLIN": {
+    "name": "CEFAZOLIN",
+    "routes": {
+      "IV/IM": {
+        "name": "IV/IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "content": "25-30 MG/kg (max 1 gram) q8h.                                                SEVERE INFECTION- 50 MG/kg (max 2 gram) q6h "
+          }
+        }
+      }
+    }
+  },
+  "CEFTAZIDIME (FORTUM)": {
+    "name": "CEFTAZIDIME (FORTUM)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "30-50 MG/kg (ADULT: 0.5- 1 gram) q8 H; q12 H in NEONATES"
+          }
+        }
+      }
+    }
+  },
+  "CEFTRIAXONE (ROCEPHIN)": {
+    "name": "CEFTRIAXONE (ROCEPHIN)",
+    "routes": {
+      "IV/IM": {
+        "name": "IV/IM",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "25-50 MG/KG q12h (> 2 weeks old)/ q24h (< 2 weeks old). SEVERE INFECTION- 50 MG/kg"
+          }
+        }
+      }
+    }
+  },
+  "CEFUROXIME (ZINACEF)": {
+    "name": "CEFUROXIME (ZINACEF)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "25- 60 MG/KG (ADULT: 1- 3 gram) q6- 8h"
+          }
+        }
+      }
+    }
+  },
+  "CHLORAL HYDRATE": {
+    "name": "CHLORAL HYDRATE",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: sedation/premedication; onset: 30-45 minutes",
+            "unit": "MG",
+            "dose": "50"
+          }
+        }
+      }
+    }
+  },
+  "CHLORPHENIRAMINE": {
+    "name": "CHLORPHENIRAMINE",
+    "routes": {
+      "IV/ IM/ IO/ SC": {
+        "name": "IV/ IM/ IO/ SC",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "antihistamine",
+            "unit": "MG",
+            "dose": "0.2"
+          }
+        }
+      }
+    }
+  },
+  "CLOXACILLIN": {
+    "name": "CLOXACILLIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "25 MG/kg/dose q6h"
+          }
+        }
+      }
+    }
+  },
+  "DANTROLENE": {
+    "name": "DANTROLENE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "for Malignant Hyperthermia; Repeat boluses at 1 MG/KG til a total of 10 MG/kg. Dilute 20 MG in 60 mL WATER (→ 1 MG in 3 mL); initial bolus 7.5 mL /KG (2.5 MG/kg), subsequent boluses 3 mL /kg (1 MG/kg) to a total of 30 mL/KG (10 MG/kg)",
+            "unit": "MG",
+            "dose": "2.5"
+          }
+        }
+      }
+    }
+  },
+  "DEXAMETHASONE": {
+    "name": "DEXAMETHASONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: anti- inflammatory/ antiemetic",
+            "unit": "MG",
+            "dose": "0.25"
+          }
+        }
+      }
+    }
+  },
+  "DEXMEDETOMIDINE": {
+    "name": "DEXMEDETOMIDINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "given over 20 minutes",
+            "unit": "MICROgram",
+            "dose": "1"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "",
+            "content": "0.2- 1.0 MICROgram/kg/h"
+          }
+        }
+      },
+      "INTRANASAL": {
+        "name": "INTRANASAL",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "for sedation/premedication; can be given up to 2 MICROgram/kg BW; onset time 15-30 minutes",
+            "unit": "MICROgram",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "DICLOFENAC": {
+    "name": "DICLOFENAC",
+    "routes": {
+      "PR": {
+        "name": "PR",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "DIPHENHYDRAMINE": {
+    "name": "DIPHENHYDRAMINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "antihistamine. Risk of local necrosis.",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "ERYTHROMYCIN": {
+    "name": "ERYTHROMYCIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "10 MG/kg/dose q6- 8h"
+          }
+        }
+      }
+    }
+  },
+  "ESMOLOL": {
+    "name": "ESMOLOL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "Beta Block",
+            "unit": "MG",
+            "dose": "0.5"
+          }
+        }
+      }
+    }
+  },
+  "ETOMIDATE": {
+    "name": "ETOMIDATE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "0.3"
+          }
+        }
+      }
+    }
+  },
+  "FENTANYL": {
+    "name": "FENTANYL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 3 MICROgram/kg BW q30 min",
+            "unit": "MG",
+            "dose": "1"
+          },
+          "INFUSION     ": {
+            "name": "INFUSION     ",
+            "remarks": "To run at 1- 4 mL / H (0.3-1.2 MICROgram/kg/h)",
+            "content": "15 MICROgram/kg in 50 mL "
+          }
+        }
+      }
+    }
+  },
+  "FLUMAZENIL": {
+    "name": "FLUMAZENIL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": " reverse effects of benzodiazepines; 5 MICROgram/kg repeated every 60 seconds to max total 40 MICROgram/ kg",
+            "unit": "MICROgram",
+            "dose": "5"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "reverse effects of benzodiazepines",
+            "content": "1- 5 MICROgram/kg/h"
+          }
+        }
+      }
+    }
+  },
+  "FRUSEMIDE": {
+    "name": "FRUSEMIDE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "diuretic; can be given up to 1 MG/kg",
+            "unit": "MG",
+            "dose": "0.5"
+          }
+        }
+      }
+    }
+  },
+  "GENTAMICIN": {
+    "name": "GENTAMICIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "2.5 MG/KG/dose q8 H; refer to chapter 11a for dosages in neonates"
+          }
+        }
+      }
+    }
+  },
+  "GLUCOSE": {
+    "name": "GLUCOSE",
+    "routes": {
+      "IV/ IO": {
+        "name": "IV/ IO",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "HYPOGLYCAEMIA- 2.5 mL/kg 10% dextrose; HYPERKALAEMIA- 5mL/kg 10% dextrose + 0.1 unit/kg Insulin "
+          }
+        }
+      }
+    }
+  },
+  "HYDROCORTISONE": {
+    "name": "HYDROCORTISONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: anti-inflammatory; can be given up to 2 MG/kg",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "HYOSCINE": {
+    "name": "HYOSCINE",
+    "routes": {
+      "IM": {
+        "name": "IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: sedation/premedication; onset time 30 minutes",
+            "unit": "MG",
+            "dose": "0.01"
+          }
+        }
+      }
+    }
+  },
+  "IBUPROFEN": {
+    "name": "IBUPROFEN",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 10 MG/kg",
+            "unit": "MG",
+            "dose": "5"
+          }
+        }
+      }
+    }
+  },
+  "KETAMINE": {
+    "name": "KETAMINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "2"
+          }
+        }
+      },
+      "IM": {
+        "name": "IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "5"
+          }
+        }
+      }
+    }
+  },
+  "LIGNOCAINE": {
+    "name": "LIGNOCAINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "LIPID EMULSION(20%)": {
+    "name": "LIPID EMULSION(20%)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: LA toxicity; given over 1 minute; can be repeated at 5 minutes interval (max 3 bolus doses)",
+            "unit": "mL",
+            "dose": "1.5"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "can be increased to 30 mL/kg/h",
+            "unit": "mL/h",
+            "dose": "15"
+          }
+        }
+      }
+    }
+  },
+  "MAGNESIUM SULPHATE": {
+    "name": "MAGNESIUM SULPHATE",
+    "routes": {
+      "IV/ IO": {
+        "name": "IV/ IO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be give up to 50 MG/kg;                                  Treatment of Torsade",
+            "unit": "MG",
+            "dose": "25"
+          }
+        }
+      }
+    }
+  },
+  "MANNITOL (20%)": {
+    "name": "MANNITOL (20%)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 5 mL/kg",
+            "unit": "mL",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "METHYLPREDNISOLONE": {
+    "name": "METHYLPREDNISOLONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "30"
+          }
+        }
+      }
+    }
+  },
+  "METOCLOPRAMIDE": {
+    "name": "METOCLOPRAMIDE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "q6 H; Beware Occulogyric Crisis",
+            "unit": "MG",
+            "dose": "0.15"
+          }
+        }
+      }
+    }
+  },
+  "METRONIDAZOLE (FLAGYL)": {
+    "name": "METRONIDAZOLE (FLAGYL)",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "7.5 MG/kg/dose q8h;                                                                     refer to chapter 11a for doasages in neonates"
+          }
+        }
+      }
+    }
+  },
+  "MIDAZOLAM": {
+    "name": "MIDAZOLAM",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: sedation/premedication;                                onset: 10- 15 minutes",
+            "unit": "MG",
+            "dose": "0.5"
+          }
+        }
+      },
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "0.1"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "1 ML /H = 1 MICROgram/kg/min;                                     can run at 1-4 mL/h (1- 4 MICROgram/kg/min)",
+            "content": "(BWx 3) MG in 50 mL"
+          }
+        }
+      },
+      "INTRANASAL": {
+        "name": "INTRANASAL",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "onset: 20 minutes; may cause nasal burning sensation",
+            "unit": "MG",
+            "dose": "0.5"
+          }
+        }
+      }
+    }
+  },
+  "MORPHINE": {
+    "name": "MORPHINE",
+    "routes": {
+      "IV/ IM": {
+        "name": "IV/ IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "0.1"
+          }
+        }
+      },
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "1 mL/h = 20 MICROgram/kg/h; can run at 1-3 mL/h (20- 60 MICROgram/kg/h). NEONATES: (BW x 0.5) MG in 50 mL at 1- 3 mL/h (10- 30 MICROgram/kg/h); BEWARE OF APNOEA!",
+            "content": "(BW x 1) MG in 50 mL"
+          }
+        }
+      }
+    }
+  },
+  "NALOXONE": {
+    "name": "NALOXONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "content": "RESPIRATORY DEPRESSION- 4 MICROgram/kg;    ITCH/URINE RETENTION- 0.5 MICROgram/kg"
+          }
+        }
+      }
+    }
+  },
+  "NEOSTIGMINE": {
+    "name": "NEOSTIGMINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "0.05"
+          }
+        }
+      }
+    }
+  },
+  "ONDANSETRON": {
+    "name": "ONDANSETRON",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 0.2 MG /kg q8h",
+            "unit": "MG",
+            "dose": "0.1"
+          }
+        }
+      }
+    }
+  },
+  "OxyCODONE": {
+    "name": "OxyCODONE",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 0.2 MG/kg BW q4- 6h;                           5 MG Tab",
+            "unit": "MG",
+            "dose": "0.1"
+          }
+        }
+      }
+    }
+  },
+  "OxyCONTINE(SR)": {
+    "name": "OxyCONTINE(SR)",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 0.2 MG/kg BW q12h ;                         10 MG Tab",
+            "unit": "MG",
+            "dose": "0.1"
+          }
+        }
+      }
+    }
+  },
+  "PARACETAMOL": {
+    "name": "PARACETAMOL",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "q4-6h",
+            "unit": "MG",
+            "dose": "15"
+          }
+        }
+      },
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "q4-6h; NEONATE: REDUCE DOSE 7.5 MG/kg",
+            "unit": "MG",
+            "dose": "15"
+          }
+        }
+      }
+    }
+  },
+  "PETHIDINE": {
+    "name": "PETHIDINE",
+    "routes": {
+      "IV/ IM": {
+        "name": "IV/ IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 2 MG /kg q4- 6h",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "PHENYLEPHRINE": {
+    "name": "PHENYLEPHRINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MICROgram",
+            "dose": "5"
+          }
+        }
+      }
+    }
+  },
+  "PHENTOLAMINE": {
+    "name": "PHENTOLAMINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: Alpha Block (↓ BP); can be given up to 100 MICROgram/kg",
+            "unit": "MICROgram",
+            "dose": "50"
+          }
+        }
+      }
+    }
+  },
+  "PHENYTOIN": {
+    "name": "PHENYTOIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "content": "10- 20 MG/KG over 1 H"
+          }
+        }
+      }
+    }
+  },
+  "PROMETHAZINE": {
+    "name": "PROMETHAZINE",
+    "routes": {
+      "PO": {
+        "name": "PO",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: sedation/premedication",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "PROPANOLOL": {
+    "name": "PROPANOLOL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "purpose: Beta Block; can be given up to 0.1 MG/kg",
+            "unit": "MG",
+            "dose": "0.05"
+          }
+        }
+      }
+    }
+  },
+  "PROPOFOL": {
+    "name": "PROPOFOL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 6 MG/kg BW; over 3 months of age",
+            "unit": "MG",
+            "dose": "2"
+          }
+        }
+      }
+    }
+  },
+  "RANITIDINE": {
+    "name": "RANITIDINE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "slow bolus; q 6-8h",
+            "unit": "MG",
+            "dose": "1"
+          }
+        }
+      }
+    }
+  },
+  "REMIFENTANIL": {
+    "name": "REMIFENTANIL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "BEWARE OF BRADYCARDIA!",
+            "content": "0.05- 2 MICROgram/kg/min"
+          }
+        }
+      }
+    }
+  },
+  "ROCURONIUM": {
+    "name": "ROCURONIUM",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS (INTUBATION)": {
+            "name": "BOLUS (INTUBATION)",
+            "remarks": "can be given up to 1.2 MG/kg BW during RSI",
+            "unit": "MG",
+            "dose": "0.6"
+          },
+          "BOLUS\n(TOP UP)": {
+            "name": "BOLUS\n(TOP UP)",
+            "remarks": "can be given up to 0.2 MG/kg BW",
+            "unit": "MG",
+            "dose": "0.1"
+          },
+          "INFUSION": {
+            "name": "INFUSION",
+            "remarks": "",
+            "content": "(BW x 15) MG in 50 ML at 1- 3 ML /H ( 5 - 15 MCG/kg/MIN)"
+          }
+        }
+      }
+    }
+  },
+  "SALBUTAMOL": {
+    "name": "SALBUTAMOL",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "",
+            "content": "5 MICROgram/kg over 10 minutes                                             then 1- 5 MICROgram/kg/min"
+          }
+        }
+      }
+    }
+  },
+  "SUGAMMADEX": {
+    "name": "SUGAMMADEX",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 16 MG/kg BW for immediate reversal",
+            "unit": "MG",
+            "dose": "2"
+          }
+        }
+      }
+    }
+  },
+  "SUXAMETHONIUM": {
+    "name": "SUXAMETHONIUM",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "can be given up to 3 MG/kg BW in NEONATES",
+            "unit": "MG",
+            "dose": "2"
+          }
+        }
+      },
+      "IM": {
+        "name": "IM",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "content": "DOUBLE IV DOSE"
+          }
+        }
+      }
+    }
+  },
+  "THIOPENTONE": {
+    "name": "THIOPENTONE",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "unit": "MG",
+            "dose": "5"
+          }
+        }
+      }
+    }
+  },
+  "UNASYN": {
+    "name": "UNASYN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "BOLUS": {
+            "name": "BOLUS",
+            "remarks": "",
+            "content": "50 MG/kg/dose q6h; q12h in NEONATES"
+          }
+        }
+      }
+    }
+  },
+  "VANCOMYCIN": {
+    "name": "VANCOMYCIN",
+    "routes": {
+      "IV": {
+        "name": "IV",
+        "methods": {
+          "SLOW BOLUS": {
+            "name": "SLOW BOLUS",
+            "remarks": "BEWARE OF RED MAN SYNDROME!",
+            "content": "15 MG/kg/dose q6h SLOW INFUSION over 1 h"
+          }
+        }
+      }
+    }
+  }
+}

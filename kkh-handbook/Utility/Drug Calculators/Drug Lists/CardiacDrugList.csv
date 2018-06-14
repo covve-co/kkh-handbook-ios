@@ -1,0 +1,45 @@
+Drugs Calculator,kg,Dose/kg BW,Amount,Unit,Remarks
+BW in kg =,XX,,,,
+,,,,,
+Fentanyl,,20,XX,mcg,Titrated
+Cefazolin,,50,XX,mg,
+Heparin ,,300,XX,IU,
+Protamine,,3,XX,mg,ONLY BY CONSULTANT
+Adrenaline,,10,XX,mcg,
+Phenylephrine,,10,XX,mcg,
+Vasopressin,,0.1,XX,unit,
+Atropine,,0.02,XX,mg,
+Bicarb (8.4%),,1,XX,mL,
+CaCl2(10%),,0.2,XX,mL,
+MgSO4,,50,XX,mg,
+Lignocaine (1%),,1,XX,mg,
+,,,,,
+Amiodarone,,5,XX,mg,over 20-60 minutes
+Amiodarone infusion,,15,XX,mg/50mLD5W,"1mL/hr=5mcg/kg/min, run at 1-3 ml/hr"
+Adenosine,,0.1,XX,mg,first bolus (max 6 mg)
+Adenosine,,0.2,XX,mg,second bolus (max 12mg)
+,,,,,
+Synch cardioversion,,0.5,XX,J,SVT/VT with pulse
+Synch cardioversion,,1,XX,J,SVT/VT with pulse
+First & Succeeding defibrillation,,4,XX,J,VF/VT pulseless
+,,,,,
+Adrenaline/Noradrenaline/Isoprenaline,,BW x 0.3 mg/50mL,XX,mg/50mL,1mL/hr=0.1mcg/kg/min
+Milrinone (≤ 16kg),,BW x 3 mg/50mL,XX,mg/50mL,1mL/hr=1.0mcg/kg/min
+Milrinone (> 16kg),,50 mg/50 mL,50,mg/50mL,1mL/hr=1.0mcg/kg/min
+Dopamine,,BW x 30 mg/50mL,XX,mg/50mL,1mL/hr=10mcg/kg/min
+Dobutamine,,BW x 15 mg/50mL,XX,mg/50mL,1mL/hr=5mcg/kg/min
+Vasopressin,,BW x 1 unit/50mL,XX,unit/50mL,"1mL/hr=0.02unit/kg/hr, 0.5-3ml/hr"
+GTN/Nipride (≤ 16kg),,BW x 3 mg/50mL,XX,mg/50mL,1mL/hr=1.0mcg/kg/min
+GTN/Nipride  (> 16kg),,50 mg/50 mL,50,mg/50mL,1mL/hr=1.0mcg/kg/min
+Phentolamine,,BW x 15 mg/50mL,XX,mg/50mL,1-10mL/hr=5-50mcg/kg/min
+,,,,,
+Tranexemic acid (≤ 40kg),,BW x 50 mg/20mL,XX,mg/20mL,"1mL/hr=2.5 mg/kg/hr (10ml/hr for 1hr à1ml/hr)"
+Tranexemic acid (> 40kg),,2000mg/20 mL,2000,mg/20mL,"0.4 mL/hr=2.5 mg/kg/hr (10ml/hr for 1hr) à1ml/hr)"
+,,,,,
+Morphine (< 50kg),,BW / 50mL,XX,mg/50mL,1mL/hr=20mcg/kg/hr
+Morphine (≥ 50kg),,50 / 50mL,50,mg/50mL,1mL/hr=1mg/hr
+Dexmedetomidine,,BW x 10 mcg/50mL,XX,mcg/50mL,1mL/hr=0.2mcg/kg/hr
+(3 in 1 cocktail),,,,,
+Midazolam,,BW x 3 mg/50mL,XX,mg/50mL,1mL/hr= 1.0mcg/kg/min
+Fentanyl,,BW x 250 mcg/50mL,XX,mcg/50mL,1mL/hr= 5mcg/kg/hr
+Rocuronium,,BW x 25 mg/50mL,XX,mg/50mL,1mL/hr= 0.5mg/kg/hr

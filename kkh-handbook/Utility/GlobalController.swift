@@ -12,8 +12,11 @@ import UIKit
 class GlobalController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		transitionSetup()
 		UILabel.appearance(whenContainedInInstancesOf: [UIAlertController.self]).numberOfLines = 0
 	}
+	
+	func transitionSetup() {}
 }
 
 class CircleView: UIView {

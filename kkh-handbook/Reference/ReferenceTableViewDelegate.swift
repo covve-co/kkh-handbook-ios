@@ -52,7 +52,7 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 		
 		// Set styles
 		cell.indicator.alpha = 0
-		if file.isBookmarked() {
+		if file.isBookmarked {
 			cell.indicator.alpha = 1
 			cell.label.textColor = .darkText
 		}
@@ -63,35 +63,21 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		let file = content[indexPath.section].1[indexPath.row]
 		
-		let bookmarkAction = UIContextualAction(style: .normal, title: nil) { _, _, _ in
-			UserDefaults.standard.set(true, forKey: String(file.id))
+		let action = UIContextualAction(style: .normal, title: nil) {
+			_, _, _ in
+			UserDefaults.standard.set(!file.isBookmarked, forKey: String(file.id))
 			tableView.setEditing(false, animated: true)
 			tableView.reloadRows(at: [indexPath], with: .right)
 		}
 		
-		let removeAction = UIContextualAction(style: .normal, title: nil) { _, _, _ in
-			UserDefaults.standard.set(false, forKey: String(file.id))
-			tableView.setEditing(false, animated: true)
-			tableView.reloadRows(at: [indexPath], with: .right)
-		}
+		action.image = file.isBookmarked ? #imageLiteral(resourceName: "cancel"):#imageLiteral(resourceName: "bookmark") // RIP light theme users
+		action.backgroundColor = file.isBookmarked ? .red:.bookmarkOrange()
 		
-		bookmarkAction.image = #imageLiteral(resourceName: "bookmark") // RIP light theme users
-		bookmarkAction.backgroundColor = .bookmarkOrange()
-		
-		removeAction.image = #imageLiteral(resourceName: "cancel") // RIP light theme users
-		removeAction.backgroundColor = .red
-		
-		let swipeConfig = UISwipeActionsConfiguration(actions:
-			file.isBookmarked() ? [removeAction]:[bookmarkAction])
+		let swipeConfig = UISwipeActionsConfiguration(actions:[action])
 		
 		return swipeConfig
 	}
 	
-}
-
-class ReferenceViewCell: UITableViewCell {
-	@IBOutlet var label: UILabel!
-	@IBOutlet var indicator: CircleView!
 }
 
 class ReferenceSectionHeader: UIView {
