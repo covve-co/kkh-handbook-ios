@@ -27,6 +27,7 @@ class DrugView: GlobalController, UITextFieldDelegate {
 											 color2: .appPinkSecondary())
 	}
 	
+	
 	func textFieldDidEndEditing(_ textField: UITextField) {
 		if weightField.text != "" && weightField.text!.valueCheck() != nil {
 			feedback.text = "Calculated for patient of weight \(weightField.text!.valueCheck()!)"

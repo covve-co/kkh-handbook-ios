@@ -153,7 +153,7 @@
         <!--Crisis-->
         <scene sceneID="4Dy-Su-f3V">
             <objects>
-                <viewController title="Crisis" id="PjN-DU-iW9" sceneMemberID="viewController">
+                <viewController title="Crisis" id="PjN-DU-iW9" customClass="CrisisController" customModule="kkh_handbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="utx-09-8L8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RZ9-0t-6eF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="info" id="SDI-wM-dfv"/>
+                    <tabBarItem key="tabBarItem" title="" image="info" id="SDI-wM-dfv">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDN-Mf-IYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -794,7 +796,8 @@
         <scene sceneID="LWh-hX-0xm">
             <objects>
                 <navigationController title="Reference Nav" id="8pi-L6-VqZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Handbook" image="book" id="IHr-Ga-8NV">
+                    <tabBarItem key="tabBarItem" title="" image="book" id="IHr-Ga-8NV">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ZRY-ud-LHU">
@@ -822,7 +825,8 @@
         <scene sceneID="Z8Z-WQ-hX6">
             <objects>
                 <navigationController title="Calculator Nav" id="KSY-wg-uyt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calculators" image="calculator" id="uOs-mL-DtL">
+                    <tabBarItem key="tabBarItem" title="" image="calculator" id="uOs-mL-DtL">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <color key="badgeColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HCD-2F-AOM">
@@ -851,7 +855,9 @@
         <scene sceneID="z1z-Ca-8a0">
             <objects>
                 <navigationController title="Crisis Nav" id="pKc-kg-2Ux" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Crisis" image="heart" id="woB-65-Mri"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" id="woB-65-Mri">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2Qe-fM-Fuz">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
