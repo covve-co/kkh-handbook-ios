@@ -15,6 +15,7 @@ class CrisisContent: GlobalController {
 	
 	private var cells: [CrisisContentCell] = []
 	
+	@IBOutlet var scrollView: UIScrollView!
 	@IBOutlet var tableView: UITableView!
 	
 	override func viewDidLoad() {
@@ -28,6 +29,10 @@ class CrisisContent: GlobalController {
 			}
 		})
 		
+	}
+	
+	override func transitionSetup() {
+		self.tableView.hero.modifiers = [ .opacity(0) , .translate(y:300)]
 	}
 	
 	// Adapter for legacy content that maps to cells
@@ -75,6 +80,14 @@ extension CrisisContent: UITableViewDelegate, UITableViewDataSource {
 	
 	
 	
+}
+
+extension CrisisContent: UIScrollViewDelegate{
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		if self.scrollView.contentOffset.y < -210 {
+			self.dismiss(animated: true, completion: nil)
+		}
+	}
 }
 
 class CrisisContentCell: UITableViewCell {

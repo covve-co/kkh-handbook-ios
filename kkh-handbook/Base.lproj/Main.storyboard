@@ -843,6 +843,9 @@
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="21"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cellc"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -880,10 +883,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bmi" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Li-Vvr">
-                                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                                <rect key="frame" x="15" y="25" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jle-Li-Vvr" secondAttribute="height" multiplier="1:1" id="8yg-qA-PAY"/>
-                                                    <constraint firstAttribute="width" constant="50" id="BfW-my-2Eg"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="BfW-my-2Eg"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="bmi_avatar"/>
@@ -891,7 +894,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXKG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSL-0D-BQ1">
-                                                <rect key="frame" x="75" y="24" width="66" height="33"/>
+                                                <rect key="frame" x="55" y="24" width="66" height="33"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -959,17 +962,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-pw-rrg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-pw-rrg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-lj-kKg" userLabel="Header">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-PK-mHg" userLabel="Title">
-                                                <rect key="frame" x="20" y="188" width="335" height="41"/>
+                                                <rect key="frame" x="20" y="106.33333333333334" width="335" height="41"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cellc"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -980,16 +987,14 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="cell"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-Kk-TJI">
-                                        <rect key="frame" x="0.0" y="244" width="375" height="482"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-Kk-TJI">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="649.66666666666663"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="482" id="z8D-HK-4h9"/>
-                                        </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="title" rowHeight="50" id="PYq-wU-9Fg" userLabel="Title" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="title" rowHeight="50" id="PYq-wU-9Fg" userLabel="Title" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PYq-wU-9Fg" id="uCv-tX-NmD">
@@ -1014,7 +1019,7 @@
                                                     <outlet property="title" destination="C0f-7K-NYE" id="8fh-RS-yXJ"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="text" rowHeight="153" id="vaY-of-3KB" userLabel="Text" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="text" rowHeight="153" id="vaY-of-3KB" userLabel="Text" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="78" width="375" height="153"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vaY-of-3KB" id="t3E-jF-ekX" userLabel="Content Cell">
@@ -1040,7 +1045,7 @@
                                                     <outlet property="content" destination="Jr7-Ub-n59" id="XJQ-dj-PfR"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chk" rowHeight="54" id="jLd-ub-EMP" userLabel="Checklist Item" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="chk" rowHeight="54" id="jLd-ub-EMP" userLabel="Checklist Item" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="231" width="375" height="54"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jLd-ub-EMP" id="TcM-dd-d3y">
@@ -1075,7 +1080,7 @@
                                                     <outlet property="content" destination="5mu-CB-6KF" id="B6X-Hm-fLJ"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="header" rowHeight="50" id="tlN-a2-uWc" userLabel="Header" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="header" rowHeight="50" id="tlN-a2-uWc" userLabel="Header" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="285" width="375" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tlN-a2-uWc" id="C7G-GN-W4d">
@@ -1100,7 +1105,7 @@
                                                     <outlet property="title" destination="jWA-fe-XjW" id="tcT-kx-vGb"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="btn" rowHeight="50" id="GEk-oj-a98" userLabel="Button" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="btn" rowHeight="50" id="GEk-oj-a98" userLabel="Button" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="335" width="375" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GEk-oj-a98" id="tJz-UW-jGU">
@@ -1136,26 +1141,30 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="CWE-Kk-TJI" secondAttribute="trailing" id="1hm-bS-jHm"/>
                                     <constraint firstItem="eu9-lj-kKg" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" id="3EA-oO-uRg"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" id="434-Nt-pAG"/>
-                                    <constraint firstAttribute="bottom" secondItem="CWE-Kk-TJI" secondAttribute="bottom" id="EdE-Su-qdq"/>
+                                    <constraint firstAttribute="bottom" secondItem="CWE-Kk-TJI" secondAttribute="bottom" id="CoT-65-Hw8"/>
+                                    <constraint firstItem="eu9-lj-kKg" firstAttribute="top" secondItem="iuK-pw-rrg" secondAttribute="top" id="D4X-dQ-eM2"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="top" secondItem="eu9-lj-kKg" secondAttribute="bottom" id="dfn-9U-uqU"/>
-                                    <constraint firstItem="eu9-lj-kKg" firstAttribute="top" secondItem="iuK-pw-rrg" secondAttribute="top" id="fAK-UK-SQc"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="trailing" secondItem="eu9-lj-kKg" secondAttribute="trailing" id="ldQ-zu-7EF"/>
                                     <constraint firstItem="eu9-lj-kKg" firstAttribute="centerX" secondItem="iuK-pw-rrg" secondAttribute="centerX" id="oSM-IQ-dSk"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Zj0-2T-VY8" id="IVL-fx-jMJ"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iuK-pw-rrg" firstAttribute="top" secondItem="Kjh-NC-BxS" secondAttribute="top" id="Dla-1h-UEG"/>
                             <constraint firstItem="iuK-pw-rrg" firstAttribute="leading" secondItem="Kjh-NC-BxS" secondAttribute="leading" id="Lkg-kD-4a4"/>
                             <constraint firstItem="iuK-pw-rrg" firstAttribute="bottom" secondItem="Kjh-NC-BxS" secondAttribute="bottom" id="UVT-Xr-92B"/>
-                            <constraint firstItem="eu9-lj-kKg" firstAttribute="height" secondItem="idW-ds-FsY" secondAttribute="height" multiplier="0.3" id="VUB-it-CM9"/>
+                            <constraint firstItem="eu9-lj-kKg" firstAttribute="height" secondItem="idW-ds-FsY" secondAttribute="height" multiplier="0.2" id="VUB-it-CM9"/>
+                            <constraint firstItem="iuK-pw-rrg" firstAttribute="top" secondItem="Kjh-NC-BxS" secondAttribute="top" id="Y0t-Cp-PF9"/>
                             <constraint firstItem="iuK-pw-rrg" firstAttribute="trailing" secondItem="Kjh-NC-BxS" secondAttribute="trailing" id="ZNP-GS-b8o"/>
+                            <constraint firstItem="CWE-Kk-TJI" firstAttribute="height" secondItem="idW-ds-FsY" secondAttribute="height" multiplier="0.8" id="vEY-95-gcs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjh-NC-BxS"/>
                     </view>
@@ -1163,6 +1172,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="scrollView" destination="iuK-pw-rrg" id="TeO-co-F92"/>
                         <outlet property="tableView" destination="CWE-Kk-TJI" id="NeK-83-uHU"/>
                     </connections>
                 </viewController>
