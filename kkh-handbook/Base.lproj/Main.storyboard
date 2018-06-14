@@ -962,14 +962,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-pw-rrg">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-pw-rrg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-lj-kKg" userLabel="Header">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="-44" width="375" height="162.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-PK-mHg" userLabel="Title">
-                                                <rect key="frame" x="20" y="106.33333333333334" width="335" height="41"/>
+                                                <rect key="frame" x="20" y="106.33333333333333" width="335" height="40.999999999999986"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -991,7 +991,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-Kk-TJI">
-                                        <rect key="frame" x="0.0" y="162" width="375" height="649.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="118.33333333333331" width="375" height="649.66666666666674"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="title" rowHeight="50" id="PYq-wU-9Fg" userLabel="Title" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
@@ -1143,11 +1143,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="eu9-lj-kKg" firstAttribute="top" secondItem="iuK-pw-rrg" secondAttribute="top" constant="-44" id="15g-v1-ddr"/>
                                     <constraint firstAttribute="trailing" secondItem="CWE-Kk-TJI" secondAttribute="trailing" id="1hm-bS-jHm"/>
                                     <constraint firstItem="eu9-lj-kKg" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" id="3EA-oO-uRg"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" id="434-Nt-pAG"/>
                                     <constraint firstAttribute="bottom" secondItem="CWE-Kk-TJI" secondAttribute="bottom" id="CoT-65-Hw8"/>
-                                    <constraint firstItem="eu9-lj-kKg" firstAttribute="top" secondItem="iuK-pw-rrg" secondAttribute="top" id="D4X-dQ-eM2"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="top" secondItem="eu9-lj-kKg" secondAttribute="bottom" id="dfn-9U-uqU"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="trailing" secondItem="eu9-lj-kKg" secondAttribute="trailing" id="ldQ-zu-7EF"/>
                                     <constraint firstItem="eu9-lj-kKg" firstAttribute="centerX" secondItem="iuK-pw-rrg" secondAttribute="centerX" id="oSM-IQ-dSk"/>
@@ -1172,6 +1172,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="headerView" destination="eu9-lj-kKg" id="lHo-dP-RNx"/>
                         <outlet property="scrollView" destination="iuK-pw-rrg" id="TeO-co-F92"/>
                         <outlet property="tableView" destination="CWE-Kk-TJI" id="NeK-83-uHU"/>
                     </connections>

@@ -17,6 +17,7 @@ class CrisisContent: GlobalController {
 	
 	@IBOutlet var scrollView: UIScrollView!
 	@IBOutlet var tableView: UITableView!
+	@IBOutlet var headerView: UIView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -28,6 +29,9 @@ class CrisisContent: GlobalController {
 				self.cells.append($0)
 			}
 		})
+		
+		headerView.drawGradientBackground(color1: .appPink(),
+										  color2: .appPinkSecondary())
 		
 	}
 	
