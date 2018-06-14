@@ -60,3 +60,28 @@ public extension UIView {
 		self.layer.insertSublayer(gradient, at: 0)
 	}
 }
+
+extension Float {
+	/// Rounds the double to decimal places value
+	func roundTo(places:Int) -> Float {
+		let divisor = pow(10.0, Float(places))
+		return (self * divisor).rounded() / divisor
+	}
+	
+	var cleanUpper:String {
+		if rint(self) == self {
+			return String(Int(self))
+		}
+		else{
+			return String(Float(self))
+		}
+	}
+	
+}
+
+
+extension UITextField {
+	func isValidDecimal() -> Bool {
+		return self.text != "" && self.text!.valueCheck() != nil
+	}
+}
