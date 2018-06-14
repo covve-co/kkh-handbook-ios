@@ -40,8 +40,28 @@ class ContentManager: NSObject {
 		                    "content" :  "Erythema\nUrticaria\nAngioedema\nHypotension\nTachycardia\nDysrrhythmias\nCirculatory Collapse"]],
 		        ["Symptoms" :  ["type" : "text",
 		                        "content" : "Dyspnoea\nWheezing"]],
-		        ["Immediate Treatment" : ["type" : "checkList_anap1"]],
-		        ["Remove Possible triggers" : ["type" : "checkList_anap2"]],
+		        ["Immediate Treatment" : ["type" : "checkList",
+										  "content_list": [
+											"Declare an emergency",
+											"Call for help",
+											"Increase FiO2 to 100%",
+											"Assess AIRWAY, BREATHING, CIRCULATION (ABCs)",
+											"Intubate if necessary",
+											"Obtain IV/IO access",
+											"Turn OFF anaesthetic agents",
+											"Elevate legs if there is hypotension",
+											"Start CPR if neccessary"
+					]
+					]],
+		        ["Remove Possible triggers" : ["type" : "checkList",
+											   "content_list": [
+												"Latex",
+												"NMB",
+												"Chlorhexidine",
+												"IV Colloids",
+												"Antibiotics"
+					]
+					]],
 		        
 		        ["Immediate Treatment Drugs" : ["type" : "header"]],
 		        ["NS/RL IV BOLUS - 10ML/kg" :  ["type" : "text",
@@ -187,7 +207,9 @@ class ContentManager: NSObject {
 	}
 	
 	static func LA_Management (weight: Float) -> [[String: Any]]{
-		return [["Steps" : ["type":"LA_Management"]]]
+		return [["Steps" : ["type":"checkList",
+							"content_list": ["Stop Injecting LA", "Call for help", "Maintain & Secure airway\n(hyperventilation usefule to increase plasma PH)", "Give 100% Oxygen", "Establish IV access"]
+			]]]
 	}
 	
 	static func LA_treatment_NeuroToxicity (weight : Float) -> [[String: Any]]{
@@ -279,61 +301,65 @@ class ContentManager: NSObject {
 	
 	static func Hyperkalaemia_ManagementAlgorithms (weight: Float) -> [[String : Any]]{
 		return [
-				["Things to take note of" : ["type" : "checklist",
+				["Things to take note of" : ["type" : "checkList",
 							   "content_list": ["Perform ECG immediately when possible", "Review all medications/infusions"]]],
-		        ["Exclude:" : ["type" : "checklist",
+		        ["Exclude:" : ["type" : "checkList",
 					"content_list": ["Burn or Crush injury", "Rhabdomyolysis", "Succinylchholine", "Malignant Hyperthermia", "Renal Failure"]]],
 				["Treatment summary": ["type": "button",
 										  "event": Hyperkalaemia_SerumDosage(weight:weight)]],
 		]
 	}
 	
-	// TODO convert to checklist
+	
 	static func Hyperkalaemia_SerumDosage (weight: Float) -> [[String : Any]]{
 		return [
 			["For 5.5 - 6.0 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "checklist",
+			["Initial Treatment" : ["type": "checkList",
 									"content_list": ["Salbutamol nebuliser (if possible)", "Consider Dextrose/Insulin"]
 				]],
-			["Review: K+ not improving" : ["type" : "checklist",
+			["Review: K+ not improving" : ["type" : "checkList",
 										   "content_list" : ["Reevaluate cause", "if K+ > 6, Escalate level of Mx"]
 				]],
-			["Review: K+ improving" : ["type" : "checklist",
+			["Review: K+ improving" : ["type" : "checkList",
 									   "content_list": ["rpt Salbutamol if K+ remains at 5.5-6.0", "Start IV Dextrose/Insulin"]
 				]],
 			
 			["For 6.1 - 6.9 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "checklist",
+			["Initial Treatment" : ["type": "checkList",
 									"content_list": ["Salbutamol nebuliser (if possible)", "IV Dextrose/Insulin", "Consider NaHCO3 (if PH < 7.2)"]
 				]],
-			["Review: K+ not improving" : ["type" : "checklist",
+			["Review: K+ not improving" : ["type" : "checkList",
 										   "content_list" : ["Reevaluate cause", "if K+ > 6, Escalate level of Mx"]
 				]],
-			["Review: K+ improving" : ["type" : "checklist",
+			["Review: K+ improving" : ["type" : "checkList",
 									   "content_list": ["Continue monitoring", "If K+ still 5.5-6.9\n- rpt salbutamol\n- rpt IV Dextrose/Insulin"]
 				]],
 			
 			["For > 7.0 mmol/L" : ["type":"header"]],
 			
-			["Initial Treatment" : ["type": "checklist",
+			["Initial Treatment" : ["type": "checkList",
 									"content_list": ["Calcium Chloride or Calcium Gluconate","Salbutamol nebuliser (if possible)", "IV Dextrose/Insulin", "Consider NaHCO3 (if PH < 7.2)", "Reevaluate cause"]
 				]],
-			["Review: K+ not improving" : ["type" : "checklist",
+			["Review: K+ not improving" : ["type" : "checkList",
 										   "content_list" : ["Reevaluate cause", "if ECG changes persist:\n- rpt Calcium\n- Consider CRRT"]
 
 				]],
-			["Review: K+ improving" : ["type" : "checklist",
+			["Review: K+ improving" : ["type" : "checkList",
 									   "content_list": ["Continue monitoring", "If K+ still 5.5-6.9\n- rpt salbutamol\n- rpt IV Dextrose/Insulin"]
 				]]
 		]
 	}
 	
-	// TODO Checklist conversion
 	static func Hyperkalaemia_Treatment (weight : Float) -> [[String : Any]]{
-		return [["Do" : ["type": "HyperK_treatment_1"]],
-		        ["Without delaying therapy, consider" : ["type" : "HyperK_treatment_2"]],
+		return [["Do" : ["type": "checkList",
+						 "content_list": ["Declare Emergency", "Call for help", "Discontinue all K+ containing infusions", "Discontinue blood products", "Hyperventilate 100% oxygen"]
+			]],
+		        ["Without delaying therapy, consider" : ["type" : "checkList",
+														 "content_list": ["Send rpt K+ to lab", "Obtain ECG", "Start CPR if haemodynamically unstable"]
+					
+					]],
 		        ["Drugs" : ["type": "header"]],
 		        ["Salbutamol  0.5% Solution" : ["type":"text",
 		                                       "content": "Nebulise with 8L oxygen\n<25 kg: 2.5MG in 4ML of NS Q1-2H\n>25 kg: 5MG in 4ML of NS Q1-2H"]],

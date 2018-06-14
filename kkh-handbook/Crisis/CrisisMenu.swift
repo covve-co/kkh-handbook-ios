@@ -43,6 +43,10 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 			switch indexPath.row {
 			case 0: return ContentManager.BasicLifeSupport
 			case 1: return ContentManager.CardiacArrest(weight: weight!)
+			case 2: return ContentManager.LA(weight: weight!)
+			case 3: return ContentManager.Hyperkalaemia(weight: weight!)
+			case 4: return nil
+			case 5: return ContentManager.anaphylaxisContent(weight: weight!)
 			default: return nil
 			}
 		}
