@@ -25,6 +25,11 @@ class CommonDrugView: UIViewController {
 	
 	var dispArr: [String]?
 	
+	var searching: Bool = false
+	var query: String?
+	
+	@IBOutlet var tableView: UITableView!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -39,11 +44,42 @@ class CommonDrugView: UIViewController {
 			dispArr = (data![drug!]![path!]![method!]! as! [String: Any]).map{"\($0.key): \($0.value as! String)"}
 		}
 		
+		// Search
+		if type == .CommonDrugs {
+			let searchController = UISearchController(searchResultsController: nil) // Search Controller
+			navigationItem.hidesSearchBarWhenScrolling = false
+			navigationItem.searchController = searchController
+			searchController.searchBar.delegate = self
+		}
 	}
 }
 
-extension CommonDrugView: UITableViewDelegate, UITableViewDataSource{
+extension CommonDrugView: UISearchBarDelegate {
+	
+	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+		self.query = searchText
+		self.tableView.reloadData()
+	}
+	
+	func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+		searching = true
+	}
+	
+	func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+		searching = false
+		self.tableView.reloadData()
+	}
+	
+	func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+		searching = false
+		self.tableView.reloadData()
+	}
+	
+}
+
+extension CommonDrugView: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		
 		let v = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "commonDrugs") as! CommonDrugView
 		
 		v.data = self.data!
@@ -69,22 +105,23 @@ extension CommonDrugView: UITableViewDelegate, UITableViewDataSource{
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return dispArr?.count ?? 0
+		let contentAdapter = searching && query != nil ? dispArr!.filter{$0.contains(query!)} : dispArr!
+		return contentAdapter.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let contentAdapter = searching && query != nil ? dispArr!.filter{$0.contains(query!)} : dispArr!
 		var cell: UITableViewCell?
 		if type! == .Method {
 			//
 			cell = tableView.dequeueReusableCell(withIdentifier: "detailcell") as! DetailCell
-			print(dispArr?[indexPath.row])
-			(cell as! DetailCell).contentLabel.text = dispArr?[indexPath.row] ?? "nil"
+			(cell as! DetailCell).contentLabel.text = contentAdapter[indexPath.row]
 			cell!.isUserInteractionEnabled = false
 			cell!.selectionStyle = .none
 		} else {
 			cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ReferenceViewCell
 			(cell as! ReferenceViewCell).indicator.alpha = 0
-			(cell as! ReferenceViewCell).label.text = dispArr?[indexPath.row] ?? "nil"
+			(cell as! ReferenceViewCell).label.text = contentAdapter[indexPath.row]
 		}
 		
 		return cell!
