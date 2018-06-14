@@ -15,7 +15,7 @@ class ContentManager: NSObject {
 		["Steps" : ["type" : "checkList",
 					"content_list": ["Open Airway",
 									 "Check for spontaneous breathing",
-									 "Check pulse (femoral & brachial preferable in children) for not more than 10 seconds" 
+									 "Check pulse (femoral & brachial preferable in children) for not more than 10 seconds"
 			]
 			]],
 		
@@ -99,42 +99,42 @@ class ContentManager: NSObject {
 		        
 		        ["1st Shock - 4J/kg" : ["type" : "text",
 		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
-		        ["" : ["type" : "header"]],
+				
 		        
 		        ["2nd Shock - 4J/kg" : ["type" : "text",
 		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
-		        ["" : ["type" : "header"]],
+				
 		        
 		        ["3rd Shock - 4J/kg" : ["type" : "text",
 		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Adrenaline IV/IO: 10 Micrograms/kg" : ["type" : "text",
 		                                                 "content" : "\((weight * 10).cleanUpper) Micrograms\n \((weight * 0.1).cleanUpper)ML  1: 10 000 Dilution"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Amiodarone: 5 MG/kg" : ["type" : "text",
 		                                          "content" : "\((weight * 5).cleanUpper) MG over 5 minutes"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Shock - 4J/kg" : ["type" : "text",
 		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Shock - 4J/kg" : ["type" : "text",
 		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Shock - 4J/kg" : ["type" : "text",
 		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Shock - 4J/kg" : ["type" : "text",
 		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone (3rd and Last Dose!)"]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Continue till return of pulse" : ["type": "text",
 		                                            "content": "Post resus care \n(Assist ventilation is required)"
 					]]
@@ -179,7 +179,7 @@ class ContentManager: NSObject {
 		return [["Step 1" : ["type":"text",
 		                     "content" : "Start CPR"
 			]],
-		        ["" : ["type" : "header"]],
+				
 		        ["Step 2" : ["type": "text",
 		                     "content": "Administer Intralipid Therapy"]
 			]]
@@ -322,7 +322,6 @@ class ContentManager: NSObject {
 		        ["Treat DIC (if present)" : ["type" : "text",
 		                                     "content" : "FFP, Cryoppt, Platelets"
 					]],
-		        ["Dantrolene" : ["type" : "header"]],
 		        ["Dantrolene" : ["type" : "text",
 		                         "content" : "each vial contains 20MG of dantrolene\nDissolve 1 vial in 60 ML sterile water\ndantrolene potentiates neuromuscular blockers"
 					]],

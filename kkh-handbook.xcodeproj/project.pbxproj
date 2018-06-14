@@ -75,6 +75,8 @@
 		97900CAD20D2210D00F58CC4 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAC20D2210D00F58CC4 /* Paths.swift */; };
 		97900CAF20D2211500F58CC4 /* CommonDrugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAE20D2211500F58CC4 /* CommonDrugs.swift */; };
 		97900CB120D231A000F58CC4 /* CrisisMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB020D231A000F58CC4 /* CrisisMenu.swift */; };
+		97900CB320D266F200F58CC4 /* CrisisContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB220D266F200F58CC4 /* CrisisContent.swift */; };
+		97900CB520D2697D00F58CC4 /* CrisisMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CB420D2697D00F58CC4 /* CrisisMenuCell.swift */; };
 		97B4B1A920AD39FA00E05F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */; };
 		97B4B1AE20AD39FA00E05F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AC20AD39FA00E05F85 /* Main.storyboard */; };
 		97B4B1B020AD39FC00E05F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B4B1AF20AD39FC00E05F85 /* Assets.xcassets */; };
@@ -184,6 +186,8 @@
 		97900CAC20D2210D00F58CC4 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		97900CAE20D2211500F58CC4 /* CommonDrugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDrugs.swift; sourceTree = "<group>"; };
 		97900CB020D231A000F58CC4 /* CrisisMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisMenu.swift; sourceTree = "<group>"; };
+		97900CB220D266F200F58CC4 /* CrisisContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisContent.swift; sourceTree = "<group>"; };
+		97900CB420D2697D00F58CC4 /* CrisisMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisMenuCell.swift; sourceTree = "<group>"; };
 		97B4B1A520AD39FA00E05F85 /* kkh-handbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kkh-handbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B4B1A820AD39FA00E05F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97B4B1AD20AD39FA00E05F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -373,6 +377,7 @@
 				97900C9C20D1FEE900F58CC4 /* ReferenceViewCell.swift */,
 				97900C9E20D1FF2700F58CC4 /* DrugCell.swift */,
 				97900CA020D1FF3C00F58CC4 /* DetailCell.swift */,
+				97900CB420D2697D00F58CC4 /* CrisisMenuCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 			children = (
 				97900CA520D21BB500F58CC4 /* CrisisController.swift */,
 				97900CB020D231A000F58CC4 /* CrisisMenu.swift */,
+				97900CB220D266F200F58CC4 /* CrisisContent.swift */,
 			);
 			path = Crisis;
 			sourceTree = "<group>";
@@ -705,6 +711,7 @@
 			files = (
 				97E31BCE20CCEA0E0055F3BD /* BMIView.swift in Sources */,
 				97C41C1420CE7A6C008E8A42 /* AlertManager.swift in Sources */,
+				97900CB320D266F200F58CC4 /* CrisisContent.swift in Sources */,
 				97900CA820D21E2900F58CC4 /* CrisisContentManager.swift in Sources */,
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
 				97E31BD220CCEBDA0055F3BD /* BMIGraphManager.swift in Sources */,
@@ -724,6 +731,7 @@
 				97E31BCA20CCDD4E0055F3BD /* CalculatorController.swift in Sources */,
 				97900C9D20D1FEE900F58CC4 /* ReferenceViewCell.swift in Sources */,
 				97C41C2120CE86B8008E8A42 /* ScoliosisDrugCalculationsManager.swift in Sources */,
+				97900CB520D2697D00F58CC4 /* CrisisMenuCell.swift in Sources */,
 				97B57AB020C8C3BE003F41D2 /* Chapter.swift in Sources */,
 				97E31BD020CCEAFD0055F3BD /* BMIModel.swift in Sources */,
 				975EA4B720AD7AA200DB6398 /* PDFManager.swift in Sources */,

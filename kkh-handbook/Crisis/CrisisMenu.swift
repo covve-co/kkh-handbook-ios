@@ -49,14 +49,3 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 }
-
-class CrisisMenuCell: UITableViewCell {
-	
-	@IBOutlet var title: UILabel!
-	@IBOutlet var cardView: UIView!
-	
-	override func awakeFromNib() {
-		self.cardView.roundify(10)
-		self.cardView.drawGradientBackground(color1: .appPink(), color2: .appPinkSecondary())
-	}
-}
