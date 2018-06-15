@@ -17,10 +17,14 @@ class PDFAdapter {
 	}
 	
 	static func buildView (_ path: URL, _ name: String) -> UIViewController {
-		
 		let pdfController = PDFViewController.createNew(with:  PDFAdapter.displayFile(path), title: name, actionButtonImage: nil, actionStyle: .activitySheet, backButton: nil, isThumbnailsEnabled: false, startPageIndex: 0)
 		pdfController.scrollDirection = .vertical
 		pdfController.backgroundColor = .white
 		return pdfController
 	}
 }
+
+
+
+
+

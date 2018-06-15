@@ -305,7 +305,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdn-Rm-5CC">
-                                                <rect key="frame" x="20" y="96.333333333333343" width="335" height="36.333333333333343"/>
+                                                <rect key="frame" x="20" y="116.33333333333333" width="335" height="36.333333333333329"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                                                 <state key="normal" title="More info">
@@ -316,7 +316,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUq-LQ-8GI">
-                                                <rect key="frame" x="20" y="30.000000000000004" width="335" height="36.333333333333343"/>
+                                                <rect key="frame" x="20" y="50" width="335" height="36.333333333333343"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                                                 <state key="normal" title="Disclaimer">
@@ -327,7 +327,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 Sean Lim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csy-Gv-Yvm">
-                                                <rect key="frame" x="20" y="142.66666666666666" width="335" height="18"/>
+                                                <rect key="frame" x="20" y="162.66666666666666" width="335" height="18"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -338,7 +338,7 @@
                                             <constraint firstItem="csy-Gv-Yvm" firstAttribute="top" secondItem="wdn-Rm-5CC" secondAttribute="bottom" constant="10" id="848-XO-exi"/>
                                             <constraint firstItem="csy-Gv-Yvm" firstAttribute="centerX" secondItem="qGF-HR-4oT" secondAttribute="centerX" id="Cqw-hl-jRM"/>
                                             <constraint firstItem="JUq-LQ-8GI" firstAttribute="height" secondItem="wdn-Rm-5CC" secondAttribute="height" id="Dfh-yj-45H"/>
-                                            <constraint firstItem="JUq-LQ-8GI" firstAttribute="top" secondItem="qGF-HR-4oT" secondAttribute="top" constant="30" id="EYb-KD-wRS"/>
+                                            <constraint firstItem="JUq-LQ-8GI" firstAttribute="top" secondItem="qGF-HR-4oT" secondAttribute="top" constant="50" id="EYb-KD-wRS"/>
                                             <constraint firstItem="csy-Gv-Yvm" firstAttribute="leading" secondItem="wdn-Rm-5CC" secondAttribute="leading" id="HHr-BE-yTw"/>
                                             <constraint firstItem="wdn-Rm-5CC" firstAttribute="leading" secondItem="qGF-HR-4oT" secondAttribute="leading" constant="20" id="Le5-ia-Vy0"/>
                                             <constraint firstItem="JUq-LQ-8GI" firstAttribute="centerX" secondItem="wdn-Rm-5CC" secondAttribute="centerX" id="OkN-y6-JB3"/>
@@ -371,7 +371,6 @@
                     <tabBarItem key="tabBarItem" title="" image="info" id="SDI-wM-dfv">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outletCollection property="buttonCollection" destination="JUq-LQ-8GI" collectionClass="NSMutableArray" id="P1X-lr-60y"/>
                         <outletCollection property="buttonCollection" destination="wdn-Rm-5CC" collectionClass="NSMutableArray" id="4zU-Xf-YXo"/>
@@ -1214,11 +1213,11 @@
                                                     <outlet property="button" destination="pK0-X2-LDt" id="Suh-5e-HeQ"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="padding" rowHeight="30" id="Jl5-XP-kpX" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="385" width="375" height="30"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="padding" rowHeight="20" id="Jl5-XP-kpX" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="385" width="375" height="20"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jl5-XP-kpX" id="i0B-9x-DOh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -1268,7 +1267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R83-U8-qSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="1934"/>
+            <point key="canvasLocation" x="1280.8" y="1933.7438423645322"/>
         </scene>
         <!--Common Drugs-->
         <scene sceneID="LMj-nC-6u5">

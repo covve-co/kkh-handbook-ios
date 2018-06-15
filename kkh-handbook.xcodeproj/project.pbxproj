@@ -70,7 +70,7 @@
 		97900C9F20D1FF2700F58CC4 /* DrugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900C9E20D1FF2700F58CC4 /* DrugCell.swift */; };
 		97900CA120D1FF3C00F58CC4 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CA020D1FF3C00F58CC4 /* DetailCell.swift */; };
 		97900CA620D21BB500F58CC4 /* CrisisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CA520D21BB500F58CC4 /* CrisisController.swift */; };
-		97900CA820D21E2900F58CC4 /* CrisisContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CA720D21E2900F58CC4 /* CrisisContentManager.swift */; };
+		97900CA820D21E2900F58CC4 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CA720D21E2900F58CC4 /* ContentManager.swift */; };
 		97900CAB20D220D600F58CC4 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAA20D220D600F58CC4 /* Methods.swift */; };
 		97900CAD20D2210D00F58CC4 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAC20D2210D00F58CC4 /* Paths.swift */; };
 		97900CAF20D2211500F58CC4 /* CommonDrugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97900CAE20D2211500F58CC4 /* CommonDrugs.swift */; };
@@ -183,7 +183,7 @@
 		97900C9E20D1FF2700F58CC4 /* DrugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCell.swift; sourceTree = "<group>"; };
 		97900CA020D1FF3C00F58CC4 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		97900CA520D21BB500F58CC4 /* CrisisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisController.swift; sourceTree = "<group>"; };
-		97900CA720D21E2900F58CC4 /* CrisisContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrisisContentManager.swift; sourceTree = "<group>"; };
+		97900CA720D21E2900F58CC4 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		97900CAA20D220D600F58CC4 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		97900CAC20D2210D00F58CC4 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		97900CAE20D2211500F58CC4 /* CommonDrugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDrugs.swift; sourceTree = "<group>"; };
@@ -312,6 +312,7 @@
 		975EA4B120AD650600DB6398 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				97900CA720D21E2900F58CC4 /* ContentManager.swift */,
 				97900CA920D220B100F58CC4 /* Crisis */,
 				97900C9B20D1FEC300F58CC4 /* Cells */,
 				97C41C1520CE8643008E8A42 /* Drug Calculators */,
@@ -399,7 +400,6 @@
 		97900CA920D220B100F58CC4 /* Crisis */ = {
 			isa = PBXGroup;
 			children = (
-				97900CA720D21E2900F58CC4 /* CrisisContentManager.swift */,
 				97900CB720D270D300F58CC4 /* CrisisComponentFactory.swift */,
 			);
 			path = Crisis;
@@ -718,7 +718,7 @@
 				97E31BCE20CCEA0E0055F3BD /* BMIView.swift in Sources */,
 				97C41C1420CE7A6C008E8A42 /* AlertManager.swift in Sources */,
 				97900CB320D266F200F58CC4 /* CrisisContent.swift in Sources */,
-				97900CA820D21E2900F58CC4 /* CrisisContentManager.swift in Sources */,
+				97900CA820D21E2900F58CC4 /* ContentManager.swift in Sources */,
 				975EA4B520AD658500DB6398 /* GlobalController.swift in Sources */,
 				97E31BD220CCEBDA0055F3BD /* BMIGraphManager.swift in Sources */,
 				97AB54E520D3AF5C003E9DEC /* AboutController.swift in Sources */,

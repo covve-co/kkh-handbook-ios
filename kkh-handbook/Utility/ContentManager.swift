@@ -12,13 +12,13 @@ class ContentManager: NSObject {
 	
 	static func specialThanks() -> [[String: Any]] {
 		return [
-			["SPECIAL THANKS TO THE FOLLOWING FOR THE SUCCESSFUL CREATION OF THIS APP": ["type":"header",
+			["Special thanks to the following for the successful creation of this app": ["type":"header",
 																						 "content": "School of Science and Technology, Singapore\nMr Aurelius Yeo\nSean Lim\nRavern Koh\nMax Oh\nElvis Kason Lin\nTaufiq Mohd\nYadunand Prem"]],
-			["CONTENTS": ["type":"header",
+			["Contents": ["type":"header",
 						  "content": "Dr Josephine and All Consultant Anaesthetists from KKH Dept. of Paediatric Anaesthesia"]],
-			["IT LIASON": ["type":"header",
+			["IT Liason": ["type":"header",
 						   "content": "Dr Tan Hon Liang (Consultant, SGH Department of Anaesthesiology)"]],
-			["CHAPTER FORMATTING": ["type":"header",
+			["Chapter Formatting": ["type":"header",
 									"content": "Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatic Anaesthesia)"]],
 		]
 	}

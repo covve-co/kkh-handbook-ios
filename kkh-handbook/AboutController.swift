@@ -24,8 +24,8 @@ class AboutController: GlobalController {
 		let v = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "crisisContent") as! CrisisContent
 		switch (sender as! UIButton).tag {
 		case 0:
-			v.name = "Disclaimer"
-			v.data = ContentManager.specialThanks()
+			v.name = ""
+			v.data = ContentManager.Disclaimer()
 		case 1:
 			v.name = "More info"
 			v.data = ContentManager.specialThanks()

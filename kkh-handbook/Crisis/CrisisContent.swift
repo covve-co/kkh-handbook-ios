@@ -61,7 +61,7 @@ class CrisisContent: GlobalController {
 		if type == "header"{
 			res.append(headerCell(withTitle: title!))
 			if let c = payload["content"] {
-				res.append(textCell(withContent: c as! String))
+				res.append(textCell(withContent: c as! String, centered: true))
 			}
 		} else if type == "button" {
 			res.append(buttonCell(withTitle: title!, event: payload["event"] as! [[String: Any]]))
