@@ -98,7 +98,7 @@ extension CrisisContent: UITableViewDelegate, UITableViewDataSource {
 
 extension CrisisContent: UIScrollViewDelegate{
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
-		if self.scrollView.contentOffset.y < -210 {
+		if self.scrollView.contentOffset.y < -200 {
 			self.dismiss(animated: true, completion: nil)
 		}
 	}
