@@ -21,6 +21,11 @@ class CrisisContent: GlobalController {
 	@IBOutlet var headerView: UIView!
 	@IBOutlet var titleLabel: UILabel!
 	
+	
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
