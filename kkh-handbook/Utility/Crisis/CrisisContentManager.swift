@@ -10,6 +10,11 @@ import UIKit
 
 class ContentManager: NSObject {
 	
+	static var Disclaimer: String =
+	"""
+This app is a resource for doctors working in the Department of Paediatric Anaesthesia KKH. The guidelines presented are based on department and international practice guidelines. They are meant to be comprehensive but may not be all inclusive. The use of these guidelines must be individualized to the patient’s needs.
+The authors of each chapter have ensured that the information is current and correct at the time of writing. KK Hospital and the Department of Paediatric Anaesthesia do not assume responsibility for the correctness, sufficiency or completeness of such information or recommendations. The user is advised to check drug dosages and protocols carefully and refer to latest updates posted by the relevant anaesthesia bodies.
+"""
 	static var BasicLifeSupport : [[String : Any]] = [
 		
 		["Steps" : ["type" : "checkList",

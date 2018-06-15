@@ -297,7 +297,59 @@
                     <view key="view" contentMode="scaleToFill" id="hl5-Iq-Pm3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dy6-uc-0Yu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGF-HR-4oT" userLabel="Wrapper">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdn-Rm-5CC">
+                                                <rect key="frame" x="48" y="138" width="279" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                <state key="normal" title="More info">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUq-LQ-8GI">
+                                                <rect key="frame" x="48" y="35" width="279" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                <state key="normal" title="Disclaimer">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sean Lim " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csy-Gv-Yvm">
+                                                <rect key="frame" x="150" y="250" width="75" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qGF-HR-4oT" firstAttribute="top" secondItem="dy6-uc-0Yu" secondAttribute="top" id="52v-TE-kKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="qGF-HR-4oT" secondAttribute="trailing" id="Ahx-YB-fER"/>
+                                    <constraint firstAttribute="bottom" secondItem="qGF-HR-4oT" secondAttribute="bottom" id="bfk-Tn-vOM"/>
+                                    <constraint firstItem="qGF-HR-4oT" firstAttribute="leading" secondItem="dy6-uc-0Yu" secondAttribute="leading" id="qvF-k1-Qvu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qGF-HR-4oT" firstAttribute="width" secondItem="hl5-Iq-Pm3" secondAttribute="width" id="4R3-E9-1VJ"/>
+                            <constraint firstItem="dy6-uc-0Yu" firstAttribute="trailing" secondItem="RZ9-0t-6eF" secondAttribute="trailing" id="8dI-Xu-4X8"/>
+                            <constraint firstItem="dy6-uc-0Yu" firstAttribute="top" secondItem="RZ9-0t-6eF" secondAttribute="top" id="EVv-zD-OB6"/>
+                            <constraint firstItem="dy6-uc-0Yu" firstAttribute="leading" secondItem="RZ9-0t-6eF" secondAttribute="leading" id="Ej7-vV-aXq"/>
+                            <constraint firstItem="dy6-uc-0Yu" firstAttribute="bottom" secondItem="RZ9-0t-6eF" secondAttribute="bottom" id="Kop-oH-hzd"/>
+                            <constraint firstItem="qGF-HR-4oT" firstAttribute="height" secondItem="hl5-Iq-Pm3" secondAttribute="height" id="Ylj-6k-60L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RZ9-0t-6eF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="info" id="SDI-wM-dfv">
@@ -307,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDN-Mf-IYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282" y="1230"/>
+            <point key="canvasLocation" x="1280.8" y="1229.5566502463055"/>
         </scene>
         <!--Reference-->
         <scene sceneID="Iq7-uq-gQ1">
