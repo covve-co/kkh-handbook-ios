@@ -21,6 +21,11 @@ class CrisisContent: GlobalController {
 	@IBOutlet var headerView: UIView!
 	@IBOutlet var titleLabel: UILabel!
 	
+	
+	override var preferredStatusBarStyle: UIStatusBarStyle {
+		return .lightContent
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -56,7 +61,7 @@ class CrisisContent: GlobalController {
 		if type == "header"{
 			res.append(headerCell(withTitle: title!))
 			if let c = payload["content"] {
-				res.append(textCell(withContent: c as! String))
+				res.append(textCell(withContent: c as! String, centered: true))
 			}
 		} else if type == "button" {
 			res.append(buttonCell(withTitle: title!, event: payload["event"] as! [[String: Any]]))
@@ -93,7 +98,7 @@ extension CrisisContent: UITableViewDelegate, UITableViewDataSource {
 
 extension CrisisContent: UIScrollViewDelegate{
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
-		if self.scrollView.contentOffset.y < -210 {
+		if self.scrollView.contentOffset.y < -200 {
 			self.dismiss(animated: true, completion: nil)
 		}
 	}

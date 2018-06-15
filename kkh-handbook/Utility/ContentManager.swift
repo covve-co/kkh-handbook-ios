@@ -10,6 +10,28 @@ import UIKit
 
 class ContentManager: NSObject {
 	
+	static func specialThanks() -> [[String: Any]] {
+		return [
+			["Special thanks to the following for the successful creation of this app": ["type":"header",
+																						 "content": "School of Science and Technology, Singapore\nMr Aurelius Yeo\nSean Lim\nRavern Koh\nMax Oh\nElvis Kason Lin\nTaufiq Mohd\nYadunand Prem"]],
+			["Contents": ["type":"header",
+						  "content": "Dr Josephine and All Consultant Anaesthetists from KKH Dept. of Paediatric Anaesthesia"]],
+			["IT Liason": ["type":"header",
+						   "content": "Dr Tan Hon Liang (Consultant, SGH Department of Anaesthesiology)"]],
+			["Chapter Formatting": ["type":"header",
+									"content": "Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatic Anaesthesia)"]],
+		]
+	}
+	
+	static func Disclaimer() -> [[String: Any]] {
+		return [["DISCLAIMER ": ["type":"header",
+								 "content": """
+			This app is a resource for doctors working in the Department of Paediatric Anaesthesia KKH. The guidelines presented are based on department and international practice guidelines. They are meant to be comprehensive but may not be all inclusive. The use of these guidelines must be individualized to the patient’s needs.
+			The authors of each chapter have ensured that the information is current and correct at the time of writing. KK Hospital and the Department of Paediatric Anaesthesia do not assume responsibility for the correctness, sufficiency or completeness of such information or recommendations. The user is advised to check drug dosages and protocols carefully and refer to latest updates posted by the relevant anaesthesia bodies.
+			"""
+			]]]
+	}
+	
 	static var BasicLifeSupport : [[String : Any]] = [
 		
 		["Steps" : ["type" : "checkList",

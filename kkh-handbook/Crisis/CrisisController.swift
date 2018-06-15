@@ -22,7 +22,7 @@ class CrisisController: GlobalController, UITextFieldDelegate {
 		weightView.roundify(10)
 		weightView.drawGradientBackground(color1: .appBlue(), color2: .appBlueSecondary())
 		nextButton.roundify(10)
-		nextButton.drawGradientBackground(color1: .appPink(), color2: .appPinkSecondary())
+		nextButton.backgroundColor = .black
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
