@@ -31,6 +31,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 		navigationItem.searchController = searchController
 		searchController.searchBar.delegate = self
 		
+		
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +40,7 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	}
 	
 	@IBAction func bookmarkToggle(_ sender: Any) {
-		let actionSheet = AlertManager.init(target: self, type: .actionSheet)
+		let actionSheet = AlertManager(target: self, type: .actionSheet)
 		.withFields(title: "Bookmarks", message: "Select bookmarked chapter")
 		
 		let files = content.flatMap{$0.1}.filter{$0.isBookmarked}

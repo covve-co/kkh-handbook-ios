@@ -71,6 +71,7 @@ extension UIViewController {
 	func presentAlertView (title : String, message : String, style: UIAlertControllerStyle, actions : [UIAlertAction]) {
 		let av = UIAlertController.init(title: title, message: message, preferredStyle: style)
 		actions.forEach { av.addAction($0) }
+		av.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
 		self.present(av, animated: true, completion: nil)
 		
 	}

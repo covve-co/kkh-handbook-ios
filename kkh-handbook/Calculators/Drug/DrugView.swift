@@ -42,7 +42,7 @@ class DrugView: GlobalController, UITextFieldDelegate {
 		let controller = viewForCsv(manager.getData()!)
 		controller.title = title
 		
-		AlertManager(target: self, type: .actionSheet)
+		AlertManager(target: self, type: .alert)
 		.withFields(title: title, message: "Select action")
 			.addAction(actionTitle: "View Results") { _ in
 					self.navigationController?.pushViewController(controller, animated: true)
