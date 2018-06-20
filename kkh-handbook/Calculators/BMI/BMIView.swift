@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Charts
 
 class BMICalculatorView: GlobalController, UIPickerViewDelegate, UITextFieldDelegate {
 	
@@ -26,6 +27,8 @@ class BMICalculatorView: GlobalController, UIPickerViewDelegate, UITextFieldDele
 	@IBOutlet var height: UITextField!
 	@IBOutlet var agePicker: UIPickerView!
 	
+	@IBOutlet var chart: LineChartView!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		model = BMIModel(bind: self)
@@ -34,6 +37,20 @@ class BMICalculatorView: GlobalController, UIPickerViewDelegate, UITextFieldDele
 		headerView.drawGradientBackground(color1: .appPink(),
 										  color2: .appPinkSecondary())
 		
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(true)
+		chart.noDataTextColor = .white
+		chart.xAxis.drawLabelsEnabled = false
+		chart.leftYAxisRenderer.axis?.axisLineColor = .white
+		chart.leftYAxisRenderer.axis?.labelTextColor = .white
+		chart.rightYAxisRenderer.axis?.drawLabelsEnabled = false
+		chart.rightYAxisRenderer.axis?.drawAxisLineEnabled = false
+		chart.gridBackgroundColor = .white
+		chart.chartDescription?.text = "BMI percentile"
+		chart.chartDescription?.textColor = .white
+		model!.notifyFormChanged()
 	}
 	
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -67,6 +84,7 @@ class BMICalculatorView: GlobalController, UIPickerViewDelegate, UITextFieldDele
 	func update(message: String, BMI: Float) {
 		self.message.text = message
 		self.bmiLabel.text = "BMI: \(BMI)"
+		self.chart.highlightValue(Highlight.init(x: 0, y: Double(BMI), dataSetIndex: 0))
 	}
 	
 }

@@ -1,10 +1,14 @@
 PODS:
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
   - Hero (1.1.0)
   - IQKeyboardManager (5.0.7)
   - PDFReader (2.5.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Charts
   - Hero
   - IQKeyboardManager
   - PDFReader
@@ -12,17 +16,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - Hero
     - IQKeyboardManager
     - PDFReader
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
   Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
   IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
   PDFReader: 2c4a845d0560f33221cf911516e3b700967680f6
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: bc04eb3c341fe73cb37bfe09fff0d49b65141ff5
+PODFILE CHECKSUM: 9d8ff51cc35970dbcb3cedf51cc321220dffa0cd
 
 COCOAPODS: 1.5.2
