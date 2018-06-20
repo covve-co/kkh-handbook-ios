@@ -71,6 +71,7 @@ extension CrisisMenu: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CrisisMenuCell
+		cell.drawGradientBackground(color1: .appPink(), color2: .appPinkSecondary())
 		cell.hero.isEnabled = false
 		cell.title.text = [
 			"Basic Life Support (BLS)",
