@@ -44,6 +44,16 @@ class CrisisContent: GlobalController {
 		
 	}
 	
+	override func viewDidAppear(_ animated: Bool) {
+		if !UserDefaults.standard.bool(forKey: "c") {
+			AlertManager(target: self, type: .alert)
+				.withFields(title: "Quick Tip", message: "Pull down to dismiss")
+				.addAction(actionTitle: "Okay", withCallback: nil)
+				.throwsAlert()
+			UserDefaults.standard.set(true, forKey: "c")
+		}
+	}
+	
 	override func transitionSetup() {
 		self.tableView.hero.modifiers = [ .opacity(0) , .translate(y:300)]
 	}

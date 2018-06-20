@@ -15,7 +15,7 @@ public extension UIColor {
 	}
 	
 	static func appBlue() -> UIColor {
-		return UIColor(red:0.02, green:0.75, blue:1.00, alpha:1.0)
+		return UIColor(red:0.35, green:0.64, blue:0.91, alpha:1.0)
 	}
 	
 	static func appBlueSecondary() -> UIColor {
@@ -23,7 +23,7 @@ public extension UIColor {
 	}
 	
 	static func appPink() -> UIColor {
-		return UIColor(red:1.00, green:0.32, blue:0.59, alpha:1.0)
+		return UIColor(red:0.06, green:0.26, blue:0.60, alpha:1.0)
 	}
 	
 	static func appPinkSecondary() -> UIColor {
@@ -53,11 +53,13 @@ public extension UIView {
 	}
 	
 	func drawGradientBackground(color1: UIColor, color2: UIColor) {
-		let gradient = CAGradientLayer()
-		
-		gradient.frame = self.bounds
-		gradient.colors = [color1.cgColor, color2.cgColor]
-		self.layer.insertSublayer(gradient, at: 0)
+//		let gradient = CAGradientLayer()
+//
+//		self.layer.layoutIfNeeded()
+//		gradient.frame = self.bounds
+//		gradient.colors = [color1.cgColor, color2.cgColor]
+//		self.layer.insertSublayer(gradient, at: 0)
+		self.backgroundColor = color1
 	}
 }
 

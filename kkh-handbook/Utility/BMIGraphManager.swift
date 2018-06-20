@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 
 class BMIGraphManager: NSObject {
     
@@ -38,6 +39,7 @@ class BMIGraphManager: NSObject {
         [19.0, 18.5, 18.6, 18.8, 19.3, 21.5, 22.9, 24.3, 25.7, 27.1, 28.3, 29.2, 30.1, 30.8, 31.3, 31.7, 32.0, 32.3]
     ]
 
+	override init() {}
     init(age: Int, bmi: Float, isMale: Bool) {
         super.init()
         
@@ -73,6 +75,29 @@ class BMIGraphManager: NSObject {
             return status.rawValue
         }
     }
+	
+	public func getChartData(age: Int, isMale: Bool) -> LineChartData {
+		
+		var data = [[Double]]()
+		if isMale {
+			data = percentilesMale1
+		} else {
+			data = percentilesFemale1
+		}
+		
+		let percentiles = data.map{$0[age]}
+		
+		let dataset = LineChartDataSet(
+			values: percentiles.map{ChartDataEntry.init(x: Double(percentiles.index(of: $0)!), y: $0)},
+			label: "")
+		
+		dataset.setColor(.appBlue())
+		dataset.circleColors = [.appBlue()]
+		dataset.valueTextColor = .white
+		
+		return LineChartData(dataSets: [dataset])
+		
+	}
     
 //    func graph() -> UIView! {
 //        let lineChartView = LineChartView()

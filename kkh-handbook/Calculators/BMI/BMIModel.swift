@@ -8,15 +8,23 @@
 
 import Foundation
 import UIKit
+import Charts
 
 struct BMIModel {
 	var viewInstance: BMICalculatorView?
 	
-	init(bind: BMICalculatorView) {
-		viewInstance = bind
+	init(bind instance: BMICalculatorView) {
+		viewInstance = instance
+	}
+	
+	func updateChart () {
+		let age = viewInstance!.agePicker.selectedRow(inComponent: 0) + 1
+		let ismale = viewInstance!.genderPicker.selectedSegmentIndex == 0
+		viewInstance?.chart.data = BMIGraphManager().getChartData(age: age, isMale: ismale)
 	}
 	
 	func notifyFormChanged() {
+		self.updateChart()
 		if let (ismale, bmiValue, age) = viewInstance!.getForm() {
 			let m = BMIGraphManager(age: age, bmi: bmiValue, isMale: ismale)
 			let res = m.range()
@@ -32,7 +40,8 @@ struct BMIModel {
 				}
 			}
 			
-			viewInstance!.update(message: msg, BMI: bmiValue)
+			viewInstance?.update(message: msg, BMI: bmiValue)
+			
 		}
 	}
 	

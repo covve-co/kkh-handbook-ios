@@ -10,5 +10,6 @@ target 'kkh-handbook' do
   pod 'PDFReader'
   pod 'Hero'
   pod 'SwiftyJSON', '~> 4.0'
+	pod 'Charts'
   
 end

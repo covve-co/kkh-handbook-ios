@@ -15,10 +15,11 @@ struct ReferenceViewModel {
 	
 	// Files
 	private var files: [File] = []
+	
 	// Content
 	var content: [Chapter] = []
 	
-	// Store search statez
+	// Store search state
 	var searching: Bool = false
 	
 	init() {
