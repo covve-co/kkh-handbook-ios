@@ -1266,7 +1266,7 @@
                                     <constraint firstAttribute="trailing" secondItem="CWE-Kk-TJI" secondAttribute="trailing" id="1hm-bS-jHm"/>
                                     <constraint firstItem="eu9-lj-kKg" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" id="3EA-oO-uRg"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="leading" secondItem="iuK-pw-rrg" secondAttribute="leading" priority="990" id="434-Nt-pAG"/>
-                                    <constraint firstAttribute="bottom" secondItem="CWE-Kk-TJI" secondAttribute="bottom" id="CoT-65-Hw8"/>
+                                    <constraint firstAttribute="bottom" secondItem="CWE-Kk-TJI" secondAttribute="bottom" constant="15" id="CoT-65-Hw8"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="top" secondItem="eu9-lj-kKg" secondAttribute="bottom" id="dfn-9U-uqU"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="centerX" secondItem="iuK-pw-rrg" secondAttribute="centerX" id="gzW-K9-S0I"/>
                                     <constraint firstItem="CWE-Kk-TJI" firstAttribute="trailing" secondItem="eu9-lj-kKg" secondAttribute="trailing" priority="990" id="ldQ-zu-7EF"/>
