@@ -36,7 +36,6 @@ final class ReferenceView: GlobalController, UISearchBarDelegate {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		self.navigationController?.navigationBar.prefersLargeTitles = true
-		self.navigationController?.tabBarController?.tabBar.tintColor = .appBlue()
 	}
 	
 	@IBAction func bookmarkToggle(_ sender: Any) {
