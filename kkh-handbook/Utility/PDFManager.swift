@@ -37,6 +37,7 @@ class PDFManager: NSObject {
 					.map{$0.replacingOccurrences(of: "\n", with: "")}
 			}
 		
+		
 		// Map to Files
 		contents.filter{ $0.hasSuffix(".pdf")}.forEach {
 			let a = $0.split(separator: "-")

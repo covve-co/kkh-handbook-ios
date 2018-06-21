@@ -35,8 +35,8 @@ struct ReferenceViewModel {
 	mutating func build() {
 		// Setup files
 		files = manager.getFiles()!
-		// Setup content
-		content = [Int](0..<manager.numberOfChapters()-1)
+		// Setup content			
+		content = [Int](0..<manager.numberOfChapters())
 			.map{makeChapter($0)}
 	}
 	
@@ -56,7 +56,7 @@ struct ReferenceViewModel {
 extension ReferenceViewModel {
 	// Chapter factory
 	func makeChapter(_ id: Int) -> Chapter {
-		return (manager.getChapter(forId: id + 1), manager.getFiles(chapterIndex: id)!)
+		return (manager.getChapter(forId: id), manager.getFiles(chapterIndex: id)!)
 	}
 	
 	// Searching function

@@ -37,7 +37,6 @@ extension ReferenceView: UITableViewDataSource, UITableViewDelegate {
 	}
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
-		// TODO search condition
 		return content.count
 	}
 	
