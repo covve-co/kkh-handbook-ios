@@ -1245,7 +1245,7 @@
                                                     <outlet property="button" destination="pK0-X2-LDt" id="Suh-5e-HeQ"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="padding" rowHeight="20" id="Jl5-XP-kpX" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="padding" rowHeight="20" id="Jl5-XP-kpX" customClass="CrisisContentCell" customModule="kkh_handbook" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="385" width="375" height="20"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jl5-XP-kpX" id="i0B-9x-DOh">
