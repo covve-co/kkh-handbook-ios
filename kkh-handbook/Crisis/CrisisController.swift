@@ -25,10 +25,6 @@ class CrisisController: GlobalController, UITextFieldDelegate {
 		nextButton.backgroundColor = .black
 	}
 	
-	override func viewDidAppear(_ animated: Bool) {
-		self.navigationController?.tabBarController?.tabBar.tintColor = .appPink()
-	}
-	
 	// Validate weight
 	// TODO Abstract weightView controls to an individual component (DRY)
 	func textFieldDidEndEditing(_ textField: UITextField) {

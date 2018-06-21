@@ -116,8 +116,7 @@ class ContentManager: NSObject {
 		        ["For Antihistamine" : ["type" : "header"]],
 		        ["Diphenhydramine IV/IO SLOW BOLUS" :  ["type" : "text",
 		                                                "content" : "\(weight.cleanUpper) MG \n(1 MG/kg)"]],
-		        ["For Antihistamine" : ["type" : "header"]],
-		        ["Diphenhydramine IV/IO SLOW BOLUS" :  ["type" : "text",
+		        ["Ranitidine IV/IO BOLUS - 1MG/KG" :  ["type" : "text",
 		                                                "content" : "\(weight.cleanUpper) MG \n(1 MG/kg)"]]
 			
 		]

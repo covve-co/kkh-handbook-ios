@@ -23,10 +23,6 @@ class CalculatorController: GlobalController {
 
 	}
 	
-	override func viewDidAppear(_ animated: Bool) {
-		self.navigationController?.tabBarController?.tabBar.tintColor = .bookmarkOrange()
-	}
-	
 	@IBAction func BMIPressed(_ sender: Any) {
 		self.performSegue(withIdentifier:"bmi", sender: self)
 	}
